@@ -1,0 +1,8 @@
+# Copy this file to src/resources/mysql.cnf and fill in your values
+# Used by mysqldump through: --defaults-extra-file=src/resources/mysql.cnf
+
+[client]
+user=root
+password=secret
+host=localhost
+port=3306

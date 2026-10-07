@@ -1,0 +1,8 @@
+db.properties
+mysql.cnf
+.local/
+work/
+build/
+dist/
+logs/
+PASSWORDS.txt

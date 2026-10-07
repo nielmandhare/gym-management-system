@@ -1,0 +1,22 @@
+# Copy this file to src/resources/db.properties and fill in your values
+# This file is loaded via ClassLoader at path: resources/db.properties
+
+# Database connection
+db.host=localhost
+db.port=3306
+# Use the database created by backups/gms-database-init.sql
+db.name=gms
+
+db.user=root
+# Avoid committing secrets. Use a local-only value.
+db.password=secret
+
+# Full paths to the MySQL client tools (used for backup)
+# Adjust these for your installation (Windows examples shown)
+# If these are empty or incorrect, backup will fail.
+# Example:
+# db.mysql_path=C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql.exe
+# db.mysqldump_path=C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqldump.exe
+
+db.mysql_path=
+db.mysqldump_path=
