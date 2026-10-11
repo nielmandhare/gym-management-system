@@ -40,6 +40,7 @@ public class ManageMemberDialog extends javax.swing.JDialog {
      */
     public ManageMemberDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+        security.Session.requireAdmin();
         initComponents();
         initCustomizations();
     }
@@ -545,18 +546,22 @@ public class ManageMemberDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void newMemberBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newMemberBtnActionPerformed
+        security.Session.requireAdmin();
         addNewMember();
     }//GEN-LAST:event_newMemberBtnActionPerformed
 
     private void bodyfatFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyfatFieldActionPerformed
+        security.Session.requireAdmin();
         // TODO add your handling code here:
     }//GEN-LAST:event_bodyfatFieldActionPerformed
 
     private void removeMemberBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeMemberBtnActionPerformed
+        security.Session.requireAdmin();
         removeMember();
     }//GEN-LAST:event_removeMemberBtnActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        security.Session.requireAdmin();
         searchRemoveMember(getRemoveMemberData());
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -565,6 +570,7 @@ public class ManageMemberDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_idField_2KeyTyped
 
     private void editMemberBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editMemberBtnActionPerformed
+        security.Session.requireAdmin();
         editMember();
     }//GEN-LAST:event_editMemberBtnActionPerformed
 

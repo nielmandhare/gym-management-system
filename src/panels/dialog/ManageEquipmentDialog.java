@@ -22,6 +22,7 @@ public class ManageEquipmentDialog extends JDialog {
 
     public ManageEquipmentDialog(Frame parent, boolean modal) {
         super(parent,"Manage Equipment",modal);
+        security.Session.requireAdmin();
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         JPanel fields = new JPanel(new GridLayout(5,2,10,10));
         fields.setBorder(BorderFactory.createEmptyBorder(12,12,12,12));

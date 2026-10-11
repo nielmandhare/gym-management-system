@@ -39,7 +39,15 @@ port=3307
     $rootConfig = Join-Path $PSScriptRoot '.local/mysql/root.cnf'
     $config = Join-Path $PSScriptRoot '.local/mysql/my.ini'
     $expectedConfig = [System.IO.Path]::GetFullPath($config)
-    $listeners = @(Get-NetTCPConnection -LocalPort 3307 -State Listen -ErrorAction Stop)
+    try {
+        $listeners = @(Get-NetTCPConnection -LocalPort 3307 -State Listen -ErrorAction Stop)
+    } catch {
+        if ($_.FullyQualifiedErrorId -like 'CmdletizationQuery_NotFound,*') {
+            $listeners = @()
+        } else {
+            throw
+        }
+    }
     foreach ($listener in $listeners) {
         $owner = Get-CimInstance Win32_Process -Filter "ProcessId = $($listener.OwningProcess)" -ErrorAction SilentlyContinue
         $isThisProjectServer = $owner -and $owner.Name -ieq 'mysqld.exe' -and
@@ -69,10 +77,38 @@ port=3307
     }
     & $client "--defaults-extra-file=$rootConfig" --execute="CREATE USER IF NOT EXISTS 'gms_dev'@'localhost' IDENTIFIED BY '1234'; GRANT ALL PRIVILEGES ON gms.* TO 'gms_dev'@'localhost';"
     if ($LASTEXITCODE -ne 0) { throw 'Local database user setup failed.' }
-    foreach ($sql in @('gms-database-init.sql','local-demo-seed.sql')) {
+    # Seed once per local instance: launching must not overwrite edited profiles,
+    # account status, memberships, products or new progress records.
+    $seedMarker = Join-Path $PSScriptRoot '.local/mysql/demo-seed-v1.complete'
+    $imports = @('gms-database-init.sql')
+    if (!(Test-Path -LiteralPath $seedMarker)) { $imports += 'local-demo-seed.sql' }
+    foreach ($sql in $imports) {
         & $client "--defaults-extra-file=$rootConfig" "--execute=source $projectPath/backups/$sql"
         if ($LASTEXITCODE -ne 0) { throw "Import failed: $sql" }
+        if ($sql -eq 'local-demo-seed.sql') { 'Demo seed installed successfully.' | Set-Content -LiteralPath $seedMarker -Encoding ASCII }
     }
+    # Back up the current schema/data before installing the incremental account table.
+    $dump = Join-Path $MySqlBin 'mysqldump.exe'
+    $migrationBackup = Join-Path $PSScriptRoot ('backups/pre-user-accounts_' + (Get-Date -Format 'yyyyMMdd_HHmmss') + '.sql')
+    & $client "--defaults-extra-file=$rootConfig" --batch --skip-column-names --execute="SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='gms' AND table_name='app_user'" | ForEach-Object { $accountTableExists = [int]$_ }
+    if ($LASTEXITCODE -ne 0) { throw 'Could not inspect account migration state.' }
+    if (!$accountTableExists) {
+        & $dump "--defaults-extra-file=$rootConfig" --no-tablespaces --single-transaction "--result-file=$migrationBackup" gms
+        if ($LASTEXITCODE -ne 0) { throw 'Pre-migration backup failed; migration cancelled.' }
+    }
+    & $client "--defaults-extra-file=$rootConfig" "--execute=source $projectPath/backups/user-accounts-migration.sql"
+    if ($LASTEXITCODE -ne 0) { throw 'Account migration failed.' }
+    & $client "--defaults-extra-file=$rootConfig" --batch --skip-column-names --execute="SELECT COUNT(*) FROM information_schema.columns WHERE table_schema='gms' AND table_name='app_user' AND column_name='member_id'" | ForEach-Object { $memberLinkExists = [int]$_ }
+    if ($LASTEXITCODE -ne 0) { throw 'Could not inspect three-role migration state.' }
+    if (!$memberLinkExists) {
+        $rbacBackup = Join-Path $PSScriptRoot ('backups/pre-three-role_' + (Get-Date -Format 'yyyyMMdd_HHmmss') + '.sql')
+        & $dump "--defaults-extra-file=$rootConfig" --no-tablespaces --single-transaction "--result-file=$rbacBackup" gms
+        if ($LASTEXITCODE -ne 0) { throw 'Three-role backup failed; migration cancelled.' }
+    }
+    & $client "--defaults-extra-file=$rootConfig" "--execute=source $projectPath/backups/three-role-migration.sql"
+    if ($LASTEXITCODE -ne 0) { throw 'Three-role migration failed.' }
+    & $client "--defaults-extra-file=$rootConfig" "--execute=source $projectPath/backups/role-demo-accounts.sql"
+    if ($LASTEXITCODE -ne 0) { throw 'Role demo account seed failed.' }
     if (!(Test-Path 'src/resources/db.properties')) {
         @"
 db.host=127.0.0.1
@@ -93,5 +129,5 @@ host=127.0.0.1
 port=3307
 '@ | Set-Content 'src/resources/mysql.cnf' -Encoding ASCII
     }
-    Write-Host 'MySQL ready: gms at 127.0.0.1:3307. Application login: admin / 1234.'
+    Write-Host 'MySQL ready: gms at 127.0.0.1:3307. Application login: admin / 123.'
 } finally { Pop-Location }

@@ -83,6 +83,7 @@ public class MySQL {
     }
 
     public static ResultSet executeSearch(String query, Object... params) throws SQLException {
+        security.Session.requireAdmin();
         ensureConnection();
         PreparedStatement stmt = connection.prepareStatement(query);
         try {
@@ -97,6 +98,7 @@ public class MySQL {
 
     // execute insert, update and delete query
     public static boolean executeIUD(String query, Object... params) {
+        security.Session.requireAdmin();
         affectedRows = 0;
         try {
             ensureConnection();
@@ -118,6 +120,7 @@ public class MySQL {
 
     // backup database
     public static boolean backupDatabase() {
+        security.Session.requireAdmin();
         try {
             String backupDir = "backups";
             new File(backupDir).mkdirs();

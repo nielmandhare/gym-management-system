@@ -29,6 +29,7 @@ public class GenerateReportsPanel extends javax.swing.JPanel {
      * Creates new form GenerateReportsPanel
      */
     public GenerateReportsPanel() {
+        security.Session.requireAdmin();
         initComponents();
         connection = MySQL.getConnection();
         parameters = new HashMap<>();
@@ -215,30 +216,37 @@ public class GenerateReportsPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void memberReportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_memberReportBtnActionPerformed
+        security.Session.requireAdmin();
         generateReport("gms_member_report.jasper");
     }//GEN-LAST:event_memberReportBtnActionPerformed
 
     private void attendanceReportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_attendanceReportBtnActionPerformed
+        security.Session.requireAdmin();
         generateReport("gms_member_attendance_report.jasper");
     }//GEN-LAST:event_attendanceReportBtnActionPerformed
 
     private void productSalesReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productSalesReportActionPerformed
+        security.Session.requireAdmin();
         generateReport("gms_product_sales_report.jasper");
     }//GEN-LAST:event_productSalesReportActionPerformed
 
     private void trainerReportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trainerReportBtnActionPerformed
+        security.Session.requireAdmin();
         generateReport("gms_trainer_report.jasper");
     }//GEN-LAST:event_trainerReportBtnActionPerformed
 
     private void paymentReportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paymentReportBtnActionPerformed
+        security.Session.requireAdmin();
         generateReport("gms_payments_report.jasper");
     }//GEN-LAST:event_paymentReportBtnActionPerformed
 
     private void equipmentReportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equipmentReportBtnActionPerformed
+        security.Session.requireAdmin();
         generateReport("gms_equipment_report.jasper");
     }//GEN-LAST:event_equipmentReportBtnActionPerformed
 
     private void backupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backupBtnActionPerformed
+        security.Session.requireAdmin();
         backupBtn.setEnabled(false);
         new Thread(() -> {
             if (MySQL.backupDatabase()) {

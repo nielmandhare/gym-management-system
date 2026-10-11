@@ -33,8 +33,12 @@ public class MembersPanel extends javax.swing.JPanel {
      * Creates new form MembersPanel
      */
     public MembersPanel() {
+        security.Session.requireAdmin();
         initComponents();
         initCustomizations();
+        javax.swing.JButton membershipButton=new javax.swing.JButton("Membership");
+        jPanel2.add(membershipButton);
+        membershipButton.addActionListener(e->manageMembership());
         SearchSuggestions.attach(searchTextField, searchBtn,
                 "SELECT name FROM member WHERE name LIKE ? ORDER BY name LIMIT 8");
         initPanelData();
@@ -296,7 +300,22 @@ public class MembersPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void manageMembership() {
+        security.Session.requireAdmin();
+        try {
+            int row=membersTable.getSelectedRow();
+            if(row<0)throw new IllegalArgumentException("Select a member first.");
+            int memberId=Integer.parseInt(membersTable.getValueAt(row,0).toString());
+            try(ResultSet data=MySQL.executeSearch("SELECT membership_type_membership_type_id,payment_status FROM member WHERE member_id=?",memberId)){
+                if(!data.next())throw new IllegalArgumentException("Member no longer exists.");
+                new panels.dialog.MembershipDialog(null,memberId,data.getInt(1),data.getBoolean(2)).setVisible(true);
+            }
+            refreshData();
+        }catch(Exception e){javax.swing.JOptionPane.showMessageDialog(this,e.getMessage(),"Membership",javax.swing.JOptionPane.ERROR_MESSAGE);}
+    }
+
     private void manageBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageBtnActionPerformed
+        security.Session.requireAdmin();
         ManageMemberDialog manageMemberDialog = new ManageMemberDialog(null, true);
         manageMemberDialog.setLocationRelativeTo(null);
         manageMemberDialog.setVisible(true);
@@ -304,6 +323,7 @@ public class MembersPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_manageBtnActionPerformed
 
     private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
+        security.Session.requireAdmin();
         getSearchResult();
     }//GEN-LAST:event_searchBtnActionPerformed
 

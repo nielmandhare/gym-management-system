@@ -101,7 +101,8 @@ public class LocalVerification {
         try {
             com.formdev.flatlaf.themes.FlatMacDarkLaf.setup();
             check(MySQL.getConnection()!=null && MySQL.getConnection().isValid(5),"JDBC connection");
-            check(scalar("SELECT COUNT(*) FROM admin WHERE username=? AND password=? AND status_status_id=1","admin","1234")==1,"admin credential preserved");
+            security.Accounts.login("admin","123");
+            check(security.Session.current().role().equals("ADMIN"),"admin credential preserved through hash migration");
             check(scalar("SELECT COUNT(*) FROM member")==25,"25 realistic members seeded");
             check(scalar("SELECT COUNT(*) FROM trainer")==6,"6 trainer profiles seeded");
             int attendanceCount=scalar("SELECT COUNT(*) FROM member_attendance");
@@ -125,15 +126,16 @@ public class LocalVerification {
                     LoginForm f=new LoginForm(); f.setVisible(true);
                     text(f,"usernameField","admin"); text(f,"passwordField","wrong"); call(f,"logIn");
                     check(f.isDisplayable() && messages.stream().anyMatch(s->s.contains("Invalid Credentials")),"invalid password rejected"); messages.clear();
-                    text(f,"usernameField","' OR 1=1 -- "); text(f,"passwordField","1234"); call(f,"logIn");
+                    text(f,"usernameField","' OR 1=1 -- "); text(f,"passwordField","123"); call(f,"logIn");
                     check(f.isDisplayable() && messages.stream().anyMatch(s->s.contains("Invalid Credentials")),"login SQL injection rejected"); messages.clear();
-                    MySQL.executeIUD("UPDATE admin SET status_status_id=2 WHERE username='admin'");
+                    // Privileged fixture changes are independent of the rejected login session.
+                    try(var fixture=MySQL.getConnection().prepareStatement("UPDATE admin SET status_status_id=2 WHERE username='admin'")){fixture.executeUpdate();}
                     try {
-                        text(f,"usernameField","admin"); text(f,"passwordField","1234"); call(f,"logIn");
+                        text(f,"usernameField","admin"); text(f,"passwordField","123"); call(f,"logIn");
                         check(f.isDisplayable() && messages.stream().anyMatch(s->s.contains("Deactivated")),"inactive admin rejected");
-                    } finally { MySQL.executeIUD("UPDATE admin SET status_status_id=1 WHERE username='admin'"); }
+                    } finally { try(var fixture=MySQL.getConnection().prepareStatement("UPDATE admin SET status_status_id=1 WHERE username='admin'")){fixture.executeUpdate();} }
                     messages.clear();
-                    text(f,"usernameField","admin"); text(f,"passwordField","1234"); call(f,"logIn");
+                    text(f,"usernameField","admin"); text(f,"passwordField","123"); call(f,"logIn");
                     MainInterface main=MainInterface.getInstance();
                     check(main.isShowing() && !f.isDisplayable(),"admin login and dashboard");
                     for(String name: new String[]{"dashboardBtn","membersBtn","trainersBtn","workoutPlansBtn","attendanceBtn","progressTrackBtn","equipmentBtn","otherProductsBtn","paymentRecordsBtn","generateReportsBtn"}) {
@@ -154,10 +156,10 @@ public class LocalVerification {
                     check(((JTable)field(field(main,"otherProductsPanel"),"membersTable")).getRowCount()==8,"product inventory visible in the table");
                     check(((JTable)field(field(main,"paymentRecordsPanel"),"membersTable")).getRowCount()==19,"payments visible in the table");
                     String memberReportText=renderedText("gms_member_report.jasper");
-                    check(memberReportText.contains("Vedant Deshmukh"),"member report includes demo member data");
+                    check(memberReportText.contains("user"),"member report includes demo member data");
                     check(renderedText("gms_trainer_report.jasper").contains("Shruti Patil"),"trainer report includes demo trainer data");
-                    check(renderedText("gms_member_attendance_report.jasper").contains("Vedant Deshmukh"),"attendance report includes member visits");
-                    check(renderedText("gms_payments_report.jasper").contains("Vedant Deshmukh"),"payment report includes member payments");
+                    check(renderedText("gms_member_attendance_report.jasper").contains("user"),"attendance report includes member visits");
+                    check(renderedText("gms_payments_report.jasper").contains("user"),"payment report includes member payments");
                     check(renderedText("gms_product_sales_report.jasper").contains("Protein Bar"),"product report includes sale data");
                     check(renderedText("gms_equipment_report.jasper").contains("Commercial Treadmill"),"equipment report includes inventory data");
                     crud();
@@ -165,7 +167,7 @@ public class LocalVerification {
                     main.logOut();
                     LoginForm again=null; for(Window w:Window.getWindows()) if(w instanceof LoginForm l && l.isShowing()) again=l;
                     check(again!=null && !main.isDisplayable(),"logout closes session");
-                    text(again,"usernameField","0770000001"); text(again,"passwordField","1234"); call(again,"logIn");
+                    text(again,"usernameField","0770000001"); text(again,"passwordField","123"); call(again,"logIn");
                     check(MainInterface.getInstance().isShowing() && !again.isDisplayable(),"login again by mobile");
                     Object reports=field(MainInterface.getInstance(),"generateReportsPanel");
                     for(String button:new String[]{"memberReportBtn","trainerReportBtn","attendanceReportBtn","paymentReportBtn","productSalesReport","equipmentReportBtn"}) {

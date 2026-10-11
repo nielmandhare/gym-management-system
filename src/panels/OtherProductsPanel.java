@@ -31,8 +31,10 @@ public class OtherProductsPanel extends javax.swing.JPanel {
      * Creates new form OtherProducts
      */
     public OtherProductsPanel() {
+        security.Session.requireAdmin();
         initComponents();
         initCustomizations();
+        manageBtn.addActionListener(e->{security.Session.requireAdmin();new panels.dialog.ManageProductsDialog(null,true).setVisible(true);refreshData();});
         SearchSuggestions.attach(searchTextField, searchBtn,
                 "SELECT name FROM product WHERE name LIKE ? ORDER BY name LIMIT 8");
         initPanelData();
@@ -280,6 +282,7 @@ public class OtherProductsPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
+        security.Session.requireAdmin();
         getSearchResult();
     }//GEN-LAST:event_searchBtnActionPerformed
 

@@ -43,6 +43,7 @@ public class ManageTrainerDialog extends javax.swing.JDialog {
      */
     public ManageTrainerDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+        security.Session.requireAdmin();
         initComponents();
         initCustomizations();
     }
@@ -513,10 +514,12 @@ public class ManageTrainerDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
+        security.Session.requireAdmin();
         // TODO add your handling code here:
     }//GEN-LAST:event_passwordFieldActionPerformed
 
     private void newTrainerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newTrainerBtnActionPerformed
+        security.Session.requireAdmin();
         addNewTranier();
     }//GEN-LAST:event_newTrainerBtnActionPerformed
 
@@ -529,14 +532,17 @@ public class ManageTrainerDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_mobileField_2KeyTyped
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        security.Session.requireAdmin();
         searchRemoveTrainer(getRemoveTrainerData());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void removeMemberBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeMemberBtnActionPerformed
+        security.Session.requireAdmin();
         removeTrainer();
     }//GEN-LAST:event_removeMemberBtnActionPerformed
 
     private void editMemberBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editMemberBtnActionPerformed
+        security.Session.requireAdmin();
         editTrainer();
     }//GEN-LAST:event_editMemberBtnActionPerformed
     private void addNewTranier() {
@@ -568,7 +574,7 @@ public class ManageTrainerDialog extends javax.swing.JDialog {
         } else if (!username.matches(USERNAME.validate())) {
             OptionPane.showMessage(this, "Warning Message", "Invalid Username. Only letters, digits, underscores, Or periods. Length Should Be Between 3-20 Characters!   ", "WARNING");
         } else if (!password.matches(PASSWORD.validate())) {
-            OptionPane.showMessage(this, "Warning Message", "Enter A Stronger Password!   ", "WARNING");
+            OptionPane.showMessage(this, "Warning Message", "Password must contain 3–128 characters.", "WARNING");
         } else if (!confirmPassword.equals(password)) {
             OptionPane.showMessage(this, "Warning Message", "Passwords Does Not Match!   ", "WARNING");
 
@@ -595,14 +601,11 @@ public class ManageTrainerDialog extends javax.swing.JDialog {
     }
 
     private void executeAddTrainerQuery(String... data) {
-        String query = "INSERT INTO trainer (name,mobile,nic,hired_date,username,password,status_status_id) "
-                + "VALUES (?,?,?,?,?,?,1)";
-        boolean executeQuery = MySQL.executeIUD(query, data[0], data[1], data[2], data[3], data[4], data[5]);
-
-        if (executeQuery) {
+        try {
+            security.Accounts.createTrainer(data[0],data[1],data[2],data[3],data[4],data[5]);
             OptionPane.showMessage(this, "Message", "Trainer Added Successfully    ", "INFORMATION");
-        } else {
-            OptionPane.showMessage(this, "Error", "Database Error. Try Again!    ", "ERROR");
+        } catch (SQLException | IllegalArgumentException | SecurityException e) {
+            OptionPane.showMessage(this, "Error", "Trainer/account creation failed: " + e.getMessage(), "ERROR");
         }
     }
 

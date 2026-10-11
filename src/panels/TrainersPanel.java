@@ -29,6 +29,7 @@ public class TrainersPanel extends javax.swing.JPanel {
      * Creates new form TrainersPanel
      */
     public TrainersPanel() {
+        security.Session.requireAdmin();
         initComponents();
         initCustomizations();
         SearchSuggestions.attach(searchTextField, searchBtn,
@@ -269,10 +270,12 @@ public class TrainersPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
+        security.Session.requireAdmin();
         getSearchResult();
     }//GEN-LAST:event_searchBtnActionPerformed
 
     private void manageBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageBtnActionPerformed
+        security.Session.requireAdmin();
         ManageTrainerDialog manageTrainerDialog = new ManageTrainerDialog(null, true);
         manageTrainerDialog.setLocationRelativeTo(null);
         manageTrainerDialog.setVisible(true);

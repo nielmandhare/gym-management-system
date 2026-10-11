@@ -36,6 +36,7 @@ public class AttendancePanel extends javax.swing.JPanel {
      * Creates new form AttendancePanel
      */
     public AttendancePanel() {
+        security.Session.requireAdmin();
         initComponents();
         initCustomizations();
         SearchSuggestions.attach(searchTextField, searchBtn,
@@ -277,6 +278,7 @@ public class AttendancePanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
+        security.Session.requireAdmin();
         getSearchResult();
     }//GEN-LAST:event_searchBtnActionPerformed
 

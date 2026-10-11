@@ -6,3 +6,6 @@ build/
 dist/
 logs/
 PASSWORDS.txt
+backups/gms_*.sql
+backups/pre-user-accounts_*.sql
+backups/pre-three-role_*.sql

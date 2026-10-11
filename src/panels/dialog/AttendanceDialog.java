@@ -28,6 +28,7 @@ public class AttendanceDialog extends javax.swing.JDialog {
      */
     public AttendanceDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+        security.Session.requireAdmin();
         initComponents();
         initCustomizations();
     }
@@ -137,6 +138,7 @@ public class AttendanceDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void confirmBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmBtnActionPerformed
+        security.Session.requireAdmin();
         markAttendance();
     }//GEN-LAST:event_confirmBtnActionPerformed
 

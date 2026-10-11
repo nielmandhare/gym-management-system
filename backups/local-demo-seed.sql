@@ -9,7 +9,7 @@ VALUES (1,'DAYPASS',500),(2,'MONTHLY',3000),(3,'ANNUAL',30000);
 
 -- Preserve the pre-existing admin credentials and ID.
 INSERT IGNORE INTO admin (name,mobile,username,password,status_status_id)
-VALUES ('Local Admin','0770000001','admin','1234',1);
+VALUES ('admin','0770000001','admin','MIGRATED',1);
 
 CREATE TEMPORARY TABLE demo_members (
  mobile CHAR(10) PRIMARY KEY, name VARCHAR(45) NOT NULL, joined_days INT NOT NULL,
@@ -19,7 +19,7 @@ CREATE TEMPORARY TABLE demo_members (
  body_fat DECIMAL(4,2) NOT NULL
 ) ENGINE=MEMORY;
 INSERT INTO demo_members VALUES
-('9876501002','Vedant Deshmukh',110,'MONTHLY',1,1,174,72.4,18.5),
+('9876501002','user',110,'MONTHLY',1,1,174,72.4,18.5),
 ('9876501003','Shruti Patil',180,'ANNUAL',1,1,163,59.8,24.0),
 ('9876501004','Tanisha Kulkarni',45,'MONTHLY',1,1,160,56.2,25.0),
 ('9876501005','Atharva Joshi',35,'DAYPASS',1,1,178,76.5,19.0),
@@ -70,7 +70,7 @@ INSERT INTO demo_trainers VALUES
 ('Tasbiya Shaikh','9876512005','990000000005',170,1,'trainer_profile_tasbiya'),
 ('Pradynesh Pawar','9876512006','990000000006',95,2,'trainer_profile_pradynesh');
 -- Trainer username/password columns are required by this schema; PROFILE_ONLY is not an app login.
-UPDATE trainer SET name='Niel Mandhare',mobile='9876512001',nic='990000000001',
+UPDATE trainer SET name='trainer',mobile='9876512001',nic='990000000001',
  hired_date=DATE_SUB('2026-10-07',INTERVAL 520 DAY),username='trainer_profile_niel',
  password='PROFILE_ONLY',status_status_id=1 WHERE trainer_id=1;
 INSERT INTO trainer (name,mobile,nic,hired_date,username,password,status_status_id)

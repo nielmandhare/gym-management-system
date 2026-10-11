@@ -126,31 +126,28 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_loginBtnActionPerformed
 
     private void logIn() {
-        String username = usernameField.getText().trim();
-        String pass = new String(passwordField.getPassword());
-
-        String query = "SELECT * FROM `admin` LEFT JOIN `status` ON `status_id` = `status_status_id` WHERE "
-                + "(`username` = ? OR `mobile` = ?) AND `password` = ?;";
-
         try {
-            try (ResultSet rs = MySQL.executeSearch(query, username, username, pass)) {
-
-            if (rs.next()) {
-                if (rs.getBoolean("status_status")) {
-                    MainInterface main = MainInterface.getInstance();
-                    this.dispose();
-                    main.setVisible(true);
-                    new AttendanceDialog(main, false).setVisible(true);
-                } else {
-                    OptionPane.showMessage(this, "Error Message", "User Access Has Been Deactivated!.    ", "ERROR");
-                }
+            security.Session.Identity identity=security.Accounts.login(usernameField.getText().trim(),new String(passwordField.getPassword()));
+            passwordField.setText("");
+            if(identity.role().equals("ADMIN")) {
+                MainInterface main=MainInterface.getInstance();
+                dispose(); main.setVisible(true);
+                new AttendanceDialog(main,false).setVisible(true);
+            } else if(identity.role().equals("TRAINER")) {
+                TrainerDashboard trainer=new TrainerDashboard();
+                dispose(); trainer.setVisible(true);
+            } else if(identity.role().equals("MEMBER")) {
+                MemberDashboard member=new MemberDashboard();
+                dispose(); member.setVisible(true);
             } else {
-                OptionPane.showMessage(this, "Error Message", "Invalid Credentials! Try Again.    ", "ERROR");
+                security.Session.logout();
+                throw new SecurityException("Unsupported account role.");
             }
-            }
-        } catch (SQLException e) {
-            logger.log(Level.SEVERE, "LoginForm.logIn() caused an error!", e);
-            OptionPane.showMessage(this, "Error Message", "Database Connection Error!    ", "ERROR");
+        } catch(SecurityException e) {
+            OptionPane.showMessage(this,"Login",e.getMessage(),"ERROR");
+        } catch(SQLException e) {
+            logger.log(Level.SEVERE,"Login database error",e);
+            OptionPane.showMessage(this,"Login","Database Connection Error!","ERROR");
         }
     }
 

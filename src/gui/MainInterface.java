@@ -59,6 +59,7 @@ public class MainInterface extends javax.swing.JFrame {
     private OtherProductsPanel otherProductsPanel;
     private PaymentRecordsPanel paymentRecordsPanel;
     private GenerateReportsPanel generateReportsPanel;
+    private panels.UserManagementPanel usersPanel;
 
     private static final Logger logger = LoggerUtil.getLogger(MainInterface.class);
 
@@ -69,6 +70,7 @@ public class MainInterface extends javax.swing.JFrame {
     }
 
     public static MainInterface getInstance() {
+        security.Session.requireAdmin();
         if (mainInterface == null) {
             mainInterface = new MainInterface();
         }
@@ -86,6 +88,16 @@ public class MainInterface extends javax.swing.JFrame {
         sidePanel.setLayout(new java.awt.GridLayout(11, 1, 0, 3));
         sidePanel.add(logoutBtn);
         logoutBtn.addActionListener(e -> logOut());
+        JButton usersBtn = new JButton("User Management");
+        sidePanel.setLayout(new java.awt.GridLayout(12, 1, 0, 3));
+        sidePanel.add(usersBtn);
+        usersBtn.addActionListener(e -> {
+            security.Session.requireAdmin();
+            usersPanel.refresh();
+            ((CardLayout) mainPanel.getLayout()).show(mainPanel, "usersPanel");
+        });
+        usersPanel = new panels.UserManagementPanel();
+        mainPanel.add(usersPanel, "usersPanel");
     }
 
     private void addPanelCards() {
@@ -622,6 +634,7 @@ public class MainInterface extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void dashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("dashboardPanel", dashboardBtn);
     }//GEN-LAST:event_dashboardBtnActionPerformed
 
@@ -630,6 +643,7 @@ public class MainInterface extends javax.swing.JFrame {
     }//GEN-LAST:event_formComponentResized
 
     private void newMemberBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newMemberBtnActionPerformed
+        security.Session.requireAdmin();
         ManageMemberDialog manageMemberDialog = new ManageMemberDialog(this, true);
         manageMemberDialog.setLocationRelativeTo(null);
         manageMemberDialog.setVisible(true);
@@ -637,38 +651,47 @@ public class MainInterface extends javax.swing.JFrame {
     }//GEN-LAST:event_newMemberBtnActionPerformed
 
     private void membersBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_membersBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("membersPanel", membersBtn);
     }//GEN-LAST:event_membersBtnActionPerformed
 
     private void workoutPlansBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_workoutPlansBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("workoutPlansPanel", workoutPlansBtn);
     }//GEN-LAST:event_workoutPlansBtnActionPerformed
 
     private void attendanceBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_attendanceBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("attendancePanel", attendanceBtn);
     }//GEN-LAST:event_attendanceBtnActionPerformed
 
     private void progressTrackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_progressTrackBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("progressTrackPanel", progressTrackBtn);
     }//GEN-LAST:event_progressTrackBtnActionPerformed
 
     private void trainersBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trainersBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("trainersPanel", trainersBtn);
     }//GEN-LAST:event_trainersBtnActionPerformed
 
     private void equipmentBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equipmentBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("equipmentPanel", equipmentBtn);
     }//GEN-LAST:event_equipmentBtnActionPerformed
 
     private void otherProductsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_otherProductsBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("otherProductsPanel", otherProductsBtn);
     }//GEN-LAST:event_otherProductsBtnActionPerformed
 
     private void paymentRecordsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paymentRecordsBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("paymentRecordsPanel", paymentRecordsBtn);
     }//GEN-LAST:event_paymentRecordsBtnActionPerformed
 
     private void generateReportsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generateReportsBtnActionPerformed
+        security.Session.requireAdmin();
         showCard("generateReportsPanel", generateReportsBtn);
     }//GEN-LAST:event_generateReportsBtnActionPerformed
 
@@ -685,6 +708,7 @@ public class MainInterface extends javax.swing.JFrame {
     }
 
     public void logOut() {
+        security.Session.logout();
         for (java.awt.Window window : java.awt.Window.getWindows()) {
             if (window instanceof panels.dialog.AttendanceDialog) window.dispose();
         }

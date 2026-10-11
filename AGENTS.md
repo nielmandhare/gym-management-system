@@ -56,7 +56,11 @@ powershell -ExecutionPolicy Bypass -File .\Build.ps1
 java -jar .\dist\Gym_Management_System.jar
 ```
 
-The local demo app login is `admin` / `1234` (mobile `0770000001` / `1234`). The local database accounts are `gms_dev` / `1234` and `root` / `1234`; these are demo-only credentials. Do not reuse them for real services.
+The local demo app login is `admin` / `123` (mobile `0770000001` / `123`). The local database accounts are `gms_dev` / `1234` and `root` / `1234`; these are demo-only credentials. Do not reuse them for real services.
+
+Three-role demo logins also include `trainer` / `123` and `user` / `123`. Setup installs the incremental account and three-role migrations before inserting their hashes. Existing passwords are never reset by the demo account seed.
+
+Setup records a successful demo seed in `.local/mysql/demo-seed-v1.complete`. Subsequent launches preserve profile/status/membership/inventory edits. Do not copy this marker or the database files into another checkout; each clone must initialize its own data. Do not manually rerun `local-demo-seed.sql` to restart the app because that script restores canonical demo values. Run `Verify.ps1` for the three Swing/MySQL integration harnesses. The application remains Windows-oriented; do not claim cross-platform setup without adapting and verifying it.
 
 ## Agent boundaries
 

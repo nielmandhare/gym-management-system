@@ -38,7 +38,7 @@ public class Regex {
         PASSWORD() {
             @Override
             public String validate() {
-                return "^.*(?=.{4,8})(?=..*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$";
+                return "^.{3,128}$";
             }
         };
 
