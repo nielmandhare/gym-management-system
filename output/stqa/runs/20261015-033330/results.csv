@@ -1,0 +1,78 @@
+﻿id,name,steps,expected,actual,status,duration
+TC01,Required sign-in fields,Required sign-in fields,Blank form stays on the sign-in page,True,PASS,0.106
+TC02,Unknown account rejected,Unknown account rejected,Error shown; no authenticated dashboard,Expected browser behavior observed.,PASS,0.461
+TC03,Incorrect password rejected,Incorrect password rejected,Error shown for a valid account with wrong password,Expected browser behavior observed.,PASS,0.933
+TC04,SQL injection input rejected,SQL injection input rejected,Injected username does not authenticate,Expected browser behavior observed.,PASS,0.443
+TC05,Admin username login,Admin username login,Admin overview loads with real metrics,Expected browser behavior observed.,PASS,0.918
+TC06,Admin dashboard metrics,Admin dashboard metrics,Four cards loaded with database totals,Four real metric cards and weekly attendance chart loaded.,PASS,0.091
+TC07,Admin mobile-number login,Admin mobile-number login,Mobile number and password authenticate admin,Expected browser behavior observed.,PASS,0.779
+TC08,Member search,Member search,Matching member rows remain visible,Matching name: Diya Banerjee,PASS,0.727
+TC09,Search empty state,Search empty state,Unknown search shows No matching records,Empty state shown for unmatched search.,PASS,0.092
+TC10,Member table pagination,Member table pagination,Next page changes visible rows and page indicator,11–20 of 25 records,PASS,0.724
+TC11,Member required-field validation,Member required-field validation,Incomplete member form cannot be submitted,Expected browser behavior observed.,PASS,1.326
+TC12,Mobile number validation,Mobile number validation,Three-digit mobile is rejected by the form,Expected browser behavior observed.,PASS,1.307
+TC13,Initial BMI preview,Initial BMI preview,175 cm and 72 kg calculate BMI 23.51,BMI preview: 23.51,PASS,1.378
+TC14,Create member with measurements,Create member with measurements,Member and initial progress are saved together,Created member #132,PASS,2.461
+TC15,Member initial progress persistence,Member initial progress persistence,Initial measurement is available in Progress tracking,Initial measurement found with BMI 23.51.,PASS,0.026
+TC16,Duplicate member mobile blocked,Duplicate member mobile blocked,Duplicate mobile rejected without duplicate records,Expected browser behavior observed.,PASS,2.592
+TC17,Edit member and retain changes,Edit member and retain changes,Updated name/payment flag survive a browser refresh,Expected browser behavior observed.,PASS,2.609
+TC18,Deactivate member,Deactivate member,Inactive member excluded from check-in choices,Expected browser behavior observed.,PASS,1.401
+TC19,Reactivate member,Reactivate member,Member status returns to Active,Expected browser behavior observed.,PASS,1.313
+TC20,Record attendance with payment warning,Record attendance with payment warning,One check-in saved and payment-due warning shown,Expected browser behavior observed.,PASS,1.828
+TC21,Duplicate attendance blocked,Duplicate attendance blocked,Second check-in on same day is rejected,Expected browser behavior observed.,PASS,1.868
+TC22,Unknown member attendance rejected,Unknown member attendance rejected,Tampered member ID produces HTTP 400,Choose an active member.,PASS,0.023
+TC23,Create trainer and login account,Create trainer and login account,Profile and Trainer account created atomically,Trainer and linked login created.,PASS,2.208
+TC24,Trainer username validation,Trainer username validation,Username beginning with a digit is invalid,Expected browser behavior observed.,PASS,1.287
+TC25,Create linked Member account,Create linked Member account,Account links to the selected member profile,Expected browser behavior observed.,PASS,2.194
+TC26,Duplicate profile link rejected,Duplicate profile link rejected,Second account linked to same member gets HTTP 409,"That username, mobile number, profile link, or serial number is already in use.",PASS,0.197
+TC27,Inactive account cannot log in,Inactive account cannot log in,Deactivated Member login is rejected,Expected browser behavior observed.,PASS,2.881
+TC28,Account reactivation,Account reactivation,Member account is Active after reactivation,Expected browser behavior observed.,PASS,1.315
+TC29,Current admin protected,Current admin protected,Admin cannot disable own account (HTTP 400),You cannot disable your own account.,PASS,0.037
+TC30,Create equipment,Create equipment,Equipment profile appears in inventory,Expected browser behavior observed.,PASS,2.03
+TC31,Edit equipment condition,Edit equipment condition,Condition is persisted as UNDER MAINTENANCE,Expected browser behavior observed.,PASS,1.888
+TC32,Delete unreferenced equipment,Delete unreferenced equipment,Created equipment is removed,Expected browser behavior observed.,PASS,1.332
+TC33,Create product,Create product,Product price and stock saved,Expected browser behavior observed.,PASS,2.058
+TC34,Negative product price validation,Negative product price validation,Negative price rejected by browser validation,Expected browser behavior observed.,PASS,1.293
+TC35,Edit product price and stock,Edit product price and stock,Updated price and quantity persist,Expected browser behavior observed.,PASS,2.02
+TC36,Referenced product deletion protected,Referenced product deletion protected,Product with order history cannot be deleted,Expected browser behavior observed.,PASS,1.426
+TC37,Delete unreferenced product,Delete unreferenced product,Product removed after fixture history is cleared,Expected browser behavior observed.,PASS,1.367
+TC38,Negative plan price rejected,Negative plan price rejected,Server rejects negative price (HTTP 400),Enter a nonnegative amount within the supported range.,PASS,0.025
+TC39,Workout plan details,Workout plan details,All seven workout days are readable,Expected browser behavior observed.,PASS,0.746
+TC40,Payment history view,Payment history view,Saved payment records loaded in browser,"(None, 19)",PASS,0.63
+TC41,Product sales view,Product sales view,Saved sale records loaded in browser,"(None, 20)",PASS,0.631
+TC42,Members PDF report,Members PDF report,Valid PDF downloaded through report button,6123 bytes; 1 PDF pages.,PASS,0.673
+TC43,Trainers PDF report,Trainers PDF report,Valid PDF downloaded through report button,12333 bytes; 2 PDF pages.,PASS,0.683
+TC44,Attendance PDF report,Attendance PDF report,Valid PDF downloaded through report button,47343 bytes; 9 PDF pages.,PASS,0.692
+TC45,Payments PDF report,Payments PDF report,Valid PDF downloaded through report button,5674 bytes; 1 PDF pages.,PASS,0.735
+TC46,Sales PDF report,Sales PDF report,Valid PDF downloaded through report button,6137 bytes; 1 PDF pages.,PASS,0.681
+TC47,Equipment PDF report,Equipment PDF report,Valid PDF downloaded through report button,3951 bytes; 1 PDF pages.,PASS,0.683
+TC48,Filtered CSV report export,Filtered CSV report export,CSV download contains visible matching member,Filtered member CSV contains fixture row.,PASS,1.273
+TC49,Local database backup,Local database backup,Timestamped SQL backup exists in checkout backups folder,gms_web_20261015_033426.sql 47270 bytes,PASS,0.706
+TC50,Trainer sign-in,Trainer sign-in,Trainer account opens a separate workspace,Expected browser behavior observed.,PASS,0.846
+TC51,Trainer navigation restriction,Trainer navigation restriction,Admin management links are absent,Trainer navigation excludes admin modules.,PASS,0.016
+TC52,Trainer server authorization,Trainer server authorization,Direct members API denied with HTTP 403,Administrator access required.,PASS,0.015
+TC53,Trainer assigned-member list,Trainer assigned-member list,Trainer sees their assigned member,Assigned fixture member and ID displayed.,PASS,0.627
+TC54,Trainer progress entry,Trainer progress entry,Assigned member progress saved with calculated BMI 23.18,Expected browser behavior observed.,PASS,2.139
+TC55,Future progress date rejected,Future progress date rejected,Server rejects a future measurement date (HTTP 400),Date cannot be in the future.,PASS,0.022
+TC56,Unassigned member progress denied,Unassigned member progress denied,Trainer cannot write progress for an unrelated member,Member is not actively assigned to you.,PASS,0.064
+TC57,Trainer edits own profile,Trainer edits own profile,Profile and account display name update together,Expected browser behavior observed.,PASS,1.891
+TC58,Wrong current password rejected,Wrong current password rejected,Password is preserved when current password is wrong,Expected browser behavior observed.,PASS,2.051
+TC59,Password confirmation validation,Password confirmation validation,Mismatched new passwords cannot be saved,Expected browser behavior observed.,PASS,1.533
+TC60,Trainer password change,Trainer password change,Old password rejected and new password works,Expected browser behavior observed.,PASS,3.527
+TC61,Member sign-in,Member sign-in,Linked Member account opens member workspace,Expected browser behavior observed.,PASS,0.836
+TC62,Member own membership view,Member own membership view,"Member sees own profile, plan, and payment status",Expected browser behavior observed.,PASS,0.701
+TC63,Member attendance scoped,Member attendance scoped,Only fixture member check-in is returned,Expected browser behavior observed.,PASS,0.624
+TC64,Member progress scoped and read-only,Member progress scoped and read-only,Own initial/trainer entries visible; no record action,Expected browser behavior observed.,PASS,0.62
+TC65,Member training scoped,Member training scoped,Only own training assignment is visible,Expected browser behavior observed.,PASS,0.63
+TC66,Member admin API access denied,Member admin API access denied,User management API denied with HTTP 403,Administrator access required.,PASS,0.014
+TC67,Member progress write denied,Member progress write denied,Member cannot submit trainer progress action,Trainer access required.,PASS,0.028
+TC68,Member edits own profile,Member edits own profile,Own name updates in profile and account,Expected browser behavior observed.,PASS,1.354
+TC69,Desktop layout,Desktop layout,Document has no horizontal overflow at 1440px,Expected browser behavior observed.,PASS,0.663
+TC70,Mobile navigation and layout,Mobile navigation and layout,390px navigation works without document overflow,Expected browser behavior observed.,PASS,1.28
+TC71,Theme persistence,Theme persistence,Dark theme remains selected after page refresh,Expected browser behavior observed.,PASS,0.273
+TC72,Sign-out invalidates browser session,Sign-out invalidates browser session,Protected API requires sign-in after logout,Expected browser behavior observed.,PASS,0.714
+TC73,Anonymous report access denied,Anonymous report access denied,Report endpoint returns HTTP 401,Your session has ended. Please sign in again.,PASS,0.008
+TC74,Server source is not publicly served,Server source is not publicly served,Source file URL returns HTTP 404,Java source URL returned 404.,PASS,0.007
+TC75,Admin account password reset,Admin account password reset,Reset password works; old password no longer works,Expected browser behavior observed.,PASS,5.056
+TC76,Delete member and linked account,Delete member and linked account,Member deletion cascades fixture history and login,Expected browser behavior observed.,PASS,2.408
+TC77,Delete unreferenced trainer,Delete unreferenced trainer,Trainer and linked account removed after assignment cleanup,Expected browser behavior observed.,PASS,1.312

@@ -1,0 +1,710 @@
+{
+  "metadata": {
+    "run": "20261015-033633",
+    "timestamp": "2026-10-15T03:38:01.287563+05:30",
+    "base_url": "http://127.0.0.1:8081",
+    "browser": "edge",
+    "browser_version": "155.0.4283.45",
+    "selenium_version": "4.51.0",
+    "tag": "STQAc40799aa",
+    "total": 77,
+    "passed": 77,
+    "failed": 0,
+    "cleanup_error": null
+  },
+  "cases": [
+    {
+      "id": "TC01",
+      "name": "Required sign-in fields",
+      "steps": "Required sign-in fields",
+      "expected": "Blank form stays on the sign-in page",
+      "status": "PASS",
+      "actual": "True",
+      "duration": 0.17
+    },
+    {
+      "id": "TC02",
+      "name": "Unknown account rejected",
+      "steps": "Unknown account rejected",
+      "expected": "Error shown; no authenticated dashboard",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.446
+    },
+    {
+      "id": "TC03",
+      "name": "Incorrect password rejected",
+      "steps": "Incorrect password rejected",
+      "expected": "Error shown for a valid account with wrong password",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.83
+    },
+    {
+      "id": "TC04",
+      "name": "SQL injection input rejected",
+      "steps": "SQL injection input rejected",
+      "expected": "Injected username does not authenticate",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.873
+    },
+    {
+      "id": "TC05",
+      "name": "Admin username login",
+      "steps": "Admin username login",
+      "expected": "Admin overview loads with real metrics",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.966
+    },
+    {
+      "id": "TC06",
+      "name": "Admin dashboard metrics",
+      "steps": "Admin dashboard metrics",
+      "expected": "Four cards loaded with database totals",
+      "status": "PASS",
+      "actual": "Four real metric cards and weekly attendance chart loaded.",
+      "duration": 0.101
+    },
+    {
+      "id": "TC07",
+      "name": "Admin mobile-number login",
+      "steps": "Admin mobile-number login",
+      "expected": "Mobile number and password authenticate admin",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.861
+    },
+    {
+      "id": "TC08",
+      "name": "Member search",
+      "steps": "Member search",
+      "expected": "Matching member rows remain visible",
+      "status": "PASS",
+      "actual": "Matching name: Diya Banerjee",
+      "duration": 0.836
+    },
+    {
+      "id": "TC09",
+      "name": "Search empty state",
+      "steps": "Search empty state",
+      "expected": "Unknown search shows No matching records",
+      "status": "PASS",
+      "actual": "Empty state shown for unmatched search.",
+      "duration": 0.119
+    },
+    {
+      "id": "TC10",
+      "name": "Member table pagination",
+      "steps": "Member table pagination",
+      "expected": "Next page changes visible rows and page indicator",
+      "status": "PASS",
+      "actual": "11–20 of 25 records",
+      "duration": 0.263
+    },
+    {
+      "id": "TC11",
+      "name": "Member required-field validation",
+      "steps": "Member required-field validation",
+      "expected": "Incomplete member form cannot be submitted",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.478
+    },
+    {
+      "id": "TC12",
+      "name": "Mobile number validation",
+      "steps": "Mobile number validation",
+      "expected": "Three-digit mobile is rejected by the form",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.404
+    },
+    {
+      "id": "TC13",
+      "name": "Initial BMI preview",
+      "steps": "Initial BMI preview",
+      "expected": "175 cm and 72 kg calculate BMI 23.51",
+      "status": "PASS",
+      "actual": "BMI preview: 23.51",
+      "duration": 1.434
+    },
+    {
+      "id": "TC14",
+      "name": "Create member with measurements",
+      "steps": "Create member with measurements",
+      "expected": "Member and initial progress are saved together",
+      "status": "PASS",
+      "actual": "Created member #134",
+      "duration": 2.696
+    },
+    {
+      "id": "TC15",
+      "name": "Member initial progress persistence",
+      "steps": "Member initial progress persistence",
+      "expected": "Initial measurement is available in Progress tracking",
+      "status": "PASS",
+      "actual": "Initial measurement found with BMI 23.51.",
+      "duration": 0.032
+    },
+    {
+      "id": "TC16",
+      "name": "Duplicate member mobile blocked",
+      "steps": "Duplicate member mobile blocked",
+      "expected": "Duplicate mobile rejected without duplicate records",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.719
+    },
+    {
+      "id": "TC17",
+      "name": "Edit member and retain changes",
+      "steps": "Edit member and retain changes",
+      "expected": "Updated name/payment flag survive a browser refresh",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.798
+    },
+    {
+      "id": "TC18",
+      "name": "Deactivate member",
+      "steps": "Deactivate member",
+      "expected": "Inactive member excluded from check-in choices",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.512
+    },
+    {
+      "id": "TC19",
+      "name": "Reactivate member",
+      "steps": "Reactivate member",
+      "expected": "Member status returns to Active",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.44
+    },
+    {
+      "id": "TC20",
+      "name": "Record attendance with payment warning",
+      "steps": "Record attendance with payment warning",
+      "expected": "One check-in saved and payment-due warning shown",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.466
+    },
+    {
+      "id": "TC21",
+      "name": "Duplicate attendance blocked",
+      "steps": "Duplicate attendance blocked",
+      "expected": "Second check-in on same day is rejected",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.015
+    },
+    {
+      "id": "TC22",
+      "name": "Unknown member attendance rejected",
+      "steps": "Unknown member attendance rejected",
+      "expected": "Tampered member ID produces HTTP 400",
+      "status": "PASS",
+      "actual": "Choose an active member.",
+      "duration": 0.03
+    },
+    {
+      "id": "TC23",
+      "name": "Create trainer and login account",
+      "steps": "Create trainer and login account",
+      "expected": "Profile and Trainer account created atomically",
+      "status": "PASS",
+      "actual": "Trainer and linked login created.",
+      "duration": 2.519
+    },
+    {
+      "id": "TC24",
+      "name": "Trainer username validation",
+      "steps": "Trainer username validation",
+      "expected": "Username beginning with a digit is invalid",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.935
+    },
+    {
+      "id": "TC25",
+      "name": "Create linked Member account",
+      "steps": "Create linked Member account",
+      "expected": "Account links to the selected member profile",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.427
+    },
+    {
+      "id": "TC26",
+      "name": "Duplicate profile link rejected",
+      "steps": "Duplicate profile link rejected",
+      "expected": "Second account linked to same member gets HTTP 409",
+      "status": "PASS",
+      "actual": "That username, mobile number, profile link, or serial number is already in use.",
+      "duration": 0.212
+    },
+    {
+      "id": "TC27",
+      "name": "Inactive account cannot log in",
+      "steps": "Inactive account cannot log in",
+      "expected": "Deactivated Member login is rejected",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 3.069
+    },
+    {
+      "id": "TC28",
+      "name": "Account reactivation",
+      "steps": "Account reactivation",
+      "expected": "Member account is Active after reactivation",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.892
+    },
+    {
+      "id": "TC29",
+      "name": "Current admin protected",
+      "steps": "Current admin protected",
+      "expected": "Admin cannot disable own account (HTTP 400)",
+      "status": "PASS",
+      "actual": "You cannot disable your own account.",
+      "duration": 0.042
+    },
+    {
+      "id": "TC30",
+      "name": "Create equipment",
+      "steps": "Create equipment",
+      "expected": "Equipment profile appears in inventory",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.114
+    },
+    {
+      "id": "TC31",
+      "name": "Edit equipment condition",
+      "steps": "Edit equipment condition",
+      "expected": "Condition is persisted as UNDER MAINTENANCE",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.957
+    },
+    {
+      "id": "TC32",
+      "name": "Delete unreferenced equipment",
+      "steps": "Delete unreferenced equipment",
+      "expected": "Created equipment is removed",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.901
+    },
+    {
+      "id": "TC33",
+      "name": "Create product",
+      "steps": "Create product",
+      "expected": "Product price and stock saved",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.174
+    },
+    {
+      "id": "TC34",
+      "name": "Negative product price validation",
+      "steps": "Negative product price validation",
+      "expected": "Negative price rejected by browser validation",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.344
+    },
+    {
+      "id": "TC35",
+      "name": "Edit product price and stock",
+      "steps": "Edit product price and stock",
+      "expected": "Updated price and quantity persist",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.055
+    },
+    {
+      "id": "TC36",
+      "name": "Referenced product deletion protected",
+      "steps": "Referenced product deletion protected",
+      "expected": "Product with order history cannot be deleted",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.515
+    },
+    {
+      "id": "TC37",
+      "name": "Delete unreferenced product",
+      "steps": "Delete unreferenced product",
+      "expected": "Product removed after fixture history is cleared",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.435
+    },
+    {
+      "id": "TC38",
+      "name": "Negative plan price rejected",
+      "steps": "Negative plan price rejected",
+      "expected": "Server rejects negative price (HTTP 400)",
+      "status": "PASS",
+      "actual": "Enter a nonnegative amount within the supported range.",
+      "duration": 0.03
+    },
+    {
+      "id": "TC39",
+      "name": "Workout plan details",
+      "steps": "Workout plan details",
+      "expected": "All seven workout days are readable",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.295
+    },
+    {
+      "id": "TC40",
+      "name": "Payment history view",
+      "steps": "Payment history view",
+      "expected": "Saved payment records loaded in browser",
+      "status": "PASS",
+      "actual": "(None, 19)",
+      "duration": 0.149
+    },
+    {
+      "id": "TC41",
+      "name": "Product sales view",
+      "steps": "Product sales view",
+      "expected": "Saved sale records loaded in browser",
+      "status": "PASS",
+      "actual": "(None, 20)",
+      "duration": 0.159
+    },
+    {
+      "id": "TC42",
+      "name": "Members PDF report",
+      "steps": "Members PDF report",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "6123 bytes; 1 PDF pages.",
+      "duration": 0.713
+    },
+    {
+      "id": "TC43",
+      "name": "Trainers PDF report",
+      "steps": "Trainers PDF report",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "12333 bytes; 2 PDF pages.",
+      "duration": 0.725
+    },
+    {
+      "id": "TC44",
+      "name": "Attendance PDF report",
+      "steps": "Attendance PDF report",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "47346 bytes; 9 PDF pages.",
+      "duration": 0.69
+    },
+    {
+      "id": "TC45",
+      "name": "Payments PDF report",
+      "steps": "Payments PDF report",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "5674 bytes; 1 PDF pages.",
+      "duration": 0.72
+    },
+    {
+      "id": "TC46",
+      "name": "Sales PDF report",
+      "steps": "Sales PDF report",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "6137 bytes; 1 PDF pages.",
+      "duration": 0.697
+    },
+    {
+      "id": "TC47",
+      "name": "Equipment PDF report",
+      "steps": "Equipment PDF report",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "3951 bytes; 1 PDF pages.",
+      "duration": 0.709
+    },
+    {
+      "id": "TC48",
+      "name": "Filtered CSV report export",
+      "steps": "Filtered CSV report export",
+      "expected": "CSV download contains visible matching member",
+      "status": "PASS",
+      "actual": "Filtered member CSV contains fixture row.",
+      "duration": 0.836
+    },
+    {
+      "id": "TC49",
+      "name": "Local database backup",
+      "steps": "Local database backup",
+      "expected": "Timestamped SQL backup exists in checkout backups folder",
+      "status": "PASS",
+      "actual": "gms_web_20261015_033731.sql 47270 bytes",
+      "duration": 0.731
+    },
+    {
+      "id": "TC50",
+      "name": "Trainer sign-in",
+      "steps": "Trainer sign-in",
+      "expected": "Trainer account opens a separate workspace",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.958
+    },
+    {
+      "id": "TC51",
+      "name": "Trainer navigation restriction",
+      "steps": "Trainer navigation restriction",
+      "expected": "Admin management links are absent",
+      "status": "PASS",
+      "actual": "Trainer navigation excludes admin modules.",
+      "duration": 0.017
+    },
+    {
+      "id": "TC52",
+      "name": "Trainer server authorization",
+      "steps": "Trainer server authorization",
+      "expected": "Direct members API denied with HTTP 403",
+      "status": "PASS",
+      "actual": "Administrator access required.",
+      "duration": 0.018
+    },
+    {
+      "id": "TC53",
+      "name": "Trainer assigned-member list",
+      "steps": "Trainer assigned-member list",
+      "expected": "Trainer sees their assigned member",
+      "status": "PASS",
+      "actual": "Assigned fixture member and ID displayed.",
+      "duration": 0.658
+    },
+    {
+      "id": "TC54",
+      "name": "Trainer progress entry",
+      "steps": "Trainer progress entry",
+      "expected": "Assigned member progress saved with calculated BMI 23.18",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.291
+    },
+    {
+      "id": "TC55",
+      "name": "Future progress date rejected",
+      "steps": "Future progress date rejected",
+      "expected": "Server rejects a future measurement date (HTTP 400)",
+      "status": "PASS",
+      "actual": "Date cannot be in the future.",
+      "duration": 0.031
+    },
+    {
+      "id": "TC56",
+      "name": "Unassigned member progress denied",
+      "steps": "Unassigned member progress denied",
+      "expected": "Trainer cannot write progress for an unrelated member",
+      "status": "PASS",
+      "actual": "Member is not actively assigned to you.",
+      "duration": 0.07
+    },
+    {
+      "id": "TC57",
+      "name": "Trainer edits own profile",
+      "steps": "Trainer edits own profile",
+      "expected": "Profile and account display name update together",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.5
+    },
+    {
+      "id": "TC58",
+      "name": "Wrong current password rejected",
+      "steps": "Wrong current password rejected",
+      "expected": "Password is preserved when current password is wrong",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.168
+    },
+    {
+      "id": "TC59",
+      "name": "Password confirmation validation",
+      "steps": "Password confirmation validation",
+      "expected": "Mismatched new passwords cannot be saved",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.653
+    },
+    {
+      "id": "TC60",
+      "name": "Trainer password change",
+      "steps": "Trainer password change",
+      "expected": "Old password rejected and new password works",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 3.834
+    },
+    {
+      "id": "TC61",
+      "name": "Member sign-in",
+      "steps": "Member sign-in",
+      "expected": "Linked Member account opens member workspace",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.884
+    },
+    {
+      "id": "TC62",
+      "name": "Member own membership view",
+      "steps": "Member own membership view",
+      "expected": "Member sees own profile, plan, and payment status",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.686
+    },
+    {
+      "id": "TC63",
+      "name": "Member attendance scoped",
+      "steps": "Member attendance scoped",
+      "expected": "Only fixture member check-in is returned",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.656
+    },
+    {
+      "id": "TC64",
+      "name": "Member progress scoped and read-only",
+      "steps": "Member progress scoped and read-only",
+      "expected": "Own initial/trainer entries visible; no record action",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.15
+    },
+    {
+      "id": "TC65",
+      "name": "Member training scoped",
+      "steps": "Member training scoped",
+      "expected": "Only own training assignment is visible",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.647
+    },
+    {
+      "id": "TC66",
+      "name": "Member admin API access denied",
+      "steps": "Member admin API access denied",
+      "expected": "User management API denied with HTTP 403",
+      "status": "PASS",
+      "actual": "Administrator access required.",
+      "duration": 0.016
+    },
+    {
+      "id": "TC67",
+      "name": "Member progress write denied",
+      "steps": "Member progress write denied",
+      "expected": "Member cannot submit trainer progress action",
+      "status": "PASS",
+      "actual": "Trainer access required.",
+      "duration": 0.026
+    },
+    {
+      "id": "TC68",
+      "name": "Member edits own profile",
+      "steps": "Member edits own profile",
+      "expected": "Own name updates in profile and account",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.947
+    },
+    {
+      "id": "TC69",
+      "name": "Desktop layout",
+      "steps": "Desktop layout",
+      "expected": "Document has no horizontal overflow at 1440px",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.69
+    },
+    {
+      "id": "TC70",
+      "name": "Mobile navigation and layout",
+      "steps": "Mobile navigation and layout",
+      "expected": "390px navigation works without document overflow",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.393
+    },
+    {
+      "id": "TC71",
+      "name": "Theme persistence",
+      "steps": "Theme persistence",
+      "expected": "Dark theme remains selected after page refresh",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.302
+    },
+    {
+      "id": "TC72",
+      "name": "Sign-out invalidates browser session",
+      "steps": "Sign-out invalidates browser session",
+      "expected": "Protected API requires sign-in after logout",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 0.712
+    },
+    {
+      "id": "TC73",
+      "name": "Anonymous report access denied",
+      "steps": "Anonymous report access denied",
+      "expected": "Report endpoint returns HTTP 401",
+      "status": "PASS",
+      "actual": "Your session has ended. Please sign in again.",
+      "duration": 0.007
+    },
+    {
+      "id": "TC74",
+      "name": "Server source is not publicly served",
+      "steps": "Server source is not publicly served",
+      "expected": "Source file URL returns HTTP 404",
+      "status": "PASS",
+      "actual": "Java source URL returned 404.",
+      "duration": 0.008
+    },
+    {
+      "id": "TC75",
+      "name": "Admin account password reset",
+      "steps": "Admin account password reset",
+      "expected": "Reset password works; old password no longer works",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 5.47
+    },
+    {
+      "id": "TC76",
+      "name": "Delete member and linked account",
+      "steps": "Delete member and linked account",
+      "expected": "Member deletion cascades fixture history and login",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 2.171
+    },
+    {
+      "id": "TC77",
+      "name": "Delete unreferenced trainer",
+      "steps": "Delete unreferenced trainer",
+      "expected": "Trainer and linked account removed after assignment cleanup",
+      "status": "PASS",
+      "actual": "Expected browser behavior observed.",
+      "duration": 1.373
+    }
+  ]
+}

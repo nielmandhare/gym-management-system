@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1900" viewBox="0 0 1400 1900">
+<rect width="100%" height="100%" fill="white"/>
+<polyline points="345,210 345,257" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="345,292 345,350" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="322.0,280.0 322.1107512865395,277.7456057724201 322.4419385507257,275.51292259362907 322.9903722781592,273.3234524231474 323.7507707522404,271.19828105560293 324.71581091998786,269.15787505300204 325.87619891704145,267.22188464054915 327.2207595726571,265.40895446423616 328.7365440327094,263.7365440327094 330.40895446423616,262.2207595726571 332.22188464054915,260.87619891704145 334.15787505300204,259.71581091998786 336.19828105560293,258.7507707522404 338.3234524231474,257.9903722781592 340.512922593629,257.4419385507257 342.7456057724201,257.1107512865395 345.0,257.0 347.2543942275799,257.1107512865395 349.48707740637093,257.4419385507257 351.6765475768526,257.9903722781592 353.80171894439707,258.7507707522404 355.84212494699796,259.71581091998786 357.77811535945085,260.87619891704145 359.59104553576384,262.220759572657 361.2634559672906,263.7365440327094 362.779240427343,265.40895446423616 364.12380108295855,267.22188464054915 365.28418908001214,269.15787505300204 366.2492292477596,271.19828105560293 367.0096277218408,273.3234524231474 367.5580614492743,275.512922593629 367.8892487134605,277.7456057724201 368.0,280.0" fill="none" stroke="#626262" stroke-width="2"/>
+<ellipse cx="345.0" cy="280.0" rx="12.0" ry="12.0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="390" y="280" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Authentication</text>
+<polyline points="1055,210 1055,257" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="1055,292 1055,350" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="1032.0,280.0 1032.1107512865394,277.7456057724201 1032.4419385507258,275.51292259362907 1032.9903722781592,273.3234524231474 1033.7507707522404,271.19828105560293 1034.715810919988,269.15787505300204 1035.8761989170414,267.22188464054915 1037.220759572657,265.40895446423616 1038.7365440327094,263.7365440327094 1040.408954464236,262.2207595726571 1042.2218846405492,260.87619891704145 1044.157875053002,259.71581091998786 1046.1982810556028,258.7507707522404 1048.3234524231473,257.9903722781592 1050.5129225936291,257.4419385507257 1052.74560577242,257.1107512865395 1055.0,257.0 1057.25439422758,257.1107512865395 1059.4870774063709,257.4419385507257 1061.6765475768527,257.9903722781592 1063.8017189443972,258.7507707522404 1065.842124946998,259.71581091998786 1067.7781153594508,260.87619891704145 1069.591045535764,262.220759572657 1071.2634559672906,263.7365440327094 1072.779240427343,265.40895446423616 1074.1238010829586,267.22188464054915 1075.284189080012,269.15787505300204 1076.2492292477596,271.19828105560293 1077.0096277218408,273.3234524231474 1077.5580614492742,275.512922593629 1077.8892487134606,277.7456057724201 1078.0,280.0" fill="none" stroke="#626262" stroke-width="2"/>
+<ellipse cx="1055.0" cy="280.0" rx="12.0" ry="12.0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1100" y="280" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Authorization</text>
+<polyline points="345,640 345,593" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="345,558 345,500" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="368.0,570.0 367.8892487134605,572.25439422758 367.5580614492743,574.487077406371 367.0096277218408,576.6765475768526 366.2492292477596,578.8017189443971 365.28418908001214,580.842124946998 364.12380108295855,582.7781153594508 362.7792404273429,584.5910455357639 361.2634559672906,586.2634559672906 359.59104553576384,587.779240427343 357.77811535945085,589.1238010829585 355.84212494699796,590.2841890800122 353.80171894439707,591.2492292477596 351.6765475768526,592.0096277218408 349.48707740637093,592.5580614492743 347.2543942275799,592.8892487134606 345.0,593.0 342.7456057724201,592.8892487134606 340.51292259362907,592.5580614492743 338.3234524231474,592.0096277218408 336.19828105560293,591.2492292477596 334.15787505300204,590.2841890800122 332.22188464054915,589.1238010829585 330.40895446423616,587.779240427343 328.7365440327094,586.2634559672906 327.2207595726571,584.5910455357639 325.87619891704145,582.7781153594508 324.71581091998786,580.842124946998 323.7507707522404,578.8017189443971 322.9903722781592,576.6765475768526 322.4419385507257,574.487077406371 322.1107512865395,572.25439422758 322.0,570.0" fill="none" stroke="#626262" stroke-width="2"/>
+<ellipse cx="345.0" cy="570.0" rx="12.0" ry="12.0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="390" y="570" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Scoped operations</text>
+<polyline points="345,790 345,837" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="345,872 345,930" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="322.0,860.0 322.1107512865395,857.7456057724202 322.4419385507257,855.512922593629 322.9903722781592,853.3234524231474 323.7507707522404,851.1982810556029 324.71581091998786,849.157875053002 325.87619891704145,847.2218846405492 327.2207595726571,845.4089544642361 328.7365440327094,843.7365440327094 330.40895446423616,842.220759572657 332.22188464054915,840.8761989170415 334.15787505300204,839.7158109199878 336.19828105560293,838.7507707522404 338.3234524231474,837.9903722781592 340.512922593629,837.4419385507257 342.7456057724201,837.1107512865394 345.0,837.0 347.2543942275799,837.1107512865394 349.48707740637093,837.4419385507257 351.6765475768526,837.9903722781592 353.80171894439707,838.7507707522404 355.84212494699796,839.7158109199878 357.77811535945085,840.8761989170415 359.59104553576384,842.220759572657 361.2634559672906,843.7365440327094 362.779240427343,845.4089544642361 364.12380108295855,847.2218846405492 365.28418908001214,849.157875053002 366.2492292477596,851.1982810556029 367.0096277218408,853.3234524231474 367.5580614492743,855.512922593629 367.8892487134605,857.7456057724202 368.0,860.0" fill="none" stroke="#626262" stroke-width="2"/>
+<ellipse cx="345.0" cy="860.0" rx="12.0" ry="12.0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="390" y="860" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Validation / UI</text>
+<polyline points="1055,1080 1055,1127" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="1055,1162 1055,1220" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="1032.0,1150.0 1032.1107512865394,1147.74560577242 1032.4419385507258,1145.5129225936291 1032.9903722781592,1143.3234524231473 1033.7507707522404,1141.198281055603 1034.715810919988,1139.157875053002 1035.8761989170414,1137.2218846405492 1037.220759572657,1135.408954464236 1038.7365440327094,1133.7365440327094 1040.408954464236,1132.220759572657 1042.2218846405492,1130.8761989170414 1044.157875053002,1129.715810919988 1046.1982810556028,1128.7507707522404 1048.3234524231473,1127.9903722781592 1050.5129225936291,1127.4419385507258 1052.74560577242,1127.1107512865394 1055.0,1127.0 1057.25439422758,1127.1107512865394 1059.4870774063709,1127.4419385507258 1061.6765475768527,1127.9903722781592 1063.8017189443972,1128.7507707522404 1065.842124946998,1129.715810919988 1067.7781153594508,1130.8761989170414 1069.591045535764,1132.220759572657 1071.2634559672906,1133.7365440327094 1072.779240427343,1135.408954464236 1074.1238010829586,1137.2218846405492 1075.284189080012,1139.157875053002 1076.2492292477596,1141.1982810556028 1077.0096277218408,1143.3234524231473 1077.5580614492742,1145.5129225936291 1077.8892487134606,1147.74560577242 1078.0,1150.0" fill="none" stroke="#626262" stroke-width="2"/>
+<ellipse cx="1055.0" cy="1150.0" rx="12.0" ry="12.0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1100" y="1150" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">JDBC / SQL</text>
+<polyline points="1055,1510 1055,1463" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="1055,1428 1055,1370" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="1078.0,1440.0 1077.8892487134606,1442.25439422758 1077.5580614492742,1444.4870774063709 1077.0096277218408,1446.6765475768527 1076.2492292477596,1448.801718944397 1075.284189080012,1450.842124946998 1074.1238010829586,1452.7781153594508 1072.779240427343,1454.591045535764 1071.2634559672906,1456.2634559672906 1069.591045535764,1457.779240427343 1067.7781153594508,1459.1238010829586 1065.842124946998,1460.284189080012 1063.8017189443972,1461.2492292477596 1061.6765475768527,1462.0096277218408 1059.4870774063709,1462.5580614492742 1057.25439422758,1462.8892487134606 1055.0,1463.0 1052.74560577242,1462.8892487134606 1050.5129225936291,1462.5580614492742 1048.3234524231473,1462.0096277218408 1046.198281055603,1461.2492292477596 1044.157875053002,1460.284189080012 1042.2218846405492,1459.1238010829586 1040.408954464236,1457.779240427343 1038.7365440327094,1456.2634559672906 1037.220759572657,1454.591045535764 1035.8761989170414,1452.7781153594508 1034.715810919988,1450.842124946998 1033.7507707522404,1448.8017189443972 1032.9903722781592,1446.6765475768527 1032.4419385507258,1444.4870774063709 1032.1107512865394,1442.25439422758 1032.0,1440.0" fill="none" stroke="#626262" stroke-width="2"/>
+<ellipse cx="1055.0" cy="1440.0" rx="12.0" ry="12.0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1100" y="1440" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">SQL dump</text>
+<polyline points="800,155 730,155 730,420 600,420" fill="none" stroke="#626262" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="612.4819560347346,413.659592004693 600,420 612.4819560347346,426.340407995307" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="800,720 690,720 690,470 600,470" fill="none" stroke="#626262" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="612.4819560347346,463.659592004693 600,470 612.4819560347346,476.340407995307" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="600,485 630,485 630,960 800,960" fill="none" stroke="#626262" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="787.5180439652654,966.3404079953069 800,960 787.5180439652654,953.6595920046931" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="644" y="880" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">JDBC</text>
+<polyline points="600,445 655,445" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="745,445 800,445" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="655,445 667,445" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="690.0,468.0 687.74560577242,467.8892487134605 685.512922593629,467.5580614492743 683.3234524231474,467.0096277218408 681.1982810556029,466.2492292477596 679.157875053002,465.28418908001214 677.2218846405492,464.12380108295855 675.4089544642361,462.7792404273429 673.7365440327094,461.2634559672906 672.220759572657,459.59104553576384 670.8761989170415,457.77811535945085 669.7158109199878,455.84212494699796 668.7507707522404,453.80171894439707 667.9903722781592,451.6765475768526 667.4419385507257,449.487077406371 667.1107512865394,447.2543942275799 667.0,445.0 667.1107512865394,442.7456057724201 667.4419385507257,440.51292259362907 667.9903722781592,438.3234524231474 668.7507707522404,436.19828105560293 669.7158109199878,434.15787505300204 670.8761989170415,432.22188464054915 672.220759572657,430.40895446423616 673.7365440327094,428.7365440327094 675.4089544642362,427.220759572657 677.2218846405492,425.87619891704145 679.157875053002,424.71581091998786 681.1982810556029,423.7507707522404 683.3234524231474,422.9903722781592 685.512922593629,422.4419385507257 687.7456057724202,422.1107512865395 690.0,422.0" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="702,445 745,445" fill="none" stroke="#626262" stroke-width="2"/>
+<ellipse cx="690.0" cy="445.0" rx="12.0" ry="12.0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="700" y="522" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Identity / hash</text>
+<polyline points="90,750 45,750 45,1295 90,1295" fill="none" stroke="#626262" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="77.51804396526539,1301.340407995307 90,1295 77.51804396526539,1288.659592004693" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="600,1295 740,1295 740,1030 800,1030" fill="none" stroke="#626262" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="787.5180439652654,1036.340407995307 800,1030 787.5180439652654,1023.6595920046931" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="687" y="1260" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Report data</text>
+<polyline points="1055,1080 1360,1080 1360,1585 1310,1585" fill="none" stroke="#626262" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1322.4819560347346,1578.659592004693 1310,1585 1322.4819560347346,1591.340407995307" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="1250" y="1480" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Backup call</text>
+<rect x="90" y="1510" width="510" height="150" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="345" y="1550" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020">&lt;&lt;artifact&gt;&gt;</text>
+<text x="345" y="1588.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="29" font-weight="400" fill="#202020">Timestamped SQL files</text>
+<text x="345" y="1622.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="29" font-weight="400" fill="#202020">backups/ folder</text>
+<polyline points="800,1585 600,1585" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="612.4819560347346,1578.659592004693 600,1585 612.4819560347346,1591.340407995307" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="700" y="1547" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Writes</text>
+<rect x="90" y="60" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="550" y="75" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="81" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="95" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="345.0" y="117" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">LoginForm</text>
+<text x="345.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Shared sign in</text>
+<rect x="800" y="60" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1260" y="75" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="81" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="95" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1055.0" y="117" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">Role dashboards</text>
+<text x="1055.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Admin / Trainer / Member</text>
+<rect x="90" y="350" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="550" y="365" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="371" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="385" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="345.0" y="407" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">Accounts</text>
+<text x="345.0" y="459.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Account and scoped operations</text>
+<rect x="800" y="350" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1260" y="365" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="371" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="385" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1055.0" y="407" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">Session and Passwords</text>
+<text x="1055.0" y="459.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Identity, roles and hashing</text>
+<rect x="90" y="640" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="550" y="655" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="661" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="675" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="345.0" y="697" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">Admin feature panels</text>
+<text x="345.0" y="749.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Members, attendance, inventory</text>
+<rect x="800" y="640" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1260" y="655" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="661" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="675" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1055.0" y="697" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">UserManagementPanel</text>
+<text x="1055.0" y="749.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Accounts and profile links</text>
+<rect x="90" y="930" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="550" y="945" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="951" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="965" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="345.0" y="987" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">util and validation</text>
+<text x="345.0" y="1039.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Search, input, logging, UI</text>
+<rect x="800" y="930" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1260" y="945" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="951" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="965" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1055.0" y="987" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">connection.MySQL</text>
+<text x="1055.0" y="1039.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">JDBC and backup utility</text>
+<rect x="90" y="1220" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="550" y="1235" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="1241" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="544" y="1255" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="345.0" y="1277" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">JasperReports</text>
+<text x="345.0" y="1329.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Six report templates and viewer</text>
+<rect x="800" y="1220" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1260" y="1235" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="1241" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="1255" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1055.0" y="1277" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">MySQL server</text>
+<text x="1055.0" y="1329.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">gms database - 16 tables</text>
+<rect x="800" y="1510" width="510" height="150" rx="4" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1260" y="1525" width="28" height="33" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="1531" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="1254" y="1545" width="16" height="8" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1055.0" y="1567" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="31" font-weight="400" fill="#202020">mysqldump</text>
+<text x="1055.0" y="1619.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Local SQL backup client</text>
+<polyline points="160,1780 210,1780" fill="none" stroke="#626262" stroke-width="2"/>
+<ellipse cx="222.0" cy="1780.0" rx="12.0" ry="12.0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="258" y="1780" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Provided interface</text>
+<polyline points="790,1780 835,1780" fill="none" stroke="#626262" stroke-width="2"/>
+<polyline points="858.0,1803.0 855.74560577242,1802.8892487134606 853.512922593629,1802.5580614492742 851.3234524231474,1802.0096277218408 849.1982810556029,1801.2492292477596 847.157875053002,1800.284189080012 845.2218846405492,1799.1238010829586 843.4089544642361,1797.779240427343 841.7365440327094,1796.2634559672906 840.220759572657,1794.591045535764 838.8761989170415,1792.7781153594508 837.7158109199878,1790.842124946998 836.7507707522404,1788.8017189443972 835.9903722781592,1786.6765475768527 835.4419385507257,1784.4870774063709 835.1107512865394,1782.25439422758 835.0,1780.0 835.1107512865394,1777.74560577242 835.4419385507257,1775.5129225936291 835.9903722781592,1773.3234524231473 836.7507707522404,1771.198281055603 837.7158109199878,1769.157875053002 838.8761989170415,1767.2218846405492 840.220759572657,1765.408954464236 841.7365440327094,1763.7365440327094 843.4089544642362,1762.220759572657 845.2218846405492,1760.8761989170414 847.157875053002,1759.715810919988 849.1982810556029,1758.7507707522404 851.3234524231474,1757.9903722781592 853.512922593629,1757.4419385507258 855.7456057724202,1757.1107512865394 858.0,1757.0" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="910" y="1780" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">Required socket</text>
+<text x="700" y="1850" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020">Dashed arrows show module dependencies.</text>
+</svg>

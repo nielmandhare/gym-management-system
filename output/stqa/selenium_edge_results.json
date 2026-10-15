@@ -1,0 +1,728 @@
+{
+  "metadata": {
+    "run": "20261015-131235",
+    "timestamp": "2026-10-15T13:14:01.833772+05:30",
+    "base_url": "http://127.0.0.1:8081",
+    "browser": "edge",
+    "browser_version": "155.0.4283.45",
+    "selenium_version": "4.51.0",
+    "tag": "STQA0119a856",
+    "total": 79,
+    "passed": 79,
+    "failed": 0,
+    "cleanup_error": null
+  },
+  "cases": [
+    {
+      "id": "TC01",
+      "name": "Required sign-in fields",
+      "steps": "Open the sign-in page. Submit with both fields empty. Check the required-field validation.",
+      "expected": "Blank form stays on the sign-in page",
+      "status": "PASS",
+      "actual": "True",
+      "duration": 0.074
+    },
+    {
+      "id": "TC02",
+      "name": "Unknown account rejected",
+      "steps": "Enter an unknown username and a password. Submit and inspect the error and dashboard visibility.",
+      "expected": "Error shown; no authenticated dashboard",
+      "status": "PASS",
+      "actual": "Verified: Error shown; no authenticated dashboard",
+      "duration": 0.299
+    },
+    {
+      "id": "TC03",
+      "name": "Incorrect password rejected",
+      "steps": "Enter admin with an incorrect password. Submit and inspect the error.",
+      "expected": "Error shown for a valid account with wrong password",
+      "status": "PASS",
+      "actual": "Verified: Error shown for a valid account with wrong password",
+      "duration": 0.814
+    },
+    {
+      "id": "TC04",
+      "name": "SQL injection input rejected",
+      "steps": "Enter an SQL-injection-style username and a password. Submit and check that authentication is denied.",
+      "expected": "Injected username does not authenticate",
+      "status": "PASS",
+      "actual": "Verified: Injected username does not authenticate",
+      "duration": 0.765
+    },
+    {
+      "id": "TC05",
+      "name": "Admin username login",
+      "steps": "Enter admin / 123. Submit and wait for the Admin overview.",
+      "expected": "Admin overview loads with real metrics",
+      "status": "PASS",
+      "actual": "Verified: Admin overview loads with real metrics",
+      "duration": 0.805
+    },
+    {
+      "id": "TC06",
+      "name": "Admin dashboard metrics",
+      "steps": "Inspect the five overview cards. Read dashboard data through the authenticated browser request and compare loaded metrics.",
+      "expected": "Five cards loaded with database totals including product sales",
+      "status": "PASS",
+      "actual": "Five real metric cards and weekly attendance chart loaded.",
+      "duration": 0.095
+    },
+    {
+      "id": "TC07",
+      "name": "Admin mobile-number login",
+      "steps": "Sign in with mobile 0770000001 and password 123. Confirm the Admin workspace.",
+      "expected": "Mobile number and password authenticate admin",
+      "status": "PASS",
+      "actual": "Verified: Mobile number and password authenticate admin",
+      "duration": 0.753
+    },
+    {
+      "id": "TC08",
+      "name": "Member search",
+      "steps": "Open Members. Search for an existing member name. Inspect the matching rows.",
+      "expected": "Matching member rows remain visible",
+      "status": "PASS",
+      "actual": "Matching name: Diya Banerjee",
+      "duration": 0.697
+    },
+    {
+      "id": "TC09",
+      "name": "Search empty state",
+      "steps": "Search Members for a unique nonexistent string. Inspect the empty-state message.",
+      "expected": "Unknown search shows No matching records",
+      "status": "PASS",
+      "actual": "Empty state shown for unmatched search.",
+      "duration": 0.069
+    },
+    {
+      "id": "TC10",
+      "name": "Member table pagination",
+      "steps": "Open Members with 10 rows per page. Select Next and inspect the page indicator and displayed range.",
+      "expected": "Next page changes visible rows and page indicator",
+      "status": "PASS",
+      "actual": "11–20 of 25 records",
+      "duration": 0.679
+    },
+    {
+      "id": "TC11",
+      "name": "Member required-field validation",
+      "steps": "Open Add member. Submit without required values. Confirm that the dialog stays open.",
+      "expected": "Incomplete member form cannot be submitted",
+      "status": "PASS",
+      "actual": "Verified: Incomplete member form cannot be submitted",
+      "duration": 1.315
+    },
+    {
+      "id": "TC12",
+      "name": "Mobile number validation",
+      "steps": "Enter a three-digit mobile in Add member. Inspect the input pattern validation.",
+      "expected": "Three-digit mobile is rejected by the form",
+      "status": "PASS",
+      "actual": "Verified: Three-digit mobile is rejected by the form",
+      "duration": 1.297
+    },
+    {
+      "id": "TC13",
+      "name": "Initial BMI preview",
+      "steps": "Enter height 175 cm and weight 72 kg. Read the calculated BMI preview.",
+      "expected": "175 cm and 72 kg calculate BMI 23.51",
+      "status": "PASS",
+      "actual": "BMI preview: 23.51",
+      "duration": 1.344
+    },
+    {
+      "id": "TC14",
+      "name": "Create member with measurements",
+      "steps": "Create an isolated member with a unique mobile, Monthly plan, paid flag, health notes, height 175 cm, weight 72 kg, and body fat 18%.",
+      "expected": "Member and initial progress are saved together",
+      "status": "PASS",
+      "actual": "Created member #152",
+      "duration": 2.344
+    },
+    {
+      "id": "TC15",
+      "name": "Member initial progress persistence",
+      "steps": "Read Progress tracking for the created member. Verify one initial entry and BMI 23.51.",
+      "expected": "Initial measurement is available in Progress tracking",
+      "status": "PASS",
+      "actual": "Initial measurement found with BMI 23.51.",
+      "duration": 0.028
+    },
+    {
+      "id": "TC16",
+      "name": "Duplicate member mobile blocked",
+      "steps": "Try to create another member with the same mobile and complete measurements. Inspect the duplicate error and count matching members.",
+      "expected": "Duplicate mobile rejected without duplicate records",
+      "status": "PASS",
+      "actual": "Verified: Duplicate mobile rejected without duplicate records",
+      "duration": 2.27
+    },
+    {
+      "id": "TC17",
+      "name": "Edit member and retain changes",
+      "steps": "Edit the fixture member name and payment flag to Due. Save, refresh the browser, and search for the fixture.",
+      "expected": "Updated name/payment flag survive a browser refresh",
+      "status": "PASS",
+      "actual": "Verified: Updated name/payment flag survive a browser refresh",
+      "duration": 2.508
+    },
+    {
+      "id": "TC18",
+      "name": "Deactivate member",
+      "steps": "Deactivate the fixture member. Confirm the new status and absence from active check-in choices.",
+      "expected": "Inactive member excluded from check-in choices",
+      "status": "PASS",
+      "actual": "Verified: Inactive member excluded from check-in choices",
+      "duration": 1.332
+    },
+    {
+      "id": "TC19",
+      "name": "Reactivate member",
+      "steps": "Reactivate the fixture member. Confirm Active status.",
+      "expected": "Member status returns to Active",
+      "status": "PASS",
+      "actual": "Verified: Member status returns to Active",
+      "duration": 1.298
+    },
+    {
+      "id": "TC20",
+      "name": "Record attendance with payment warning",
+      "steps": "Select the fixture member in Record check-in. Save and inspect the payment-due warning and attendance history.",
+      "expected": "One check-in saved and payment-due warning shown",
+      "status": "PASS",
+      "actual": "Verified: One check-in saved and payment-due warning shown",
+      "duration": 1.812
+    },
+    {
+      "id": "TC21",
+      "name": "Duplicate attendance blocked",
+      "steps": "Attempt a second check-in for the same member on the same date. Inspect the validation error.",
+      "expected": "Second check-in on same day is rejected",
+      "status": "PASS",
+      "actual": "Verified: Second check-in on same day is rejected",
+      "duration": 1.834
+    },
+    {
+      "id": "TC22",
+      "name": "Unknown member attendance rejected",
+      "steps": "Submit an attendance action with a nonexistent member ID through the authenticated browser. Inspect HTTP 400.",
+      "expected": "Tampered member ID produces HTTP 400",
+      "status": "PASS",
+      "actual": "Choose an active member.",
+      "duration": 0.025
+    },
+    {
+      "id": "TC23",
+      "name": "Create trainer and login account",
+      "steps": "Create a unique trainer with valid profile details, hire date, username, and temporary password. Inspect the trainer and linked account.",
+      "expected": "Profile and Trainer account created atomically",
+      "status": "PASS",
+      "actual": "Trainer and linked login created.",
+      "duration": 2.093
+    },
+    {
+      "id": "TC24",
+      "name": "Trainer username validation",
+      "steps": "Enter a trainer username starting with a digit. Inspect the username pattern validation.",
+      "expected": "Username beginning with a digit is invalid",
+      "status": "PASS",
+      "actual": "Verified: Username beginning with a digit is invalid",
+      "duration": 1.251
+    },
+    {
+      "id": "TC25",
+      "name": "Create linked Member account",
+      "steps": "Create a Member account and link it to the fixture member. Confirm the account appears in User management.",
+      "expected": "Account links to the selected member profile",
+      "status": "PASS",
+      "actual": "Verified: Account links to the selected member profile",
+      "duration": 2.076
+    },
+    {
+      "id": "TC26",
+      "name": "Duplicate profile link rejected",
+      "steps": "Attempt to link another account to the same member profile. Inspect HTTP 409 and the duplicate-link error.",
+      "expected": "Second account linked to same member gets HTTP 409",
+      "status": "PASS",
+      "actual": "That username, mobile number, profile link, or serial number is already in use.",
+      "duration": 0.193
+    },
+    {
+      "id": "TC27",
+      "name": "Inactive account cannot log in",
+      "steps": "Deactivate the fixture Member account. Try to sign in with it and verify the inactive-account error.",
+      "expected": "Deactivated Member login is rejected",
+      "status": "PASS",
+      "actual": "Verified: Deactivated Member login is rejected",
+      "duration": 2.769
+    },
+    {
+      "id": "TC28",
+      "name": "Account reactivation",
+      "steps": "Reactivate the fixture Member account in User management. Read the updated Active status.",
+      "expected": "Member account is Active after reactivation",
+      "status": "PASS",
+      "actual": "Verified: Member account is Active after reactivation",
+      "duration": 1.31
+    },
+    {
+      "id": "TC29",
+      "name": "Current admin protected",
+      "steps": "Submit a request to deactivate the current Admin account. Inspect the self-protection error.",
+      "expected": "Admin cannot disable own account (HTTP 400)",
+      "status": "PASS",
+      "actual": "You cannot disable your own account.",
+      "duration": 0.039
+    },
+    {
+      "id": "TC30",
+      "name": "Create equipment",
+      "steps": "Create equipment with a unique serial, purchase date, and warranty date. Read the new inventory row.",
+      "expected": "Equipment profile appears in inventory",
+      "status": "PASS",
+      "actual": "Verified: Equipment profile appears in inventory",
+      "duration": 1.951
+    },
+    {
+      "id": "TC31",
+      "name": "Edit equipment condition",
+      "steps": "Edit the fixture equipment condition to UNDER MAINTENANCE. Save and reread its condition.",
+      "expected": "Condition is persisted as UNDER MAINTENANCE",
+      "status": "PASS",
+      "actual": "Verified: Condition is persisted as UNDER MAINTENANCE",
+      "duration": 1.84
+    },
+    {
+      "id": "TC32",
+      "name": "Delete unreferenced equipment",
+      "steps": "Delete the unreferenced fixture equipment and confirm it no longer appears.",
+      "expected": "Created equipment is removed",
+      "status": "PASS",
+      "actual": "Verified: Created equipment is removed",
+      "duration": 1.302
+    },
+    {
+      "id": "TC33",
+      "name": "Create product",
+      "steps": "Create a unique product with price 499.50 and stock 12. Confirm its inventory record.",
+      "expected": "Product price and stock saved",
+      "status": "PASS",
+      "actual": "Verified: Product price and stock saved",
+      "duration": 1.464
+    },
+    {
+      "id": "TC34",
+      "name": "Negative product price validation",
+      "steps": "Enter -1 as the product price. Inspect the browser's minimum-value validation.",
+      "expected": "Negative price rejected by browser validation",
+      "status": "PASS",
+      "actual": "Verified: Negative price rejected by browser validation",
+      "duration": 1.253
+    },
+    {
+      "id": "TC35",
+      "name": "Edit product price and stock",
+      "steps": "Edit the fixture product to price 549.75 and stock 20. Save and inspect persisted values.",
+      "expected": "Updated price and quantity persist",
+      "status": "PASS",
+      "actual": "Verified: Updated price and quantity persist",
+      "duration": 1.914
+    },
+    {
+      "id": "TC36",
+      "name": "Referenced product deletion protected",
+      "steps": "Add a test-only order reference to the fixture product. Attempt deletion and inspect the protected-history error.",
+      "expected": "Product with order history cannot be deleted",
+      "status": "PASS",
+      "actual": "Verified: Product with order history cannot be deleted",
+      "duration": 1.374
+    },
+    {
+      "id": "TC37",
+      "name": "Delete unreferenced product",
+      "steps": "Remove the fixture order reference. Delete the product and confirm removal.",
+      "expected": "Product removed after fixture history is cleared",
+      "status": "PASS",
+      "actual": "Verified: Product removed after fixture history is cleared",
+      "duration": 1.331
+    },
+    {
+      "id": "TC38",
+      "name": "Negative plan price rejected",
+      "steps": "Submit a negative membership-plan price through the browser request. Confirm HTTP 400 without changing the price.",
+      "expected": "Server rejects negative price (HTTP 400)",
+      "status": "PASS",
+      "actual": "Enter a nonnegative amount within the supported range.",
+      "duration": 0.023
+    },
+    {
+      "id": "TC39",
+      "name": "Workout plan details",
+      "steps": "Open a workout plan with View plan. Count and read all seven day sections.",
+      "expected": "All seven workout days are readable",
+      "status": "PASS",
+      "actual": "Verified: All seven workout days are readable",
+      "duration": 0.7
+    },
+    {
+      "id": "TC40",
+      "name": "Payment history view",
+      "steps": "Open Payment history and inspect the loaded records.",
+      "expected": "Saved payment records loaded in browser",
+      "status": "PASS",
+      "actual": "(None, 19)",
+      "duration": 0.619
+    },
+    {
+      "id": "TC41",
+      "name": "Product sales view",
+      "steps": "Open Product sales and inspect the loaded records.",
+      "expected": "Saved sale records loaded in browser",
+      "status": "PASS",
+      "actual": "(None, 20)",
+      "duration": 0.147
+    },
+    {
+      "id": "TC42",
+      "name": "Members PDF report",
+      "steps": "Open Reports. Download the Members PDF. Parse it and confirm at least one page and a nonempty file.",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "4137 bytes; 1 PDF pages.",
+      "duration": 0.659
+    },
+    {
+      "id": "TC43",
+      "name": "Trainers PDF report",
+      "steps": "Download the Trainers PDF through its report button. Parse and inspect the downloaded file.",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "2312 bytes; 1 PDF pages.",
+      "duration": 0.643
+    },
+    {
+      "id": "TC44",
+      "name": "Attendance PDF report",
+      "steps": "Download the Attendance PDF through its report button. Parse and inspect the downloaded file.",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "28633 bytes; 11 PDF pages.",
+      "duration": 0.643
+    },
+    {
+      "id": "TC45",
+      "name": "Payments PDF report",
+      "steps": "Download the Payments PDF through its report button. Parse and inspect the downloaded file.",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "3300 bytes; 1 PDF pages.",
+      "duration": 0.66
+    },
+    {
+      "id": "TC46",
+      "name": "Sales PDF report",
+      "steps": "Download the Product sales PDF through its report button. Parse and inspect the downloaded file.",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "4999 bytes; 2 PDF pages.",
+      "duration": 0.636
+    },
+    {
+      "id": "TC47",
+      "name": "Equipment PDF report",
+      "steps": "Download the Equipment PDF through its report button. Parse and inspect the downloaded file.",
+      "expected": "Valid PDF downloaded through report button",
+      "status": "PASS",
+      "actual": "4482 bytes; 2 PDF pages.",
+      "duration": 0.652
+    },
+    {
+      "id": "TC48",
+      "name": "Filtered CSV report export",
+      "steps": "Search Members for the fixture. Select Export CSV. Read the file and verify the matching member is included.",
+      "expected": "CSV download contains visible matching member",
+      "status": "PASS",
+      "actual": "Filtered member CSV contains fixture row.",
+      "duration": 1.231
+    },
+    {
+      "id": "TC49",
+      "name": "Local database backup",
+      "steps": "Open Database backup and create a snapshot. Verify the reported SQL file exists inside the checkout's backups folder.",
+      "expected": "Timestamped SQL backup exists in checkout backups folder",
+      "status": "PASS",
+      "actual": "gms_web_20261015_131328.sql 47276 bytes",
+      "duration": 0.657
+    },
+    {
+      "id": "TC50",
+      "name": "Trainer sign-in",
+      "steps": "Create an isolated training assignment and sign in as the fixture trainer. Wait for the Trainer overview.",
+      "expected": "Trainer account opens a separate workspace",
+      "status": "PASS",
+      "actual": "Verified: Trainer account opens a separate workspace",
+      "duration": 0.746
+    },
+    {
+      "id": "TC51",
+      "name": "Trainer navigation restriction",
+      "steps": "Inspect Trainer navigation. Confirm Assigned members exists and User management does not.",
+      "expected": "Admin management links are absent",
+      "status": "PASS",
+      "actual": "Trainer navigation excludes admin modules.",
+      "duration": 0.012
+    },
+    {
+      "id": "TC52",
+      "name": "Trainer server authorization",
+      "steps": "Request the admin Members endpoint from a Trainer session. Inspect HTTP 403.",
+      "expected": "Direct members API denied with HTTP 403",
+      "status": "PASS",
+      "actual": "Administrator access required.",
+      "duration": 0.013
+    },
+    {
+      "id": "TC53",
+      "name": "Trainer assigned-member list",
+      "steps": "Open Assigned members. Confirm the fixture member name and ID appear.",
+      "expected": "Trainer sees their assigned member",
+      "status": "PASS",
+      "actual": "Assigned fixture member and ID displayed.",
+      "duration": 0.609
+    },
+    {
+      "id": "TC54",
+      "name": "Trainer progress entry",
+      "steps": "Record progress for the assigned member: height 175 cm, weight 71 kg, body fat 17%, current date. Inspect BMI 23.18.",
+      "expected": "Assigned member progress saved with calculated BMI 23.18",
+      "status": "PASS",
+      "actual": "Verified: Assigned member progress saved with calculated BMI 23.18",
+      "duration": 2.051
+    },
+    {
+      "id": "TC55",
+      "name": "Future progress date rejected",
+      "steps": "Submit a future-dated measurement through the browser request. Inspect HTTP 400.",
+      "expected": "Server rejects a future measurement date (HTTP 400)",
+      "status": "PASS",
+      "actual": "Date cannot be in the future.",
+      "duration": 0.024
+    },
+    {
+      "id": "TC56",
+      "name": "Unassigned member progress denied",
+      "steps": "Attempt progress entry for an unrelated member ID. Inspect HTTP 403.",
+      "expected": "Trainer cannot write progress for an unrelated member",
+      "status": "PASS",
+      "actual": "Member is not actively assigned to you.",
+      "duration": 0.066
+    },
+    {
+      "id": "TC57",
+      "name": "Trainer edits own profile",
+      "steps": "Open the Trainer profile. Edit the fixture trainer name. Save and inspect the profile and account display.",
+      "expected": "Profile and account display name update together",
+      "status": "PASS",
+      "actual": "Verified: Profile and account display name update together",
+      "duration": 1.871
+    },
+    {
+      "id": "TC58",
+      "name": "Wrong current password rejected",
+      "steps": "Attempt a password change with an incorrect current password. Inspect the error.",
+      "expected": "Password is preserved when current password is wrong",
+      "status": "PASS",
+      "actual": "Verified: Password is preserved when current password is wrong",
+      "duration": 1.941
+    },
+    {
+      "id": "TC59",
+      "name": "Password confirmation validation",
+      "steps": "Enter different new and confirmation passwords. Submit and inspect the mismatch error.",
+      "expected": "Mismatched new passwords cannot be saved",
+      "status": "PASS",
+      "actual": "Verified: Mismatched new passwords cannot be saved",
+      "duration": 1.41
+    },
+    {
+      "id": "TC60",
+      "name": "Trainer password change",
+      "steps": "Change the fixture trainer password with matching confirmation. Verify that the old password fails and the new password authenticates.",
+      "expected": "Old password rejected and new password works",
+      "status": "PASS",
+      "actual": "Verified: Old password rejected and new password works",
+      "duration": 3.398
+    },
+    {
+      "id": "TC61",
+      "name": "Member sign-in",
+      "steps": "Sign in with the linked fixture Member account. Wait for the Member overview.",
+      "expected": "Linked Member account opens member workspace",
+      "status": "PASS",
+      "actual": "Verified: Linked Member account opens member workspace",
+      "duration": 0.766
+    },
+    {
+      "id": "TC62",
+      "name": "Member own membership view",
+      "steps": "Open My profile. Confirm the member's own name, Monthly plan, and payment status.",
+      "expected": "Member sees own profile, plan, and payment status",
+      "status": "PASS",
+      "actual": "Verified: Member sees own profile, plan, and payment status",
+      "duration": 0.188
+    },
+    {
+      "id": "TC63",
+      "name": "Member attendance scoped",
+      "steps": "Open My attendance. Verify only the fixture member's one check-in is returned.",
+      "expected": "Only fixture member check-in is returned",
+      "status": "PASS",
+      "actual": "Verified: Only fixture member check-in is returned",
+      "duration": 0.616
+    },
+    {
+      "id": "TC64",
+      "name": "Member progress scoped and read-only",
+      "steps": "Open My progress. Verify the initial and trainer-entered measurements; confirm no add-record action exists.",
+      "expected": "Own initial/trainer entries visible; no record action",
+      "status": "PASS",
+      "actual": "Verified: Own initial/trainer entries visible; no record action",
+      "duration": 0.63
+    },
+    {
+      "id": "TC65",
+      "name": "Member training scoped",
+      "steps": "Open My training. Confirm only the fixture member's assigned trainer and training record are shown.",
+      "expected": "Only own training assignment is visible",
+      "status": "PASS",
+      "actual": "Verified: Only own training assignment is visible",
+      "duration": 0.619
+    },
+    {
+      "id": "TC66",
+      "name": "Member admin API access denied",
+      "steps": "Request User management data from the Member browser session. Inspect HTTP 403.",
+      "expected": "User management API denied with HTTP 403",
+      "status": "PASS",
+      "actual": "Administrator access required.",
+      "duration": 0.013
+    },
+    {
+      "id": "TC67",
+      "name": "Member progress write denied",
+      "steps": "Attempt a Trainer progress action from the Member session. Inspect HTTP 403.",
+      "expected": "Member cannot submit trainer progress action",
+      "status": "PASS",
+      "actual": "Trainer access required.",
+      "duration": 0.02
+    },
+    {
+      "id": "TC68",
+      "name": "Member edits own profile",
+      "steps": "Edit the fixture member's own name. Save and inspect the updated profile.",
+      "expected": "Own name updates in profile and account",
+      "status": "PASS",
+      "actual": "Verified: Own name updates in profile and account",
+      "duration": 1.357
+    },
+    {
+      "id": "TC69",
+      "name": "Desktop layout",
+      "steps": "Set a desktop browser window to 1440 pixels wide. Inspect the profile and check document horizontal overflow.",
+      "expected": "Document has no horizontal overflow at 1440px",
+      "status": "PASS",
+      "actual": "Verified: Document has no horizontal overflow at 1440px",
+      "duration": 0.64
+    },
+    {
+      "id": "TC70",
+      "name": "Mobile navigation and layout",
+      "steps": "Emulate a true 390 by 844 mobile viewport. Open the navigation drawer, select Progress, wait for the transition, and inspect overflow.",
+      "expected": "390px navigation works without document overflow",
+      "status": "PASS",
+      "actual": "Verified: 390px navigation works without document overflow",
+      "duration": 1.387
+    },
+    {
+      "id": "TC71",
+      "name": "Theme persistence",
+      "steps": "Toggle dark theme, refresh the page, and confirm the theme persists. Capture the rendered screen.",
+      "expected": "Dark theme remains selected after page refresh",
+      "status": "PASS",
+      "actual": "Verified: Dark theme remains selected after page refresh",
+      "duration": 0.527
+    },
+    {
+      "id": "TC72",
+      "name": "Sign-out invalidates browser session",
+      "steps": "Sign out using the confirmation dialog. Confirm the login page and HTTP 401 from the protected account endpoint.",
+      "expected": "Protected API requires sign-in after logout",
+      "status": "PASS",
+      "actual": "Verified: Protected API requires sign-in after logout",
+      "duration": 0.788
+    },
+    {
+      "id": "TC73",
+      "name": "Anonymous report access denied",
+      "steps": "Request a PDF report without an authenticated session. Inspect HTTP 401.",
+      "expected": "Report endpoint returns HTTP 401",
+      "status": "PASS",
+      "actual": "Your session has ended. Please sign in again.",
+      "duration": 0.012
+    },
+    {
+      "id": "TC74",
+      "name": "Server source is not publicly served",
+      "steps": "Request GymWebServer.java through the browser URL. Confirm HTTP 404.",
+      "expected": "Source file URL returns HTTP 404",
+      "status": "PASS",
+      "actual": "Java source URL returned 404.",
+      "duration": 0.012
+    },
+    {
+      "id": "TC75",
+      "name": "Admin account password reset",
+      "steps": "As Admin, reset the fixture Member password. Verify the old password fails and the reset password works.",
+      "expected": "Reset password works; old password no longer works",
+      "status": "PASS",
+      "actual": "Verified: Reset password works; old password no longer works",
+      "duration": 6.038
+    },
+    {
+      "id": "TC76",
+      "name": "Delete member and linked account",
+      "steps": "Delete the fixture member. Verify the profile, linked login, attendance, progress, and assignment are removed and sign-in fails.",
+      "expected": "Member deletion cascades fixture history and login",
+      "status": "PASS",
+      "actual": "Verified: Member deletion cascades fixture history and login",
+      "duration": 3.33
+    },
+    {
+      "id": "TC77",
+      "name": "Delete unreferenced trainer",
+      "steps": "Delete the now-unreferenced fixture trainer. Confirm profile and linked account removal.",
+      "expected": "Trainer and linked account removed after assignment cleanup",
+      "status": "PASS",
+      "actual": "Verified: Trainer and linked account removed after assignment cleanup",
+      "duration": 1.664
+    },
+    {
+      "id": "TC78",
+      "name": "Module summary values",
+      "steps": "Compare the Members summary card count with the current authenticated Members response.",
+      "expected": "Member summary count equals loaded database rows",
+      "status": "PASS",
+      "actual": "Module summary matches the actual member record count.",
+      "duration": 0.284
+    },
+    {
+      "id": "TC79",
+      "name": "Membership plan price update",
+      "steps": "Create a test-only membership plan. Edit its price from 17.50 to 29.75 in the UI, reread the value, then remove that exact fixture plan.",
+      "expected": "A valid price change is persisted for an isolated plan",
+      "status": "PASS",
+      "actual": "Fixture plan price changed from 17.50 to 29.75.",
+      "duration": 1.874
+    }
+  ]
+}

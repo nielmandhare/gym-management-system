@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1900" viewBox="0 0 1400 1900">
+<rect width="100%" height="100%" fill="white"/>
+<polyline points="450,170 505,170" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="477" y="141" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">0..1</text>
+<text x="477" y="195" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">0..1</text>
+<polyline points="505,220 478,220 478,485 450,485" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="475" y="336" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">0..1</text>
+<polyline points="895,220 923,220 923,485 950,485" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="922" y="336" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">0..1</text>
+<polyline points="450,420 505,420" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="467" y="400" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">*</text>
+<text x="492" y="400" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1</text>
+<polyline points="255,560 255,640" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="255" y="602" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1     has     0..*</text>
+<polyline points="450,525 468,525 468,742 505,742" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="470" y="627" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1:*</text>
+<polyline points="60,455 30,455 30,1027 60,1027" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="30" y="904" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1:*</text>
+<polyline points="450,555 482,555 482,1055 505,1055" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="483" y="900" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1:*</text>
+<polyline points="950,545 924,545 924,1055 895,1055" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="924" y="900" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1:*</text>
+<polyline points="1145,560 1145,640" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="1145" y="601" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1     has     0..*</text>
+<polyline points="450,1315 505,1315" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="463" y="1290" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1</text>
+<text x="490" y="1290" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">*</text>
+<polyline points="450,1600 505,1600" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="463" y="1577" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">1</text>
+<text x="490" y="1577" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">*</text>
+<rect x="60" y="70" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="60" y="70" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="255.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">Admin</text>
+<text x="72" y="133" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-adminId: int</text>
+<text x="72" y="162" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-name, mobile: String</text>
+<text x="72" y="191" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-statusId: int</text>
+<polyline points="60,227 450,227" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="72" y="251" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+manageGym()</text>
+<rect x="505" y="70" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="505" y="70" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="700.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">AppUser</text>
+<text x="517" y="133" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-userId: int; role: String</text>
+<text x="517" y="162" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-username, hash: String</text>
+<text x="517" y="191" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-active: boolean</text>
+<polyline points="505,227 895,227" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="517" y="251" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+authenticate()</text>
+<rect x="950" y="70" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="950" y="70" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="1145.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">Status</text>
+<text x="962" y="133" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-statusId: int</text>
+<text x="962" y="162" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-active: boolean</text>
+<polyline points="950,227 1340,227" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="962" y="251" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+checkActive()</text>
+<rect x="60" y="355" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="60" y="355" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="255.0" y="377" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">Member</text>
+<text x="72" y="418" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-memberId: int</text>
+<text x="72" y="447" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-name, mobile: String</text>
+<text x="72" y="476" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-paid: boolean; statusId: int</text>
+<polyline points="60,512 450,512" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="72" y="536" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+updateProfile()</text>
+<rect x="505" y="355" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="505" y="355" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="700.0" y="377" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">Membership</text>
+<text x="517" y="418" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-membershipTypeId: int</text>
+<text x="517" y="447" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-type: enum</text>
+<text x="517" y="476" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-price: decimal</text>
+<polyline points="505,512 895,512" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="517" y="536" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+setPrice()</text>
+<rect x="950" y="355" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="950" y="355" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="1145.0" y="377" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">Trainer</text>
+<text x="962" y="418" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-trainerId: int</text>
+<text x="962" y="447" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-name, mobile: String</text>
+<text x="962" y="476" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-statusId: int</text>
+<polyline points="950,512 1340,512" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="962" y="536" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+updateProfile()</text>
+<rect x="60" y="640" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="60" y="640" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="255.0" y="662" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">MemberAttendance</text>
+<text x="72" y="703" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-attendanceId: int</text>
+<text x="72" y="732" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-date: Date</text>
+<text x="72" y="761" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-checkInTime: Time</text>
+<polyline points="60,797 450,797" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="72" y="821" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+recordCheckIn()</text>
+<rect x="505" y="640" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="505" y="640" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="700.0" y="662" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">ProgressTrack</text>
+<text x="517" y="703" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-progressId: int; date: Date</text>
+<text x="517" y="732" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-heightCm, weightKg: decimal</text>
+<text x="517" y="761" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-bodyFat, bmi: decimal</text>
+<polyline points="505,797 895,797" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="517" y="821" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+recordProgress()</text>
+<rect x="950" y="640" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="950" y="640" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="1145.0" y="662" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">TrainerAttendance</text>
+<text x="962" y="703" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-attendanceId: int</text>
+<text x="962" y="732" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-date: Date</text>
+<text x="962" y="761" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-checkIn, checkOut: Time</text>
+<polyline points="950,797 1340,797" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="962" y="821" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+viewAttendance()</text>
+<rect x="60" y="925" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="60" y="925" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="255.0" y="947" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">PaymentHistory</text>
+<text x="72" y="988" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-paymentId: int</text>
+<text x="72" y="1017" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-paidAmount: decimal</text>
+<text x="72" y="1046" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-method, reference: String</text>
+<polyline points="60,1082 450,1082" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="72" y="1106" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+viewPayments()</text>
+<rect x="505" y="925" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="505" y="925" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="700.0" y="947" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">PersonalTraining</text>
+<text x="517" y="988" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-ptId: int; dates: Date</text>
+<text x="517" y="1017" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-total, completed: int</text>
+<text x="517" y="1046" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-status: enum</text>
+<polyline points="505,1082 895,1082" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="517" y="1106" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+viewSessions()</text>
+<rect x="950" y="925" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="950" y="925" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="1145.0" y="947" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">WorkoutPlan</text>
+<text x="962" y="988" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-planId: int</text>
+<text x="962" y="1017" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-level: enum</text>
+<text x="962" y="1046" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-day1 ... day7: String</text>
+<polyline points="950,1082 1340,1082" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="962" y="1106" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+viewPlan()</text>
+<rect x="60" y="1210" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="60" y="1210" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="255.0" y="1232" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">Product</text>
+<text x="72" y="1273" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-productId: int</text>
+<text x="72" y="1302" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-name: String; price: decimal</text>
+<text x="72" y="1331" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-stock: int</text>
+<polyline points="60,1367 450,1367" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="72" y="1391" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+saveProduct()</text>
+<rect x="505" y="1210" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="505" y="1210" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="700.0" y="1232" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">OrderHistory</text>
+<text x="517" y="1273" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-orderId: int; date: Date</text>
+<text x="517" y="1302" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-quantity: int; total: decimal</text>
+<text x="517" y="1331" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-method, reference: String</text>
+<polyline points="505,1367 895,1367" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="517" y="1391" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+viewSales()</text>
+<rect x="60" y="1495" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="60" y="1495" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="255.0" y="1517" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">Equipment</text>
+<text x="72" y="1558" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-equipmentId: int</text>
+<text x="72" y="1587" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-name, serialNo: String</text>
+<text x="72" y="1616" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-status: enum; dates: Date</text>
+<polyline points="60,1652 450,1652" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="72" y="1676" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+manageEquipment()</text>
+<rect x="505" y="1495" width="390" height="205" rx="5" fill="white" stroke="#626262" stroke-width="2"/>
+<rect x="505" y="1495" width="390" height="42" rx="5" fill="#bedfe7" stroke="#626262" stroke-width="2"/>
+<text x="700.0" y="1517" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">MaintenanceLog</text>
+<text x="517" y="1558" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-logId: int; date: Date</text>
+<text x="517" y="1587" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-description: String</text>
+<text x="517" y="1616" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">-cost: decimal</text>
+<polyline points="505,1652 895,1652" fill="none" stroke="#626262" stroke-width="2"/>
+<text x="517" y="1676" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">+viewMaintenance()</text>
+<text x="1145" y="1350" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="29" font-weight="400" fill="#202020">Status association</text>
+<text x="1145" y="1402.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">Status 1 : 0..* Admin</text>
+<text x="1145" y="1440.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">Status 1 : 0..* Member</text>
+<text x="1145" y="1478.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#202020">Status 1 : 0..* Trainer</text>
+<text x="1145" y="1653.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="400" fill="#202020">Conceptual record classes</text>
+<text x="1145" y="1690.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="400" fill="#202020">Operations describe supported tasks</text>
+<text x="1145" y="1727.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="400" fill="#202020">WorkoutPlan is a catalogue</text>
+<text x="700" y="1807.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020">Each history row belongs to one parent. * means 0..*.</text>
+<text x="700" y="1843.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020">AppUser links to a Member or Trainer according to its role.</text>
+</svg>

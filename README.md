@@ -2,11 +2,27 @@
 
 Gym Management System is an OOMD college mini-project built with Java Swing, JDBC, and MySQL. It provides separate Admin, Trainer, and Member dashboards through one login flow. Administrators manage gym operations, trainers work with assigned members, and members view their own records.
 
+## Browser-based edition (STQA assignment)
+
+The browser edition replicates the current gym workflows using Java 17, JDBC, MySQL and a responsive HTML/CSS/JavaScript interface. Detailed setup, feature mapping and Selenium instructions are in [web/README.md](web/README.md).
+
+After following the port-3307 ownership checks in AGENTS.md and setting up this checkout's dedicated MySQL instance:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Run-Web.ps1 -Background
+```
+
+Open **http://127.0.0.1:8081**. `-Port` selects a different web port. `Stop-Web.ps1` stops only the recorded server for this checkout. Local database credentials remain in ignored `src/resources/db.properties`; existing demo passwords are preserved. Fresh demo logins are admin / 123, trainer / 123 and user1 / 123.
+
+The web edition includes all three role workspaces, original dashboard totals, searchable/paginated module tables and summaries, member/initial-progress creation, trainer/login creation, membership management, attendance, equipment, products, scoped progress, user access controls, own-profile/password changes, CSV exports, six clean PDF report downloads and local SQL backups. Payment/sales entry and editing workout/training assignments were not current desktop workflows; their existing read-only views are retained.
+
+`Verify-Web.ps1` runs the Selenium WebDriver regression on Chrome or Edge using isolated test records. `Run-SeleniumIDE.ps1` replays the importable 30-case `web/tests/Gym_STQA.side` project through the official runner. Results and the generated STQA report are under `output/stqa/`. Student and faculty cover fields should be filled before submission.
+
 ## Project Overview
 
 The project stores gym records in a relational database and exposes them through role-specific desktop interfaces. The Admin Dashboard summarizes activity and provides member, trainer, attendance, equipment, product, payment, workout-plan, progress, and reporting modules. Trainer and Member dashboards restrict records and actions using the authenticated account and its linked profile.
 
-Trainers and members use the same login window and receive separate dashboards scoped to their linked profiles. For a college mini-project, the application illustrates a graphical client connected to a MySQL database through JDBC. It is a desktop program, not a web application.
+Trainers and members use the same login window and receive separate dashboards scoped to their linked profiles. For a college mini-project, the application illustrates a graphical client connected to a MySQL database through JDBC. The original Swing edition is a desktop program; the browser alternative is documented above.
 
 ## Features
 
@@ -26,7 +42,7 @@ The following features are present in the source and project resources:
 - Payment-history and product/sales records with searchable list views and summary values. The current screens primarily display and search these records; they do not provide a full payment or sales-entry workflow.
 - Workout-plan and member progress-history views with search. The member form records starting height, weight, body-fat percentage, and BMI as a progress entry.
 - Search fields with database-backed suggestions in the main data panels.
-- Six JasperReports templates, opened in JasperViewer, for members, trainers, member attendance, payments, product sales, and equipment.
+- Six desktop JasperReports templates, opened in JasperViewer, for members, trainers, member attendance, payments, product sales, and equipment.
 - A database backup action that invokes `mysqldump` and writes a timestamped SQL file in `backups/`.
 - Local logging, input validation, and a FlatLaf dark theme.
 
@@ -66,7 +82,7 @@ The code is organized around Swing windows, feature panels, dialogs, and a share
 - `connection.MySQL` loads database settings, opens the JDBC connection, executes prepared SQL statements, and runs the backup command.
 - `security.Accounts`, `security.Session`, and `security.Passwords` handle account operations, role authorization, scoped data and password hashing. `panels.UserManagementPanel` is admin-only.
 - `util/` and `validation/` contain shared UI, logging, date/time, and input-validation helpers.
-- `src/report/` contains compiled JasperReports templates.
+- `src/report/` contains compiled desktop JasperReports templates.
 
 ## Project Structure
 
@@ -79,7 +95,7 @@ The code is organized around Swing windows, feature panels, dialogs, and a share
 │   ├── connection/           # JDBC connection and database operations
 │   ├── gui/                  # Splash, login, and main application window
 │   ├── panels/               # Feature screens and dialogs
-│   ├── report/               # Compiled JasperReports templates
+│   ├── report/               # Compiled desktop JasperReports templates
 │   ├── resources/            # Configuration examples and app resources
 │   ├── security/             # Account service, sessions and password hashing
 │   ├── util/                 # Shared helpers
@@ -125,9 +141,9 @@ These accounts are created for local demonstrations. Application password hashes
 |---|---|---|---|
 | Admin | `admin` | `123` | admin / `0770000001` |
 | Trainer | `trainer` | `123` | trainer / `9876512001` |
-| Member | `user` | `123` | user / `9876501002` |
+| Member | `user1` | `123` | user1 / `9876501002` |
 
-The login form accepts either the username or mobile number with the password. The three demo usernames and profile names are `admin`, `trainer`, and `user`, all with password `123`. New passwords may contain 3–128 characters. Database connection credentials are listed separately above. Setup preserves existing accounts and changed passwords; these defaults apply to a fresh demo installation.
+The login form accepts either the username or mobile number with the password. The three demo usernames and profile names are `admin`, `trainer`, and `user1`, all with password `123`. New passwords may contain 3–128 characters. Database connection credentials are listed separately above. Setup preserves existing accounts and changed passwords; these defaults apply to a fresh demo installation.
 
 ## User Management and Role Dashboards
 
@@ -157,7 +173,7 @@ Passwords use JDK-native PBKDF2-HMAC-SHA256 with 600,000 iterations, a random 16
 
 ## Demo Data
 
-The local seed script populates realistic Indian demo records including Shruti, Niel, Tanisha, Atharva, Tasbiya, and Pradynesh. The three login profiles use the simple names `admin`, `trainer`, and `user`. Seeded data covers members, trainers, attendance, membership types, payments, progress records, workout plans, equipment, maintenance, products, sales/orders, and related records.
+The local seed script populates realistic Indian demo records including Shruti, Niel, Tanisha, Atharva, Tasbiya, and Pradynesh. The three login profiles use the simple names `admin`, `trainer`, and `user1`. Seeded data covers members, trainers, attendance, membership types, payments, progress records, workout plans, equipment, maintenance, products, sales/orders, and related records.
 
 The saved integration verification checked the seeded database and confirmed 25 members, 6 trainer profiles, 75 progress entries, 6 workout plans, 12 equipment records, 7 maintenance records, 8 products, 20 sales/order records, and 19 payment records. Attendance volume is checked by the harness rather than stated here as a fixed count.
 
@@ -214,7 +230,7 @@ Set-Location -LiteralPath '<project-directory>'
 powershell -ExecutionPolicy Bypass -File .\Run.ps1
 ```
 
-Sign in with `admin` / `123`, `trainer` / `123`, or `user` / `123`. Each opens its appropriate dashboard. See the Demo Login table for mobile login alternatives.
+Sign in with `admin` / `123`, `trainer` / `123`, or `user1` / `123`. Each opens its appropriate dashboard. See the Demo Login table for mobile login alternatives.
 
 For an AI-agent-friendly replication checklist that avoids the original machine's paths and checks for port conflicts before setup, see [`AGENTS.md`](AGENTS.md).
 
@@ -255,7 +271,7 @@ Run the full verification from the project directory:
 powershell -ExecutionPolicy Bypass -File .\Verify.ps1
 ```
 
-The latest recorded run on **11 October 2026**, after simplifying the demo logins to `admin`, `trainer`, and `user` with password `123`, passed **221 assertions**:
+The latest recorded run on **11 October 2026**, after simplifying the demo logins to `admin`, `trainer`, and `user1` with password `123`, passed **221 assertions**:
 
 | Harness | Main-process checks | Fresh-JVM checks |
 |---|---:|---:|
@@ -292,7 +308,7 @@ Use the repository's configured remote and chosen branch when pushing. Test repl
 
 ## Reports
 
-The application includes six compiled JasperReports templates in `src/report/`:
+The application includes six compiled desktop JasperReports templates in `src/report/`:
 
 - `gms_member_report.jasper`
 - `gms_trainer_report.jasper`

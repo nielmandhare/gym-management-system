@@ -1,0 +1,32 @@
+<html><head><meta charset="utf-8"><title>Selenium code and output</title><style>body{font:18px Segoe UI;margin:36px;background:#f5f7f2;color:#203c2a}pre{font:15px/1.55 Consolas;background:white;border:1px solid #dae5d0;padding:24px;white-space:pre-wrap}h1{font-size:28px}h2{font-size:20px}</style></head><body><h1>Selenium WebDriver — code and actual output</h1><h2>Regression code from selenium_suite.py</h2><pre>def create_member():
+        add_form(&#x27;members&#x27;);fill(member_values());save();found=[r for r in data(&#x27;members&#x27;) if r[&#x27;mobile&#x27;]==phone];assert len(found)==1;state[&#x27;member&#x27;]=found[0][&#x27;id&#x27;];state[&#x27;member_name&#x27;]=tag+&#x27; Member&#x27;;search_for(tag);shot(&#x27;03-member-management&#x27;);return &#x27;Created member #&#x27;+str(state[&#x27;member&#x27;])
+
+def report_download(name=name):
+            nav(&#x27;reports&#x27;);click(f&#x27;[data-report=&quot;{name}&quot;]&#x27;);file=DOWNLOADS/(name+&#x27;-report.pdf&#x27;);wait.until(lambda d:file.exists() and not list(DOWNLOADS.glob(&#x27;*.crdownload&#x27;)));reader=PdfReader(file);assert len(reader.pages)&gt;=1;assert file.stat().st_size&gt;1000;return f&#x27;{file.stat().st_size} bytes; {len(reader.pages)} PDF pages.&#x27;</pre><h2>Saved execution metadata</h2><pre>{
+  &quot;chrome&quot;: {
+    &quot;run&quot;: &quot;20261015-131021&quot;,
+    &quot;timestamp&quot;: &quot;2026-10-15T13:12:20.393016+05:30&quot;,
+    &quot;base_url&quot;: &quot;http://127.0.0.1:8081&quot;,
+    &quot;browser&quot;: &quot;chrome&quot;,
+    &quot;browser_version&quot;: &quot;155.0.8059.79&quot;,
+    &quot;selenium_version&quot;: &quot;4.51.0&quot;,
+    &quot;tag&quot;: &quot;STQA1a198bde&quot;,
+    &quot;total&quot;: 79,
+    &quot;passed&quot;: 79,
+    &quot;failed&quot;: 0,
+    &quot;cleanup_error&quot;: null
+  },
+  &quot;edge&quot;: {
+    &quot;run&quot;: &quot;20261015-131235&quot;,
+    &quot;timestamp&quot;: &quot;2026-10-15T13:14:01.833772+05:30&quot;,
+    &quot;base_url&quot;: &quot;http://127.0.0.1:8081&quot;,
+    &quot;browser&quot;: &quot;edge&quot;,
+    &quot;browser_version&quot;: &quot;155.0.4283.45&quot;,
+    &quot;selenium_version&quot;: &quot;4.51.0&quot;,
+    &quot;tag&quot;: &quot;STQA0119a856&quot;,
+    &quot;total&quot;: 79,
+    &quot;passed&quot;: 79,
+    &quot;failed&quot;: 0,
+    &quot;cleanup_error&quot;: null
+  }
+}</pre></body></html>

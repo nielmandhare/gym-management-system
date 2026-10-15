@@ -2,12 +2,12 @@
 # This file is loaded via ClassLoader at path: resources/db.properties
 
 # Database connection
-db.host=localhost
-db.port=3306
+db.host=127.0.0.1
+db.port=3307
 # Use the database created by backups/gms-database-init.sql
 db.name=gms
 
-db.user=root
+db.user=gms_dev
 # Avoid committing secrets. Use a local-only value.
 db.password=secret
 

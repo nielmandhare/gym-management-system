@@ -1,0 +1,1058 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 194,
+      "sha256": "d0cd17256d2587cf37a79a589757a2ac8fd710310946e115db1d68a1b648c2ba"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 5356,
+      "sha256": "64b3b0b2f8243969fa8bf29d4696d6db6b90a5a89cbe5a904410f97f160f4f91"
+    },
+    {
+      "path": "backups/gms-database-init.sql",
+      "bytes": 10696,
+      "sha256": "3100ebf474704b604ea50860680d1c65a3ddf10b21ed1bc9bf4899af58e7a8b9"
+    },
+    {
+      "path": "backups/local-demo-seed.sql",
+      "bytes": 22050,
+      "sha256": "fc737fe5a9a73d7ea15e75fde664ca5547084f96dc72fa93acc4caa121cab661"
+    },
+    {
+      "path": "backups/role-demo-accounts.sql",
+      "bytes": 1160,
+      "sha256": "17d294b2c731c16acf5714987c9e2ac3bbb68d78b2f1e558a848b9c00f1e46d5"
+    },
+    {
+      "path": "backups/three-role-migration.sql",
+      "bytes": 1506,
+      "sha256": "c4ff361d9b4b1b2411c0be0b5e77b2b6a9c1dc639a1baabc1d3699c9fcfaaaf8"
+    },
+    {
+      "path": "backups/user-accounts-migration.sql",
+      "bytes": 772,
+      "sha256": "e2365ff016846c625da1d97293f05992147eeff4f82ed5f793dacfae1186673c"
+    },
+    {
+      "path": "Build.ps1",
+      "bytes": 617,
+      "sha256": "aa5ff6c7f6cd0c41a27e1516fab3ae365fabf80d954dcdf0d5b3b6a2a6c26422"
+    },
+    {
+      "path": "build.xml",
+      "bytes": 3575,
+      "sha256": "33477a42a37b82d892e80ffb90cad346ed9cd2b716da6ad2c9588a48e07975a2"
+    },
+    {
+      "path": "lib/absolutelayout/AbsoluteLayout.jar",
+      "bytes": 17073,
+      "sha256": "d1b47ff84a391c8637d3ef1d47063a240aa419263f7a2e283140e315cb0ebfeb"
+    },
+    {
+      "path": "lib/barbecue-1.5-beta1.jar",
+      "bytes": 91079,
+      "sha256": "f7e27c911d5174e2e8c6404939fab49d351b9957b5d7e6a833bc3b3ec942e048"
+    },
+    {
+      "path": "lib/commons-beanutils-1.9.4.jar",
+      "bytes": 246918,
+      "sha256": "7d938c81789028045c08c065e94be75fc280527620d5bd62b519d5838532368a"
+    },
+    {
+      "path": "lib/commons-collections-3.2.2.jar",
+      "bytes": 588337,
+      "sha256": "eeeae917917144a68a741d4c0dff66aa5c5c5fd85593ff217bced3fc8ca783b8"
+    },
+    {
+      "path": "lib/commons-collections4-4.4.jar",
+      "bytes": 751914,
+      "sha256": "1df8b9430b5c8ed143d7815e403e33ef5371b2400aadbe9bda0883762e0846d1"
+    },
+    {
+      "path": "lib/commons-digester-2.1.jar",
+      "bytes": 196768,
+      "sha256": "e0b2b980a84fc6533c5ce291f1917b32c507f62bcad64198fff44368c2196a3d"
+    },
+    {
+      "path": "lib/commons-logging-1.2.jar",
+      "bytes": 61829,
+      "sha256": "daddea1ea0be0f56978ab3006b8ac92834afeefbd9b7e4e6316fca57df0fa636"
+    },
+    {
+      "path": "lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar",
+      "bytes": 111130,
+      "sha256": "9e3d7cea108bc25cd51dc70cd306c0f2d7c7b8597291c197db726e1c61a3a1cd"
+    },
+    {
+      "path": "lib/flatlaf-3.6.jar",
+      "bytes": 925551,
+      "sha256": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0"
+    },
+    {
+      "path": "lib/flatlaf-extras-3.6.jar",
+      "bytes": 118560,
+      "sha256": "0efe624935f249aabff4f0a7ea1a647d3b90503da38b649599158e8e69c22abc"
+    },
+    {
+      "path": "lib/hamcrest/hamcrest-core-1.3.jar",
+      "bytes": 45024,
+      "sha256": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9"
+    },
+    {
+      "path": "lib/itext-2.1.7.js4.jar",
+      "bytes": 1132231,
+      "sha256": "9416c8371aaba304c6637c21e7df8b5bf189cc03c872c68be1b1f3be8e358c8f"
+    },
+    {
+      "path": "lib/itext-asian-5.1.0.jar",
+      "bytes": 333423,
+      "sha256": "d01675887c158b86939e465b99edbf34036cd837468877c8b6a00b3abfa5008f"
+    },
+    {
+      "path": "lib/itext-asian-5.2.0.jar",
+      "bytes": 2166560,
+      "sha256": "13ff1134b69d51eec39c7bc173670737a833815b70bd7bcb6de5ac1ab979dfa3"
+    },
+    {
+      "path": "lib/jasperreports-6.21.3.jar",
+      "bytes": 5774637,
+      "sha256": "249248089d407ba7adf2acef93cb324c1a8f1cd082f3dc1ab57a202a158c606c"
+    },
+    {
+      "path": "lib/jasperreports-annotation-processors-6.21.3.jar",
+      "bytes": 18821,
+      "sha256": "2e9a2463f4cbdc26925cd65c415b36f0d14ad2ebbb04d1d6f0dbc5da325a27f5"
+    },
+    {
+      "path": "lib/jasperreports-castor-6.21.3.jar",
+      "bytes": 43598,
+      "sha256": "ae79e01b2a2ff8558f30d28ba40dac0357d7e8b9d1eaedd3e035c41f6a213d42"
+    },
+    {
+      "path": "lib/jasperreports-chart-customizers-6.21.3.jar",
+      "bytes": 44570,
+      "sha256": "caa2b362ef7b85808bd4b5558674081042684f625da4bdda8a1dc3b716704b16"
+    },
+    {
+      "path": "lib/jasperreports-chart-themes-6.21.3.jar",
+      "bytes": 191069,
+      "sha256": "1e967386987b9f00496d12fafc06a3d5c66cc3ebd5e4fc345afa82ab07d9d0e8"
+    },
+    {
+      "path": "lib/jasperreports-custom-visualization-6.21.3.jar",
+      "bytes": 114837,
+      "sha256": "b63f77cc965bf22b6fcc1d171aba8010cbd154373a14f6260c0e39146b23e3aa"
+    },
+    {
+      "path": "lib/jasperreports-fastexcel-6.21.3.jar",
+      "bytes": 8379,
+      "sha256": "44ab85c86093f3e846475248fa9a1120382dfcbf863f2c8315f24a82c88bb652"
+    },
+    {
+      "path": "lib/jasperreports-fonts-6.21.3.jar",
+      "bytes": 4949471,
+      "sha256": "f60362a18e7deae9e1f8a403049feded683d7039e6bd1a5b74baab50c8ab4a63"
+    },
+    {
+      "path": "lib/jasperreports-functions-6.21.3.jar",
+      "bytes": 37749,
+      "sha256": "520b5f634bffff4e2044aed7a46dce6ab372c9e223989bac1ecfe90f374e512f"
+    },
+    {
+      "path": "lib/jasperreports-javaflow-6.21.3.jar",
+      "bytes": 5783419,
+      "sha256": "6c5144c2806055cb0e1ee38b05e13d24d1615a28776928e29dedde0311eae682"
+    },
+    {
+      "path": "lib/jasperreports-metadata-6.21.3.jar",
+      "bytes": 9774,
+      "sha256": "a33d13ecf14139a7e18cd9243681ef3624d5e1341d34d85816039255ee5c50a9"
+    },
+    {
+      "path": "lib/jasperreports-xalan-6.21.3.jar",
+      "bytes": 15521,
+      "sha256": "5f3c71f358fe2481cadf67eb3d62eb31c7b10ea256112e79c380ac28b18915dd"
+    },
+    {
+      "path": "lib/jcalendar-1.4.jar",
+      "bytes": 165052,
+      "sha256": "284fcfbb7938d5b85bb0f540c712fa042521a4c50f4a5d47da02ba19bff291eb"
+    },
+    {
+      "path": "lib/jsvg-1.4.0.jar",
+      "bytes": 527530,
+      "sha256": "2f1ea19fb9611cca2f7d0686a9b0313cb0df8cdcba073df574b5cd1a6c8a86a2"
+    },
+    {
+      "path": "lib/junit_4/junit-4.13.2-javadoc.jar",
+      "bytes": 1674580,
+      "sha256": "9607be074b0200ce78f544a52ecae544b1ba559f430ba5b6c4ff110e30db0b8c"
+    },
+    {
+      "path": "lib/junit_4/junit-4.13.2-sources.jar",
+      "bytes": 234540,
+      "sha256": "34181df6482d40ea4c046b063cb53c7ffae94bdf1b1d62695bdf3adf9dea7e3a"
+    },
+    {
+      "path": "lib/junit_4/junit-4.13.2.jar",
+      "bytes": 384581,
+      "sha256": "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3"
+    },
+    {
+      "path": "lib/mysql-connector-j-8.4.0.jar",
+      "bytes": 2533399,
+      "sha256": "d77962877d010777cff997015da90ee689f0f4bb76848340e1488f2b83332af5"
+    },
+    {
+      "path": "lib/nblibraries.properties",
+      "bytes": 772,
+      "sha256": "739fb61625346489a064eb535d76b0a08d6f478584aacf01968d101398197293"
+    },
+    {
+      "path": "lib/openpdf-1.3.30.jar",
+      "bytes": 2128282,
+      "sha256": "6249b9b450af456f743ca3085663d7bb54814f7cc16644368795495457fd320a"
+    },
+    {
+      "path": "lib/spring-beans-5.3.18.jar",
+      "bytes": 698595,
+      "sha256": "e962d99bf7b3753cded86ce8ce6b4be5bed27d0b59feeb2a85948e29bba2807d"
+    },
+    {
+      "path": "lib/spring-core-5.3.18.jar",
+      "bytes": 1482364,
+      "sha256": "ca6fbdcf571fe1ee036d8e0b990175169baf629d38a8714f59e0e0fdc8f7a361"
+    },
+    {
+      "path": "manifest.mf",
+      "bytes": 82,
+      "sha256": "aba13eb4e4d2c16f718c4db49e8fd5812a0064e0b12c52e147979240abd019a0"
+    },
+    {
+      "path": "nbproject/build-impl.xml",
+      "bytes": 100424,
+      "sha256": "f07ca8a5dda7aa5c4581196064b5e36805627614afeb9f33ca0d340b3dbaa041"
+    },
+    {
+      "path": "nbproject/genfiles.properties",
+      "bytes": 469,
+      "sha256": "fcf52c24f98d9bac3b02ddcad1002187dc52366b3e30d942eb2e2f5f1540b3a8"
+    },
+    {
+      "path": "nbproject/project.properties",
+      "bytes": 6685,
+      "sha256": "fd518c2d2d56fd2275c5a66e0eda1171d9c0fda8c3af7be49dcb26b36bcfbc83"
+    },
+    {
+      "path": "nbproject/project.xml",
+      "bytes": 682,
+      "sha256": "28dac435ecaf2dec2df90ecd92bc2061d918bd76dd911619e6f583bef61b860f"
+    },
+    {
+      "path": "output/stqa/code-and-output.html",
+      "bytes": 2424,
+      "sha256": "58a85173e2ffdb427469027ef973e0ac70f4df96ec7624150134f40db142a52e"
+    },
+    {
+      "path": "output/stqa/exploratory_initial.json",
+      "bytes": 1141,
+      "sha256": "8a92bc5ec74b3c9047b4b8922ce138af49e5aebe7b571335e93ff96c21eb732f"
+    },
+    {
+      "path": "output/stqa/exploratory_results.json",
+      "bytes": 1376,
+      "sha256": "8945962068bb405d9e16b56f430bf4d8b3ab6b3e7c25b418fc57f2bb537aedbc"
+    },
+    {
+      "path": "output/stqa/gym-reports/attendance-report.pdf",
+      "bytes": 28574,
+      "sha256": "59c7b2647928e4ce2b84260feb992a8e5474fa142f79d15d6b498932032ff49a"
+    },
+    {
+      "path": "output/stqa/gym-reports/equipment-report.pdf",
+      "bytes": 4483,
+      "sha256": "7343acedf5853d36b22a3f39e31e8727c3d924842db198aca1ee139f4b252ce4"
+    },
+    {
+      "path": "output/stqa/gym-reports/members-report.pdf",
+      "bytes": 4027,
+      "sha256": "c1749bae1e351769cf3195b081adf4ce6fb9a58bc2756630e58a3ea0ccfb7e5f"
+    },
+    {
+      "path": "output/stqa/gym-reports/payments-report.pdf",
+      "bytes": 3300,
+      "sha256": "64fdeec8496f15fe62a1b27fd5140fdae3032e8dde84e133ec432447a11cc8a9"
+    },
+    {
+      "path": "output/stqa/gym-reports/sales-report.pdf",
+      "bytes": 5001,
+      "sha256": "b5944fd8febdc5ad42e0183fe574bbd13141a09f636c46cdfc702793ae4e8046"
+    },
+    {
+      "path": "output/stqa/gym-reports/trainers-report.pdf",
+      "bytes": 2206,
+      "sha256": "0c5e763c5b554bafa93fa131b752a641793ee944bdba94bf44dca4fe6106392c"
+    },
+    {
+      "path": "output/stqa/Gym_Management_System_STQA_Report.pdf",
+      "bytes": 634264,
+      "sha256": "23850c711c57605b752e97b3dc5363f35480b416595ad15aa0cb4e29c457042b"
+    },
+    {
+      "path": "output/stqa/ide/results-2026-10-15T07-43-10.288Z.json",
+      "bytes": 13627,
+      "sha256": "e4e863a220ac6feba5d67aad07b8c5c07cb7b3f011dc0d4030fad46a778224af"
+    },
+    {
+      "path": "output/stqa/ide-output.html",
+      "bytes": 4345,
+      "sha256": "cbdb1361d5180b91f013766b93dadfcb46b8f9248ac3fea8816c9120c8f7b275"
+    },
+    {
+      "path": "output/stqa/java_diagnostic_results.json",
+      "bytes": 2599,
+      "sha256": "8df9e5c94f20d84f0f4e139ad06c69f5f722a9524ad3baae93827da83ca97d83"
+    },
+    {
+      "path": "output/stqa/READY.md",
+      "bytes": 2581,
+      "sha256": "2443f30625abdb9cdf19ce37a350d9796e0ebd6e7a51ddc3006810c6bc027901"
+    },
+    {
+      "path": "output/stqa/REPORT_FORMAT_CHECK.json",
+      "bytes": 336,
+      "sha256": "dc4ef96c180e7f541156688931d8db3e929eb4418162ee95b8fd1ece9bf6bf4b"
+    },
+    {
+      "path": "output/stqa/REPORT_METADATA.json",
+      "bytes": 1416,
+      "sha256": "005a1fb58be72bb7f5e8cd68094b21872119a6bd080ee9dafc422c9d3ad42f02"
+    },
+    {
+      "path": "output/stqa/requirements_traceability.csv",
+      "bytes": 20088,
+      "sha256": "d63ff6ce7c39a59578644ec133699f8bf2df27e4780a4029c81fd82a683936f1"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/report.html",
+      "bytes": 15855,
+      "sha256": "04890fd3bd2a3f5061b6a2ba2bbc89e400506d83307f57dafc01a17daf7283cb"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/results.csv",
+      "bytes": 18007,
+      "sha256": "90176bc63aad4cca01f1e995af6bef900c75a653038896736761b8db1e0051f1"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/results.json",
+      "bytes": 30001,
+      "sha256": "acf9fa511eb9932afe090791ac5504b9acd7dca4020d3214141495e45963149a"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/01-login.png",
+      "bytes": 64228,
+      "sha256": "68fd622d11329bc9c3cda6facc94dd148f640dadeda85adccf17d2156b4a1ca7"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/02-admin-overview.png",
+      "bytes": 86233,
+      "sha256": "a4a7d9673c07095c9b12c5d91095a54b890d5b4abc0270c13c1a0965135a1d73"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/03-member-management.png",
+      "bytes": 75918,
+      "sha256": "bce22ca2b4cdce8025a04f1684f53f702adc092593bfa46ebf759407807fd536"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/04-report-center.png",
+      "bytes": 75750,
+      "sha256": "575149cb1ceace29edec010b6e0a9c8b1128ae4e4a0afdb92501f41c905859c1"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/05-trainer-progress.png",
+      "bytes": 71717,
+      "sha256": "0ab6f9858b284ba6c54a244a3520edb09e2c67fd4ccd3f56877ae41d9849dd1a"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/06-trainer-profile.png",
+      "bytes": 90735,
+      "sha256": "ba543b8337f4f35fe5936f080aaef2673b119efd66dcaaeca361728cf3ffa84d"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/07-member-profile.png",
+      "bytes": 86122,
+      "sha256": "fe6ee5bca020f27356b02a810c27cc01452d62088366cb9a2e6d22bfdd1c0766"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/08-desktop-profile.png",
+      "bytes": 88356,
+      "sha256": "057798ca2ff573654bae28fb6801ab4753da3b43d973758dfc30ef390575b01f"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/09-mobile-progress.png",
+      "bytes": 35762,
+      "sha256": "a002551bc62b9596956385648bb7eb850a6413e699ecbc0d9c5a951d307f3393"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/10-dark-theme.png",
+      "bytes": 58045,
+      "sha256": "45fa7f6cacb915fe391e8e2ea7ad6b5b6cf67b8f4a998712fa0c6c7c7bebc66c"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131021/screenshots/11-cleanup-complete.png",
+      "bytes": 72048,
+      "sha256": "e20523bed923ce7ba9c64f4d8f8d861adaa16a5edb2ba32e966469b88e8d6c64"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/report.html",
+      "bytes": 15853,
+      "sha256": "9d877e6f041fd0fd16c47620179962495bac564e54a22de3280dca8fd5ba9117"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/results.csv",
+      "bytes": 17999,
+      "sha256": "21e10a8b159849d2e086cda7f1a869b1cc39220e36d63006c8d6b9a5c4a446dd"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/results.json",
+      "bytes": 29991,
+      "sha256": "59a131773ea7baceddfb0e660550f6f761250a09ede11a9dba1385cbaef9a9c6"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/01-login.png",
+      "bytes": 63488,
+      "sha256": "992ecd75ecabd17c91a392dbf4b40ea1e4dc3c0a9d416ffc1e10b1b70610da68"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/02-admin-overview.png",
+      "bytes": 87200,
+      "sha256": "27bed8893594a45b13b8c3aff1a7b860ebf4e360a60bbdf8a9704f60ef67e5e7"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/03-member-management.png",
+      "bytes": 76119,
+      "sha256": "578a040f6d04b756ae63d6e9b36065897894712f314f05aa6fb8e19b2b773df7"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/04-report-center.png",
+      "bytes": 75731,
+      "sha256": "0c2488535d8440419fbd990d2d689e02c5a555614c10de45912507d02cb640e7"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/05-trainer-progress.png",
+      "bytes": 72912,
+      "sha256": "95db8da7605a689b04e3ce26d0e3772f59b9e1365613fc0f436b8e7fd240f91b"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/06-trainer-profile.png",
+      "bytes": 90746,
+      "sha256": "7972e8345bd96f90b6427044f5c2dfb58dd90b4b6c6e4bdef2fc0207de2df6e6"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/07-member-profile.png",
+      "bytes": 86371,
+      "sha256": "fb2d4effeccdf86d5ec4d79d3a85879b283228df43faa0e0131faa1a27dbe32a"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/08-desktop-profile.png",
+      "bytes": 88637,
+      "sha256": "5ffce908e53df96f399d7fd51063b63f6b7a33248fc4310dd27976e9199bd70e"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/09-mobile-progress.png",
+      "bytes": 35762,
+      "sha256": "a002551bc62b9596956385648bb7eb850a6413e699ecbc0d9c5a951d307f3393"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/10-dark-theme.png",
+      "bytes": 58416,
+      "sha256": "40fc2177f900b6bb4acfa10765dc46a01f78f70fb641174dd035066095e8b3d4"
+    },
+    {
+      "path": "output/stqa/runs/20261015-131235/screenshots/11-cleanup-complete.png",
+      "bytes": 71963,
+      "sha256": "cb9dde6cbc851e462ed4e5575dba9476fbaf83ab58c992d412ee8897e72558f2"
+    },
+    {
+      "path": "output/stqa/screenshots/01-login.png",
+      "bytes": 64822,
+      "sha256": "5dce1486d6ede4ca345b55ec5e58e6ab4a06bb3ba71cb0926944e32c63729c54"
+    },
+    {
+      "path": "output/stqa/screenshots/02-admin-overview.png",
+      "bytes": 85631,
+      "sha256": "752ccd5f23a5051630f91781ca21f04df5b0df724169d2002fcbc02373d0157a"
+    },
+    {
+      "path": "output/stqa/screenshots/03-member-management.png",
+      "bytes": 96403,
+      "sha256": "807bbffda7cd924f3a111d681c26d68f7eaa9a38816abb9aa022d1731a18001d"
+    },
+    {
+      "path": "output/stqa/screenshots/04-reports.png",
+      "bytes": 70371,
+      "sha256": "381f7bd0eccf39b98de2f2e781270518e0127d3c9fdee195463f4d22cdf593bf"
+    },
+    {
+      "path": "output/stqa/screenshots/05-trainer-progress.png",
+      "bytes": 76550,
+      "sha256": "13825941f20b700cc4da5cba8f7092ac9e8a722902c61f1bf3510862f6256180"
+    },
+    {
+      "path": "output/stqa/screenshots/06-member-profile.png",
+      "bytes": 83435,
+      "sha256": "62f065e619ce33789a319fd42e40b4af7bf10121229f42474c76963fd0f350b9"
+    },
+    {
+      "path": "output/stqa/screenshots/07-mobile-profile.png",
+      "bytes": 37764,
+      "sha256": "57a28a6750186583bfc62132913dd63a627befed19f2a788f2a44394d8ed6b96"
+    },
+    {
+      "path": "output/stqa/screenshots/08-code-and-output.png",
+      "bytes": 81850,
+      "sha256": "b9f37158d82f35af9debf2517ec3c995fc3ef61d036e6c52828c10a8322c1b7c"
+    },
+    {
+      "path": "output/stqa/screenshots/09-selenium-ide-output.png",
+      "bytes": 153711,
+      "sha256": "2566201c99bd5bc9a5ed269e4cbf62b47406a1fed628ab83089a48b1277090b2"
+    },
+    {
+      "path": "output/stqa/screenshots/10-java-code.png",
+      "bytes": 86776,
+      "sha256": "c1e13a5f822bdb04869da87ac9ccd9117d5626b73b431ef0ebb75d9d2ab58337"
+    },
+    {
+      "path": "output/stqa/screenshots/11-java-output.png",
+      "bytes": 51654,
+      "sha256": "05e862ecba5ccfbae0771ac39c767621d16f3caf7c339fa74b365caace650c36"
+    },
+    {
+      "path": "output/stqa/selenium_chrome_report.html",
+      "bytes": 15855,
+      "sha256": "04890fd3bd2a3f5061b6a2ba2bbc89e400506d83307f57dafc01a17daf7283cb"
+    },
+    {
+      "path": "output/stqa/selenium_chrome_results.csv",
+      "bytes": 18007,
+      "sha256": "90176bc63aad4cca01f1e995af6bef900c75a653038896736761b8db1e0051f1"
+    },
+    {
+      "path": "output/stqa/selenium_chrome_results.json",
+      "bytes": 30001,
+      "sha256": "acf9fa511eb9932afe090791ac5504b9acd7dca4020d3214141495e45963149a"
+    },
+    {
+      "path": "output/stqa/selenium_edge_report.html",
+      "bytes": 15853,
+      "sha256": "9d877e6f041fd0fd16c47620179962495bac564e54a22de3280dca8fd5ba9117"
+    },
+    {
+      "path": "output/stqa/selenium_edge_results.csv",
+      "bytes": 17999,
+      "sha256": "21e10a8b159849d2e086cda7f1a869b1cc39220e36d63006c8d6b9a5c4a446dd"
+    },
+    {
+      "path": "output/stqa/selenium_edge_results.json",
+      "bytes": 29991,
+      "sha256": "59a131773ea7baceddfb0e660550f6f761250a09ede11a9dba1385cbaef9a9c6"
+    },
+    {
+      "path": "output/stqa/selenium_ide_results.json",
+      "bytes": 13627,
+      "sha256": "e4e863a220ac6feba5d67aad07b8c5c07cb7b3f011dc0d4030fad46a778224af"
+    },
+    {
+      "path": "output/stqa/selenium_java_results.json",
+      "bytes": 1338,
+      "sha256": "eda1173193bac44bb44c3d7f223f43c17bff2a4edd1af7fb0719be113e65799d"
+    },
+    {
+      "path": "PROJECT_DEMO_GUIDE.md",
+      "bytes": 5153,
+      "sha256": "2b545e4e84c2e324bcb342f823f72519ba679f41a26a4d2e636fb8b370b5e064"
+    },
+    {
+      "path": "README.md",
+      "bytes": 34514,
+      "sha256": "1a342312b4cbd5fe28dbd9942543ac63ebd576fa41a08dbb641a90ff04acda94"
+    },
+    {
+      "path": "Run-SeleniumIDE.ps1",
+      "bytes": 1009,
+      "sha256": "0421149ba5398e68da8bbece2e96b4455a54ec02c4a0f7cabc14cbff002643a1"
+    },
+    {
+      "path": "Run-Web.ps1",
+      "bytes": 3212,
+      "sha256": "08d8e894f8f125d951f8d68ddde234cc68bf3aaf457c48aeae0f619838e23b2d"
+    },
+    {
+      "path": "Run.ps1",
+      "bytes": 315,
+      "sha256": "e048ae6c9c0e2d1e95a7037309135fb2c3ee14bff30bff4afadc3a62c241600f"
+    },
+    {
+      "path": "Setup-Database.ps1",
+      "bytes": 7522,
+      "sha256": "a6af977c9e6caebd44926c8b45910f72a15d5aa1ef78c8d9ae31902e90daa4f0"
+    },
+    {
+      "path": "src/connection/MySQL.java",
+      "bytes": 5794,
+      "sha256": "9750d15767768fcabe33f3620c645ebea2ee13c6204d76b5948748cbab6dcf88"
+    },
+    {
+      "path": "src/gui/LoginForm.form",
+      "bytes": 6758,
+      "sha256": "0bcb5d4450c5a0d2611eaabe821b06a750e26d95242df082244fd44dfc2ab354"
+    },
+    {
+      "path": "src/gui/LoginForm.java",
+      "bytes": 6605,
+      "sha256": "1b9f99c7fbb741a1e2469b0911f81603aa9f6e053f4b60f13bc3821844677772"
+    },
+    {
+      "path": "src/gui/MainInterface.form",
+      "bytes": 34134,
+      "sha256": "6b1dff660b26e37f7bff16a24c24f05bb91292b7ca0436c130cc7237e028f6fb"
+    },
+    {
+      "path": "src/gui/MainInterface.java",
+      "bytes": 32521,
+      "sha256": "9ad3e1104000f2c7a2f6b7df0a1b8453f29d2db7ed21a38937d9f2163fd7561e"
+    },
+    {
+      "path": "src/gui/MemberDashboard.java",
+      "bytes": 4010,
+      "sha256": "a53db2a151574e058a02823563abc8be14d121496f885acb423998ff78b7b02a"
+    },
+    {
+      "path": "src/gui/SplashSceen.form",
+      "bytes": 7270,
+      "sha256": "9ea3e430e23a4b34be3a187aa88637a8e41ca3c630dc7f61e078cb788a8a4d71"
+    },
+    {
+      "path": "src/gui/SplashSceen.java",
+      "bytes": 6502,
+      "sha256": "266eec181144e994f0c41e0fd954ac1070aab638e835ffadab26dd9933eda0bb"
+    },
+    {
+      "path": "src/gui/TrainerDashboard.java",
+      "bytes": 5770,
+      "sha256": "4db8adf078397d434cc7bf1d5ce6a9207eb94648d83466c1307550fdd3e0ce4e"
+    },
+    {
+      "path": "src/img/banner.svg",
+      "bytes": 24994,
+      "sha256": "09fc497ea3ba1b46c308f0f7f1701eef6f533972a4a359ba34c72a93cd837b98"
+    },
+    {
+      "path": "src/img/favicon.png",
+      "bytes": 3167,
+      "sha256": "a230768cfea0e05a8a0c5b10d3eb71589290882a171aaea1b565afeeb87892c8"
+    },
+    {
+      "path": "src/panels/AttendancePanel.form",
+      "bytes": 13150,
+      "sha256": "30764c33d31787bf09c8073cf4b947399bd2ac0aa143e6ddfda05d8ce3fbc3d8"
+    },
+    {
+      "path": "src/panels/AttendancePanel.java",
+      "bytes": 14483,
+      "sha256": "760bda5bc56a12656e4e890e6d8f5d9abe627417e5bf70835d0efd4115155423"
+    },
+    {
+      "path": "src/panels/dialog/AttendanceDialog.form",
+      "bytes": 9860,
+      "sha256": "a809eb2ec5b96c1e4df0f27b49c7866ed196ce33a17252ae35ef1e7dfb347b61"
+    },
+    {
+      "path": "src/panels/dialog/AttendanceDialog.java",
+      "bytes": 8973,
+      "sha256": "f43ad30d58c1c48705a1d942577c719ac38431777e51167c45377eec650e8fb3"
+    },
+    {
+      "path": "src/panels/dialog/ManageEquipmentDialog.java",
+      "bytes": 5750,
+      "sha256": "87e6836d60edc29ee59c31a4c8f515561c421bc771a81abd676247ad7cef762e"
+    },
+    {
+      "path": "src/panels/dialog/ManageMemberDialog.form",
+      "bytes": 45358,
+      "sha256": "f425cd04d5dddbdfbaf086c0a7fe08cbd6d7915c1103fd3a8a2f8fde5d960327"
+    },
+    {
+      "path": "src/panels/dialog/ManageMemberDialog.java",
+      "bytes": 34255,
+      "sha256": "d127a2e55eb3016829b3fd07aebce0300f46910ca60a0a16d10bf296e1cce45e"
+    },
+    {
+      "path": "src/panels/dialog/ManageProductsDialog.java",
+      "bytes": 3328,
+      "sha256": "d4dd55326191a55aa1ef5799c3d5c1c7f950524e5b6118bf9188b2d098ead281"
+    },
+    {
+      "path": "src/panels/dialog/ManageTrainerDialog.form",
+      "bytes": 40246,
+      "sha256": "7f54675776b141d69234c26b6ee6dcb4f1ee9c29cca39475ad3e902e8695b719"
+    },
+    {
+      "path": "src/panels/dialog/ManageTrainerDialog.java",
+      "bytes": 32362,
+      "sha256": "4d92b817e3721ad19c2446d37c3330424c4ed383b9b1c0f87514633c5f5c8bce"
+    },
+    {
+      "path": "src/panels/dialog/MembershipDialog.java",
+      "bytes": 2443,
+      "sha256": "6266fa5e38cabfb97e826c36994ef4a43db968304533c376bd87b3172ea59dd6"
+    },
+    {
+      "path": "src/panels/EquipmentPanel.form",
+      "bytes": 13412,
+      "sha256": "2cd8f42caa644562e419fcb7501833796b1444e305e6041d2227b83f860b355f"
+    },
+    {
+      "path": "src/panels/EquipmentPanel.java",
+      "bytes": 13892,
+      "sha256": "7da61fb0f59fad2d16eb950803f77de100ac0b17cbc6fc0b8ed52c0c07c718ee"
+    },
+    {
+      "path": "src/panels/GenerateReportsPanel.form",
+      "bytes": 15709,
+      "sha256": "374756032933917d7f31d78fb81f0db47c13e61526d1c61336e71839df6f79df"
+    },
+    {
+      "path": "src/panels/GenerateReportsPanel.java",
+      "bytes": 13581,
+      "sha256": "54b68e45b011f79b0fd26fe1d4a7f1fc41d101db7e4c008c1b63dd83d2896fe4"
+    },
+    {
+      "path": "src/panels/MembersPanel.form",
+      "bytes": 14743,
+      "sha256": "53927d5c8a53cdc38d66f5d7d0b391cbcfa172debb2b3acbdf58bc3c74989ed8"
+    },
+    {
+      "path": "src/panels/MembersPanel.java",
+      "bytes": 17517,
+      "sha256": "d51dccb2c02cfd659baa2293734eb2604cf65419bea69784ad3005f78cc62067"
+    },
+    {
+      "path": "src/panels/OtherProductsPanel.form",
+      "bytes": 13638,
+      "sha256": "dbfdbdaf0b043ac133f0f3aa359a026ee5455ec590ea956536653f4fd930411b"
+    },
+    {
+      "path": "src/panels/OtherProductsPanel.java",
+      "bytes": 14915,
+      "sha256": "13ee3506dd63db54dd221a10ee22f057eb31c4bb80b1e8555cde15612306d19d"
+    },
+    {
+      "path": "src/panels/PaymentRecordsPanel.form",
+      "bytes": 12925,
+      "sha256": "ffc29cfad7f4b75442a1468a0dd9e0d5c1fa729adceeecfd2db27cff983e9bb1"
+    },
+    {
+      "path": "src/panels/PaymentRecordsPanel.java",
+      "bytes": 13128,
+      "sha256": "5c399dab8965f8fde111b5210f12bb1339a7e073991152eb784cf7b4e9e00ebf"
+    },
+    {
+      "path": "src/panels/ProgressTrackPanel.form",
+      "bytes": 20725,
+      "sha256": "97d46d497537e56b59ee1339ca7dc45edd599df56362c4fe0467fbdac1303ba4"
+    },
+    {
+      "path": "src/panels/ProgressTrackPanel.java",
+      "bytes": 16477,
+      "sha256": "53fb6ee80208b637f0424c7d24538ec53d714d6bc28caff3bd69a7ae19148b52"
+    },
+    {
+      "path": "src/panels/TrainersPanel.form",
+      "bytes": 13948,
+      "sha256": "8fa96c2c83725834139147a48e6cbebdc72d4680df6036a439006aac66ab0c87"
+    },
+    {
+      "path": "src/panels/TrainersPanel.java",
+      "bytes": 14689,
+      "sha256": "cda0037d1604502904c9e6951b09ff4bc332790e4b05536fd8a264fc1deeaa5a"
+    },
+    {
+      "path": "src/panels/UserManagementPanel.java",
+      "bytes": 6183,
+      "sha256": "a566dfc9766a2f3673287d91f71af67bd8e6e45f9d3ca82da0ee01e8e664d8f2"
+    },
+    {
+      "path": "src/panels/WorkoutPlansPanel.form",
+      "bytes": 14384,
+      "sha256": "d27d27fe270b1e86a1d2404fffccb6f5d8c2f03d5aba0c89e801860db1a8240a"
+    },
+    {
+      "path": "src/panels/WorkoutPlansPanel.java",
+      "bytes": 14072,
+      "sha256": "9a5f59f4817cf15cfde60a5f3e020f9182f959ae7b56157047ccda72a5a56e3c"
+    },
+    {
+      "path": "src/report/gms_equipment_report.jasper",
+      "bytes": 41400,
+      "sha256": "0af4ee7214c65a027e57a34d3fc9f279053f90b18d00d49c1271688cc6b635c2"
+    },
+    {
+      "path": "src/report/gms_member_attendance_report.jasper",
+      "bytes": 39159,
+      "sha256": "422dc35ea0e2b24adf25afc69a013aa7bed199257874610a856c7e509b366fff"
+    },
+    {
+      "path": "src/report/gms_member_report.jasper",
+      "bytes": 41752,
+      "sha256": "843a2b319e2910d25d88d1b89832bfa9226ea4c1d07f120b03ad053d34531066"
+    },
+    {
+      "path": "src/report/gms_payments_report.jasper",
+      "bytes": 43807,
+      "sha256": "940a1d2d66ad1cc7c144fc1b86533cc4749b8cd4be9b8359de203e479bf966d8"
+    },
+    {
+      "path": "src/report/gms_product_sales_report.jasper",
+      "bytes": 46652,
+      "sha256": "baf7b61ab46c08aff0d4e179807022244cfe73c4315478b44a3659034bb7ed3f"
+    },
+    {
+      "path": "src/report/gms_trainer_report.jasper",
+      "bytes": 41525,
+      "sha256": "a59b678ab04f8ccfad26076a1e6df03be2769781710b6feac6d36a120e915f13"
+    },
+    {
+      "path": "src/resources/db.properties.example",
+      "bytes": 734,
+      "sha256": "34d99a035c5a029edea2cc588f1ac3feb239563d1f4a42595867d0abb2b8f6c7"
+    },
+    {
+      "path": "src/resources/mysql.cnf.example",
+      "bytes": 207,
+      "sha256": "0b5f990d677762328f875734dd08a949554d325d8b987139188ea8e9c70b3d3b"
+    },
+    {
+      "path": "src/security/Accounts.java",
+      "bytes": 18303,
+      "sha256": "8a389cc045978517cc40caa7e0ef76a3b7f83e3118fe90c9f25cb3b1c3c7ce7d"
+    },
+    {
+      "path": "src/security/Passwords.java",
+      "bytes": 1522,
+      "sha256": "5ea18a666bc523518d1a5547a31acf82fbc118e6342b0c9286ba785836ee3529"
+    },
+    {
+      "path": "src/security/Session.java",
+      "bytes": 998,
+      "sha256": "b7517354770a169c8b117f5f640fe9aefdca5a8eaf725e6ebb94f06ab1cefe79"
+    },
+    {
+      "path": "src/util/AppIconUtil.java",
+      "bytes": 846,
+      "sha256": "3e9e02f5c2fbb1851d8fdf581709e0d0385dd244c6f104dc73ba5ace1a8c3f8d"
+    },
+    {
+      "path": "src/util/LoggerUtil.java",
+      "bytes": 1476,
+      "sha256": "01fc686a4d0e1ed69274f4ec4003d4eadbc40ae66ea927e017a86923d0a31610"
+    },
+    {
+      "path": "src/util/OptionPane.java",
+      "bytes": 1277,
+      "sha256": "ac99e23ca4738974175eeab724baeae40e69003b141656c162d168fc21bcda75"
+    },
+    {
+      "path": "src/util/RoundedUtil.java",
+      "bytes": 553,
+      "sha256": "d07ae925daa0cd24c41c9cadc64d0b9c7956fe9c3f02e8637369aaca3c0b20ee"
+    },
+    {
+      "path": "src/util/SearchSuggestions.java",
+      "bytes": 2792,
+      "sha256": "340945603489579b639d05f6b2141e3d4652313c4a12cc270e2cb05979487a00"
+    },
+    {
+      "path": "src/util/TimeUtil.java",
+      "bytes": 2179,
+      "sha256": "983a90246f8b4830e56b449894aa1e7a741ecce714870ef781c44f1b13bec912"
+    },
+    {
+      "path": "src/validation/Regex.java",
+      "bytes": 1236,
+      "sha256": "9dcce00f626d88eb3499ccde6778fa613d577bc812869f94283947d77e40ed4f"
+    },
+    {
+      "path": "Start-Demo.ps1",
+      "bytes": 2732,
+      "sha256": "88d267f2e337601d90c06a84d635aad71444dc0a0fe952069cf95e605c7f7ecb"
+    },
+    {
+      "path": "Stop-Database.ps1",
+      "bytes": 276,
+      "sha256": "9ad17a410a2ae1147c8153388e8c01cd1bd6fd05b670f89295dc25ab789f1847"
+    },
+    {
+      "path": "Stop-Web.ps1",
+      "bytes": 901,
+      "sha256": "c966e23a4b24dbf7caebb96b758e2034a6ecff851665e191b35945fc1e310e1f"
+    },
+    {
+      "path": "STQA Mini Project Report.pdf",
+      "bytes": 1009812,
+      "sha256": "023fb90f5baea22a0c1b0f1ebb3b93d4a02a59932cb05e81dd8b93606c2046d8"
+    },
+    {
+      "path": "test/AccountVerification.java",
+      "bytes": 13546,
+      "sha256": "ee769e661ccb2e5d3366b5177e73341f764cdb688daf1c7dbf45b472c528891a"
+    },
+    {
+      "path": "test/LocalVerification.java",
+      "bytes": 19871,
+      "sha256": "68985c982f7372c0e95a31abaf40eef7e085650dfb0b9c9b88e46a5257b21a04"
+    },
+    {
+      "path": "test/ThreeRoleVerification.java",
+      "bytes": 21136,
+      "sha256": "22fd4156f0a463c1a8a88a3a95641293e8b995851fa2058306c4865f80dfa674"
+    },
+    {
+      "path": "Verify-Web.ps1",
+      "bytes": 996,
+      "sha256": "3ee5d0a8f3667b03049a70b42fb9ea83929b72f0ab3723a98ed8ab3aef8af424"
+    },
+    {
+      "path": "Verify-WebJava.ps1",
+      "bytes": 2091,
+      "sha256": "ead97ffd74f8289c85593e97c95452a37414f2765ba41fd34e702fa4148ba5bf"
+    },
+    {
+      "path": "Verify.ps1",
+      "bytes": 1352,
+      "sha256": "b898a27dd67c82ba163ae9466c78179fa57ac5d6cb87bdb541b2c42eb0269852"
+    },
+    {
+      "path": "web/docs/DEFECTS.md",
+      "bytes": 4201,
+      "sha256": "96e4677974a46c0769bf8b747e29abae790d7188f8b1c47ed7d4d3e8c705b2e8"
+    },
+    {
+      "path": "web/docs/MIGRATION_PLAN.md",
+      "bytes": 2701,
+      "sha256": "c2dfbc2a1e3a9244705bba6ec89a8c156f4ecaab857615249fbd35a0d7670e98"
+    },
+    {
+      "path": "web/GymWebServer.java",
+      "bytes": 43116,
+      "sha256": "3f3b4e75ddd75d78d2d945faae0d257eca0a0071613b04fec4fbb814445dece9"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 3773,
+      "sha256": "e8276fa0400e38d37213d37c5fc6bb1b180ee26722f73e708847e1d235d9e69e"
+    },
+    {
+      "path": "web/README.md",
+      "bytes": 7128,
+      "sha256": "95f089837108890e0bcc9a0f540e4d563b819160d290472781e6cf0bddd717c0"
+    },
+    {
+      "path": "web/tests/case_steps.json",
+      "bytes": 8203,
+      "sha256": "13621e44f02408b45baf3e087626fd540988db27bf94f359faa1d3303dfddbc3"
+    },
+    {
+      "path": "web/tests/exploratory_checks.py",
+      "bytes": 4952,
+      "sha256": "55e121f76c1d4cc77cf74a581a4554f21eb67e6b60381d2ef74be0a3c4df12bf"
+    },
+    {
+      "path": "web/tests/generate_ide.py",
+      "bytes": 4524,
+      "sha256": "b08cb4204531c6916ba14ac36ab575a84cdae805effa5c9efb840f77eb1638c9"
+    },
+    {
+      "path": "web/tests/Gym_STQA.side",
+      "bytes": 104174,
+      "sha256": "c757858de850ccf61642e5e3b244cd392156b47c908ff83bff832f5b63a405da"
+    },
+    {
+      "path": "web/tests/ide-config.yml",
+      "bytes": 170,
+      "sha256": "5c8ca6cfd5b1dbab2eb3543a7952dd560d08eaa990178344eb98543ee3185b3a"
+    },
+    {
+      "path": "web/tests/java/src/main/java/GymWebSmoke.java",
+      "bytes": 6571,
+      "sha256": "79ccf383ed5343f29911ef003ea31988628572b5ab4f57ee7802c1a6af634d6a"
+    },
+    {
+      "path": "web/tests/requirements.txt",
+      "bytes": 29,
+      "sha256": "ecb43d91ec0f3143a1ba2c62ab66143a294d1aa8eee9e6828b5cf467ebace925"
+    },
+    {
+      "path": "web/tests/run_ide.js",
+      "bytes": 815,
+      "sha256": "41a72af52f49f3ee2cdabce2e1860031d0459b26f15bf81fb598e7e7f49a37b9"
+    },
+    {
+      "path": "web/tests/selenium_suite.py",
+      "bytes": 34833,
+      "sha256": "cf836f14ad2caa2d92205f496ccc56ac78f90987954759dc191ff7c5e7ec40d4"
+    },
+    {
+      "path": "web/tools/build_plain_stqa_report.py",
+      "bytes": 30061,
+      "sha256": "187703664bacf64e0c70eb305a9300aca020cf7f72bab6d0a369e95e802e0778"
+    },
+    {
+      "path": "web/tools/build_stqa_report.py",
+      "bytes": 154,
+      "sha256": "aa191bbeaccca83c68c2277f1e8504ae0e6e07ba3957a584bd5fe85c9b81ff84"
+    },
+    {
+      "path": "web/tools/capture_evidence.py",
+      "bytes": 4534,
+      "sha256": "3e1e5ad35403a2ec07077eb5ed30505fbc201cf611076350503427e0dfc3e428"
+    },
+    {
+      "path": "web/tools/package_submission.py",
+      "bytes": 3074,
+      "sha256": "049c19f43aadf661137f4f1e7ae102f5fe2746586ba653a522f2635f8241a11c"
+    },
+    {
+      "path": "web/tools/requirements.txt",
+      "bytes": 31,
+      "sha256": "2073ed97ab264ce65cd60e736c1e7f4cb02499c2c9a1a54dea8cae4fda38ca47"
+    },
+    {
+      "path": "web/ui.css",
+      "bytes": 19298,
+      "sha256": "86f2f9e9f38246be226db5bdd159c02479654a21712287c63cb6d098ff38d567"
+    },
+    {
+      "path": "web/ui.js",
+      "bytes": 31449,
+      "sha256": "2180c5d162da0308117f1dc175d9aeba74bd8d70f729d19606c5739c11581b37"
+    },
+    {
+      "path": "web/WebReports.java",
+      "bytes": 8448,
+      "sha256": "ee63e58438b3b579bd71626320ec6d24d0840a33dce524c01378cd4ad166544f"
+    }
+  ],
+  "excludes": [
+    "local credentials",
+    "MySQL data/config/seed marker",
+    "generated SQL backups",
+    "application logs",
+    "build outputs",
+    "dependency caches",
+    "unrelated project folders"
+  ]
+}

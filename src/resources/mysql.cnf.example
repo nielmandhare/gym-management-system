@@ -2,7 +2,7 @@
 # Used by mysqldump through: --defaults-extra-file=src/resources/mysql.cnf
 
 [client]
-user=root
+user=gms_dev
 password=secret
-host=localhost
-port=3306
+host=127.0.0.1
+port=3307

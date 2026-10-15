@@ -1,0 +1,8 @@
+baseUrl: http://127.0.0.1:8081
+capabilities:
+  browserName: chrome
+  goog:chromeOptions:
+    args:
+      - headless=new
+      - window-size=1440,1050
+      - disable-gpu

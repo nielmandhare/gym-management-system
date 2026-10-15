@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1900" viewBox="0 0 1400 1900">
+<rect width="100%" height="100%" fill="white"/>
+<ellipse cx="110.0" cy="56.0" rx="16.0" ry="16.0" fill="white" stroke="#202020" stroke-width="2"/>
+<polyline points="110,72 110,140 81,185" fill="none" stroke="#202020" stroke-width="2"/>
+<polyline points="110,140 139,185" fill="none" stroke="#202020" stroke-width="2"/>
+<polyline points="75,100 145,100" fill="none" stroke="#202020" stroke-width="2"/>
+<text x="110" y="219" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#202020">User</text>
+<polyline points="110,235 110,1840" fill="none" stroke="#999999" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="242" y="75" width="206" height="105" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="345" y="128" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">:LoginForm</text>
+<polyline points="345,180 345,1840" fill="none" stroke="#999999" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="477" y="75" width="206" height="105" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="580" y="128" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">:Accounts</text>
+<polyline points="580,180 580,1840" fill="none" stroke="#999999" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="712" y="75" width="206" height="105" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="815" y="128" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">:Passwords</text>
+<polyline points="815,180 815,1840" fill="none" stroke="#999999" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="947" y="75" width="206" height="105" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1050" y="128" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">:Session</text>
+<polyline points="1050,180 1050,1840" fill="none" stroke="#999999" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="1182" y="75" width="206" height="105" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="1285" y="128" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">:MySQL</text>
+<polyline points="1285,180 1285,1840" fill="none" stroke="#999999" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="110,320 345,320" fill="none" stroke="#202020" stroke-width="2"/>
+<polygon points="332.5180439652654,326.340407995307 345,320 332.5180439652654,313.659592004693" fill="#202020" stroke="#202020" stroke-width="2"/>
+<text x="230" y="260.5" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020">Enter username / mobile</text>
+<text x="230" y="291.5" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020">and password</text>
+<polyline points="345,440 580,440" fill="none" stroke="#202020" stroke-width="2"/>
+<polygon points="567.5180439652654,446.340407995307 580,440 567.5180439652654,433.659592004693" fill="#202020" stroke="#202020" stroke-width="2"/>
+<text x="462.5" y="412" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">login(identifier, password)</text>
+<polyline points="580,560 1285,560" fill="none" stroke="#202020" stroke-width="2"/>
+<polygon points="1272.5180439652654,566.3404079953069 1285,560 1272.5180439652654,553.6595920046931" fill="#202020" stroke="#202020" stroke-width="2"/>
+<text x="932.5" y="532" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Read account and linked profile status</text>
+<polyline points="1285,680 580,680" fill="none" stroke="#202020" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="592.4819560347346,673.6595920046931 580,680 592.4819560347346,686.3404079953069" fill="none" stroke="#202020" stroke-width="2"/>
+<text x="932.5" y="652" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Account, role, hash, profile IDs</text>
+<polyline points="580,800 815,800" fill="none" stroke="#202020" stroke-width="2"/>
+<polygon points="802.5180439652654,806.3404079953069 815,800 802.5180439652654,793.6595920046931" fill="#202020" stroke="#202020" stroke-width="2"/>
+<text x="697.5" y="772" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">verify(password, hash)</text>
+<polyline points="815,915 580,915" fill="none" stroke="#202020" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="592.4819560347346,908.6595920046931 580,915 592.4819560347346,921.3404079953069" fill="none" stroke="#202020" stroke-width="2"/>
+<text x="697.5" y="887" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Password matches?</text>
+<rect x="32" y="1000" width="1336" height="810" rx="0" fill="white" stroke="#202020" stroke-width="2"/>
+<rect x="32" y="1000" width="82" height="45" rx="0" fill="white" stroke="#626262" stroke-width="2"/>
+<text x="73" y="1023" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">alt</text>
+<text x="135" y="1040" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">[password correct and account / profile active]</text>
+<polyline points="580,1150 1050,1150" fill="none" stroke="#202020" stroke-width="2"/>
+<polygon points="1037.5180439652654,1156.340407995307 1050,1150 1037.5180439652654,1143.659592004693" fill="#202020" stroke="#202020" stroke-width="2"/>
+<text x="815.0" y="1122" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">start(trusted Identity)</text>
+<polyline points="580,1270 345,1270" fill="none" stroke="#202020" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="357.4819560347346,1263.659592004693 345,1270 357.4819560347346,1276.340407995307" fill="none" stroke="#202020" stroke-width="2"/>
+<text x="462.5" y="1242" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Return Identity with stored role</text>
+<polyline points="345,1380 445,1380 445,1450 345,1450" fill="none" stroke="#202020" stroke-width="2"/>
+<polyline points="357.4819560347346,1443.659592004693 345,1450 357.4819560347346,1456.340407995307" fill="none" stroke="#202020" stroke-width="2"/>
+<text x="830" y="1384.5" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020">Open MainInterface, TrainerDashboard</text>
+<text x="830" y="1415.5" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#202020">or MemberDashboard for the stored role</text>
+<polyline points="345,1530 110,1530" fill="none" stroke="#202020" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="122.48195603473461,1523.659592004693 110,1530 122.48195603473461,1536.340407995307" fill="none" stroke="#202020" stroke-width="2"/>
+<text x="227.5" y="1502" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Show matching dashboard</text>
+<polyline points="32,1595 1368,1595" fill="none" stroke="#626262" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="135" y="1630" text-anchor="start" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020">[invalid credentials or inactive account / profile]</text>
+<polyline points="580,1700 345,1700" fill="none" stroke="#202020" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="357.4819560347346,1693.659592004693 345,1700 357.4819560347346,1706.340407995307" fill="none" stroke="#202020" stroke-width="2"/>
+<text x="462.5" y="1672" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Throw SecurityException</text>
+<polyline points="345,1775 110,1775" fill="none" stroke="#202020" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="122.48195603473461,1768.659592004693 110,1775 122.48195603473461,1781.340407995307" fill="none" stroke="#202020" stroke-width="2"/>
+<text x="227.5" y="1747" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#202020" stroke="white" stroke-width="7" paint-order="stroke">Show login error</text>
+</svg>
