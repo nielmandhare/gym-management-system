@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-15T13:14:29.649529+05:30",
+  "cases": [
+    {
+      "name": "Independent Admin and Member browser sessions",
+      "status": "PASS",
+      "actual": "Two simultaneous browser sessions retained different roles."
+    },
+    {
+      "name": "Dashboard totals match the desktop app",
+      "status": "PASS",
+      "actual": "Dashboard includes all members/trainers, matching the desktop COUNT(*) totals."
+    },
+    {
+      "name": "Keyboard focus stays in dialog",
+      "status": "PASS",
+      "actual": "Twelve Tab transitions stayed inside the native modal."
+    },
+    {
+      "name": "Dialog Escape dismissal",
+      "status": "PASS",
+      "actual": "Escape closed the unsaved member form."
+    },
+    {
+      "name": "Mobile drawer outside-click dismissal",
+      "status": "PASS",
+      "actual": "Outside pointer click closed the mobile drawer."
+    },
+    {
+      "name": "Height below minimum rejected",
+      "status": "PASS",
+      "actual": "height must be between 50.0 and 250.0."
+    },
+    {
+      "name": "Body fat above maximum rejected",
+      "status": "PASS",
+      "actual": "fat must be between 1.0 and 70.0."
+    },
+    {
+      "name": "Non-finite weight rejected",
+      "status": "PASS",
+      "actual": "Enter a valid number for weight."
+    }
+  ],
+  "passed": 8,
+  "failed": 0
+}

@@ -2,8 +2,8 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 194,
-      "sha256": "d0cd17256d2587cf37a79a589757a2ac8fd710310946e115db1d68a1b648c2ba"
+      "bytes": 272,
+      "sha256": "b4bee0a7e7fd84cd34dc9bfe2d3e4ab91b73eedb57ff712a471f3ece65c5f6a5"
     },
     {
       "path": "AGENTS.md",
@@ -571,6 +571,11 @@
       "sha256": "eda1173193bac44bb44c3d7f223f43c17bff2a4edd1af7fb0719be113e65799d"
     },
     {
+      "path": "output/stqa/STQA_lab _manual_.pdf",
+      "bytes": 1892605,
+      "sha256": "60520d44846772162b738690980546226922f0ef2289c97d8791db013e8d0b7e"
+    },
+    {
       "path": "PROJECT_DEMO_GUIDE.md",
       "bytes": 5153,
       "sha256": "2b545e4e84c2e324bcb342f823f72519ba679f41a26a4d2e636fb8b370b5e064"
@@ -906,6 +911,21 @@
       "sha256": "023fb90f5baea22a0c1b0f1ebb3b93d4a02a59932cb05e81dd8b93606c2046d8"
     },
     {
+      "path": "STQA_Submission/01_Report/Gym_Management_System_SRS_Final.docx",
+      "bytes": 40887,
+      "sha256": "14c7f96f2e5a9c310b6ef1a7e658c4e50cc3da86ee443b15b5c7ea9922204047"
+    },
+    {
+      "path": "STQA_Submission/01_Report/Gym_Management_System_SRS_Final.pdf",
+      "bytes": 155267,
+      "sha256": "03438e573812e27d86ceb10710395be1c76e8afd2dd6f0b3d709ae1fe266dd2e"
+    },
+    {
+      "path": "STQA_Submission/05_Reference_PDFs/STQA_Lab_Manual.pdf",
+      "bytes": 1892605,
+      "sha256": "60520d44846772162b738690980546226922f0ef2289c97d8791db013e8d0b7e"
+    },
+    {
       "path": "test/AccountVerification.java",
       "bytes": 13546,
       "sha256": "ee769e661ccb2e5d3366b5177e73341f764cdb688daf1c7dbf45b472c528891a"
@@ -1011,6 +1031,11 @@
       "sha256": "187703664bacf64e0c70eb305a9300aca020cf7f72bab6d0a369e95e802e0778"
     },
     {
+      "path": "web/tools/build_srs.py",
+      "bytes": 13295,
+      "sha256": "459b9aa0857dcff7e97b2feac96ca24d69d849423377f23b85bd1b523899fe8c"
+    },
+    {
       "path": "web/tools/build_stqa_report.py",
       "bytes": 154,
       "sha256": "aa191bbeaccca83c68c2277f1e8504ae0e6e07ba3957a584bd5fe85c9b81ff84"
@@ -1022,8 +1047,8 @@
     },
     {
       "path": "web/tools/package_submission.py",
-      "bytes": 3074,
-      "sha256": "049c19f43aadf661137f4f1e7ae102f5fe2746586ba653a522f2635f8241a11c"
+      "bytes": 3302,
+      "sha256": "dae52a48abbeb313e5fb70f61764acf2b17d5d84b2e4e8edcf301887b4b9ed73"
     },
     {
       "path": "web/tools/requirements.txt",

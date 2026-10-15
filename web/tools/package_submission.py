@@ -10,6 +10,8 @@ for directory in ['src','web','lib','nbproject','test']:
 for name in ['.gitignore','AGENTS.md','README.md','PROJECT_DEMO_GUIDE.md','STQA Mini Project Report.pdf','Start-Demo.ps1','Build.ps1','Run.ps1','Setup-Database.ps1','Stop-Database.ps1','Verify.ps1','Run-Web.ps1','Stop-Web.ps1','Verify-Web.ps1','Verify-WebJava.ps1','Run-SeleniumIDE.ps1','build.xml','manifest.mf']:
     file=ROOT/name
     if file.exists():files.append(file)
+for name in ['STQA_Submission/01_Report/Gym_Management_System_SRS_Final.docx','STQA_Submission/01_Report/Gym_Management_System_SRS_Final.pdf','STQA_Submission/05_Reference_PDFs/STQA_Lab_Manual.pdf']:
+    files.append(ROOT/name)
 for name in ['gms-database-init.sql','local-demo-seed.sql','user-accounts-migration.sql','three-role-migration.sql','role-demo-accounts.sql']:
     files.append(ROOT/'backups'/name)
 reports=ROOT/'output/stqa'

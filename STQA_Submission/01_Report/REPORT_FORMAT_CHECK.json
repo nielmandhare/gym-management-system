@@ -1,0 +1,17 @@
+{
+  "pages": 20,
+  "detailed_case_rows": 79,
+  "columns_per_case": 6,
+  "case_table_pages": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "full_grid_tables_detected": true,
+  "format": "Times text, plain pages, black table borders",
+  "app_state": "Existing running process retained; HTTP 200 verified"
+}

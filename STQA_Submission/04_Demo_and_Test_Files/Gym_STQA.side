@@ -1,0 +1,3699 @@
+{
+  "id": "71b7df50-cbfc-5ab0-aeba-6730502450a8",
+  "version": "2.0",
+  "name": "Gym Management System STQA",
+  "url": "http://127.0.0.1:8081",
+  "tests": [
+    {
+      "id": "bfabed29-ab0b-587b-8c92-9231d85ca941",
+      "name": "Admin Overview",
+      "commands": [
+        {
+          "id": "ffdca8a4-4d12-41a3-879f-d16d610963cd",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b24f20db-8db5-4a31-ac57-06cef2f34b5e",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fb3bb5be-891e-4781-b69e-bfdffb71f07d",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "81a49471-12c2-42d9-b9d8-cf2a1fdf79fc",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e55e3d30-9412-48f9-844e-c31bf84be1c8",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "80f53e76-1e0b-443b-8bf8-0c37ff0daefd",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "f060664e-277a-412c-bb80-4247736599d0",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4a4d9866-dd83-43cb-99aa-20cdf27f9138",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "620a0250-ab49-4964-9f2d-60d60f7e9136",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f5c30ca0-1d3c-4069-ac78-eaf661ecb5ca",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"overview\"]",
+          "targets": [
+            [
+              "css=[data-page=\"overview\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8b3af1b3-e2b3-400b-99c1-4c1bb8ef86f9",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Overview"
+        },
+        {
+          "id": "0c915c57-a2f1-4a3a-8554-88dfce14091d",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "cc90b35d-1842-547e-8194-3c1c41b18c90",
+      "name": "Admin Members",
+      "commands": [
+        {
+          "id": "541d81bc-a344-4351-b921-9e66f10d5e88",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f4473a0d-beda-47ab-a721-ac3cb438d1cd",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "47866922-243a-42eb-9ec9-cf21a89305f3",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c99d961c-9847-41b6-96f3-46f05de77f23",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e7562699-b244-493f-98bf-710634b1bb3c",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "c343c9ca-b594-40fd-af2f-0a681587c31c",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "c62779d1-6017-465c-a5a7-d323e6ee9155",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "718c1963-ee52-42bd-b813-b05923d04c3e",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c38bb6c3-68c5-44e4-87d6-38d808153f9d",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d60cc6f9-4527-41bf-bda8-6270b4b9ba78",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"members\"]",
+          "targets": [
+            [
+              "css=[data-page=\"members\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0d057ee2-4093-4ea3-aa50-debc8f954177",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Members"
+        },
+        {
+          "id": "7ccd0407-4d5f-48e7-b949-6d1d2b9a877f",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "29fd8d95-726e-5c17-8d0e-becef5ed8b6d",
+      "name": "Admin Trainers",
+      "commands": [
+        {
+          "id": "425dc453-c1f2-4b25-9a3b-e4a67223930c",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2bc83d97-28b6-47f0-889c-e803682a8421",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f3e32ca9-4835-4a5f-9d29-4c2ef9900de9",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4ba7b2b8-c8ee-450b-b05b-d8a15934bca4",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c833b6f4-3829-4307-a4e4-c3f45ad827b4",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "bfd75a98-a3c9-498e-b475-8040291f2ed4",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "2f1dc390-eb70-4ced-8707-e7c006da681f",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7300bd1e-029a-450a-ab75-cc4ed9fbd463",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d0323189-13af-4b7b-bc4d-b01aca41f390",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9c8fc715-120b-48bc-a293-4cbae3d71d39",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"trainers\"]",
+          "targets": [
+            [
+              "css=[data-page=\"trainers\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8c8de58c-6ef1-49f9-be9b-2da0418ee9c1",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Trainers"
+        },
+        {
+          "id": "a36fb973-5dcc-48b3-b874-706f7310682e",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "bb9cd629-6223-5017-9795-c4d03d4a2ef7",
+      "name": "Admin Attendance",
+      "commands": [
+        {
+          "id": "93c39130-2206-4e8e-a9ba-533197d8feca",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "482199ed-3f8a-4314-ac6c-854e01a0a658",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "eec81a81-2ee8-4035-9f38-ac182074e897",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7bf58cc7-7ddf-424b-bb57-2e6c3c48979d",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5fc32dfc-4d1c-4be5-90cb-942017292357",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "e73bd854-6a3c-477b-9f87-21593edb3bd5",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "a8a42ab8-75c7-47e8-b761-1da0bcc74939",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0e44eacc-1275-41a8-9a3b-7ec0e8f14a6e",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bc264299-4ee8-4557-9062-59ce0a1a122f",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e6c5df7d-fcd6-4454-a343-38ccab24e7f0",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"attendance\"]",
+          "targets": [
+            [
+              "css=[data-page=\"attendance\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "24b0f111-a1b8-4891-b6c3-1a8ba21b5cca",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Attendance"
+        },
+        {
+          "id": "21a7d9ff-7b67-442a-acb3-3577698c1d0e",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "c4fdb553-786e-5da3-95b0-60f002e49f36",
+      "name": "Admin Equipment",
+      "commands": [
+        {
+          "id": "207af9c8-543d-41b0-8a00-7f1d458cd23f",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a42cd9ca-d94f-4a89-ac03-c06b3fe2951a",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9dc3a302-c44a-4bb9-808f-911b6f767d13",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "36612709-e045-498e-9fe4-3015191ca7d8",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "27e3da14-0eca-4382-b24c-b657914372c6",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "61a03563-072c-43a2-90f9-205c60f94626",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "8779f380-5878-4cf0-974f-4dd0bb64f8dd",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1e51242e-13e2-4ae6-87af-f2fd44554a21",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9efa741e-0ea0-4488-8888-d83d910c198c",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6ae5fb41-162e-42ee-8cde-7869b214fcf0",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"equipment\"]",
+          "targets": [
+            [
+              "css=[data-page=\"equipment\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "aa281475-d03f-4e08-ac92-3d29cba80ff0",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Equipment"
+        },
+        {
+          "id": "2e980190-fd9f-450e-9f6b-a390ab5b6329",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "a27f6e3f-184c-5db1-bbbc-f8605d6406a4",
+      "name": "Admin Products",
+      "commands": [
+        {
+          "id": "ccbf143b-4032-4ccc-88dc-4d1f5386956e",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "63d8c35c-1ce2-4981-89c4-aedcbd61fe41",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3b968489-7321-44e4-89c7-5291a882c943",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0592fe27-73d5-4410-ba95-7f197c9e57b4",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b2f4904e-730a-4025-915c-bfb433bf47fe",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "ccd91acd-9ab6-44af-b1d8-f9d7eb218b33",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "feddf41e-8459-4879-ba96-3aa9473641d4",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fd3663db-00e0-4c28-89c2-6b7a5d063eed",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "cc1cc53b-2b27-420b-83fe-c267dee2232e",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9f71d2a9-df94-4f8d-99a0-03e9e1359264",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"products\"]",
+          "targets": [
+            [
+              "css=[data-page=\"products\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8008fd67-38a9-4c75-b344-81d06ca8fae4",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Products"
+        },
+        {
+          "id": "4038ea66-dcbc-42ed-b49a-1412b6e9b0b1",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "12db0749-2bca-5553-8715-034bbbe354c3",
+      "name": "Admin Payment history",
+      "commands": [
+        {
+          "id": "ae0910ff-4821-4d4e-9882-0be16a9289bc",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5f6b43f8-d66e-4ee7-bfb1-aa89d59daa31",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ebbe8e81-bd74-4652-ab3e-f5bc72d6fa4f",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cf13d2eb-b02e-4fed-aadf-a72a8df907fa",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5c878cec-a635-4f23-a9ab-fcd30803fd3f",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "8be2c993-5e5a-488f-bd69-ddf6eab8faa2",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "abc9df42-ab45-4c9b-982c-4709190969d2",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7ebe134c-0ed9-4c07-b09e-bc7d7955ac41",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "81d16a26-b080-4cae-85b1-f5f0513ebfab",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "91c374c1-3a2a-42ff-afec-0eb225032d21",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"payments\"]",
+          "targets": [
+            [
+              "css=[data-page=\"payments\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1629601f-03da-4db6-9821-337083e25aee",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Payment history"
+        },
+        {
+          "id": "ad1f4f5c-fce9-4c91-9a71-c1fee5e009a1",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "9762836b-fad7-5639-8424-1da66d7eae5a",
+      "name": "Admin Product sales",
+      "commands": [
+        {
+          "id": "ba489631-7935-43ca-84bf-cabc67b2b7d6",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6444b435-897e-4d89-97d6-91f144fbcb3c",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0b158bca-1b08-4e48-9448-efef9208d047",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f20faa44-d98d-40fa-8ce8-9320312d51a4",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ae85126a-0963-4532-b19d-d2148a111306",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "7d822bb4-3c86-4885-aeda-e57f33dfb833",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "6c63a90d-185a-4c35-81f0-31b7da3dcecc",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b59ec402-ee4e-425b-8230-e65c77edbf25",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9406ba15-9365-46f3-bafe-e6d8ad38a0ce",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "7d060ebf-dac5-481d-a396-2f8fcc52ec45",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"sales\"]",
+          "targets": [
+            [
+              "css=[data-page=\"sales\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b8828263-c7bd-4c77-92ea-29e29a1c5a06",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Product sales"
+        },
+        {
+          "id": "2087268c-8895-4fa0-b80f-aa9a4abfd6b2",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "6a34d518-ea0d-5bc5-abbd-83d2533c5e6f",
+      "name": "Admin Workout plans",
+      "commands": [
+        {
+          "id": "0aeac3da-7631-4c90-9b62-a031cf010940",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7a1e28e1-9bac-495b-81dd-508725a782d2",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9fd105af-6d49-4ff3-90c4-820b2b4f3d9c",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c75d97a7-fa87-4af5-9b90-c5f5b5205323",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c4f750d9-830d-47a6-a27f-239f39a57dd4",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "bcdd6716-dfda-4400-89bc-576d79f62aad",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "fc59b1ef-830e-4b2a-b293-32aa258304e2",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "310db6c1-f438-4674-b545-aa03094516b9",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "20e0e424-84e7-48a3-987f-21b0641febdd",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d89f8fcb-680c-45b9-afd8-07edb7ce1682",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"workouts\"]",
+          "targets": [
+            [
+              "css=[data-page=\"workouts\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0dd268c7-3a2e-40f0-83a6-fd7314c1ff85",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Workout plans"
+        },
+        {
+          "id": "cd8df474-e968-46d9-a874-1af8d89cba58",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "852c9f22-aecf-54ea-9ea9-6ba425144c53",
+      "name": "Admin Progress tracking",
+      "commands": [
+        {
+          "id": "ac2bdc5a-4971-4aa8-9959-a60d13088f9c",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "73cffbeb-f727-4377-b919-670d94b54657",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8f4e8047-bf59-4af8-8d46-68ad67dd25d4",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3f2bc394-7503-4813-a739-af6ef57131fe",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a29c1edb-db03-42d5-8b7a-effec8069256",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "3daa40c2-38b1-4bc9-90d0-656af667150e",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "0f2f75a2-0b58-429e-83d7-bb01e56e5090",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3a195790-79c8-4252-a771-12a60214c735",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "935b6297-bd18-4305-8cb8-b884ed9c1089",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6897f1f1-a6a7-4a2d-b321-1b148cb335b1",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"progress\"]",
+          "targets": [
+            [
+              "css=[data-page=\"progress\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "47bd3060-01b6-4b02-9f10-ddd623ad7e73",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Progress tracking"
+        },
+        {
+          "id": "37e73f7a-9bf3-4294-b6aa-972f7118765e",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "4aff1c28-40ce-57a8-a892-c9c6de105f5e",
+      "name": "Admin Training sessions",
+      "commands": [
+        {
+          "id": "e86aba6d-01b6-4b0a-8188-8d99ce5a05c1",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "98d6750a-06a2-4dcd-bb68-cc443dc45c88",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b3a2a817-2a74-49fe-8b21-8df711b130d3",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6acc6698-fece-4392-8e05-055a4337a494",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b7bd432d-eda7-47f4-8066-1f30764163cc",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "1cba9205-527c-450b-a592-4027a2b5444f",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "f3fd7b83-dbf5-4ed0-925e-e1d92ec25d8a",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bd6d81fc-f25e-4207-9008-95aaa41a8261",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "7411fa76-3fcf-40eb-b0ec-164a3afff3d7",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "20c3a39d-d9a3-4503-acf6-c8c1b7023adb",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"sessions\"]",
+          "targets": [
+            [
+              "css=[data-page=\"sessions\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "78b4411f-d61e-4ca3-8fa3-bc50d94b3af5",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Training sessions"
+        },
+        {
+          "id": "6dd21214-6436-4236-8188-0980b665aa55",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "b336a96b-bed4-5fd6-8d1c-02be3f75cae7",
+      "name": "Admin Membership plans",
+      "commands": [
+        {
+          "id": "44fd9b85-e91b-4d16-a640-87cd5b3dc088",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "59a6d5e8-be96-426d-b3af-3744fd12059a",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c24e011f-b077-4830-9792-96a6356ca6ea",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "14947a21-603b-40af-87d4-f03288e3bfaf",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9f3e03ae-b706-4838-8e4b-fe2b49150695",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "0d37e434-a5c9-4d31-a180-2fcd5a101a44",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "caa7a9c4-2558-4303-8108-e18cfc721607",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0efcac12-8de7-4fd1-a471-df9202e568d2",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bbc42f81-1d0c-45ff-9d95-1473eccea641",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4835532f-614e-4b74-a514-5da421684c28",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"memberships\"]",
+          "targets": [
+            [
+              "css=[data-page=\"memberships\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b665ebdb-ef8a-4edb-8a49-a41353e6dc88",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Membership plans"
+        },
+        {
+          "id": "053430bf-838f-40a0-bb5f-3dd1a7d319dc",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "e8fe3903-6611-5ff7-a289-0f3d910af74b",
+      "name": "Admin User management",
+      "commands": [
+        {
+          "id": "6ec3ddf6-86ef-400b-8df0-c2f4f8b4ea85",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "88ad98db-212e-4c1a-a149-5b9f0d810cb0",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d702d1cd-b0b1-4f69-89f7-8d4c96e78bfa",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "44e27a5d-7b83-4133-a45f-f36b33daf7d7",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "48dd322c-58be-4b29-9f31-a25a6e46a0d2",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "b1d9c699-f660-4e46-a318-4a8536d74df6",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "d920ae92-36fd-459c-9ea1-5fe93eb21ee6",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8ab68705-2453-4669-91ae-895c187ec38a",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4a18f457-1f27-4437-9ba5-edbe906a3dfe",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c4df2170-2f6a-4e65-a2b1-fa053dbed255",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9080332f-2cf8-40a0-b788-35898bddb0ba",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "User management"
+        },
+        {
+          "id": "5e332e21-8e03-44af-9ac1-57b3892a4162",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "e5862393-ffe0-5ba9-bed4-a58158f80025",
+      "name": "Admin Reports",
+      "commands": [
+        {
+          "id": "ae704d63-8fa9-4965-8920-c746337b30ae",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2ba6c2e6-ee2a-4e0b-a40e-bd9053039417",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "afbbcd02-4549-464f-aca5-42a8def07a3e",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "838edaf2-c874-40e4-a9ef-e4bdc2be89ce",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ea5987a1-3cbb-42d6-aef4-842634cba673",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "a8c19960-95ec-4e7f-9998-9e59b429a2a7",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "dc52b07f-afbe-42ca-b9e6-91cea2063036",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ada153a4-ffa8-4c21-8050-7016722eb1ce",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8c4db055-f396-40bf-9119-2f34a500929d",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "87676d69-5dab-43dc-95f4-5b3e8e0e765f",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"reports\"]",
+          "targets": [
+            [
+              "css=[data-page=\"reports\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bc8840d9-3bd0-41d8-9faf-54256909bbbc",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Reports"
+        },
+        {
+          "id": "1479fb56-0092-4c13-a0b0-939469afb6d6",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "b281bac4-f963-5675-9841-e729d15d90eb",
+      "name": "Admin Database backup",
+      "commands": [
+        {
+          "id": "db0a7c88-1d76-47ac-a977-98fb7db87cf3",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "df0cddef-4869-4dd4-a261-227d1cb2aca7",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "51594d86-179d-4269-9453-915285d93ba4",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "65ead32b-5d0b-4b72-8209-bdbc8da9accc",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "10636322-3b23-437a-80bb-64b091e9d8c0",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "e511da1c-3d5f-465a-8b64-90a34ac17e96",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "873850ed-21d6-463d-a4cc-74cd91a7e630",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d399df2d-d06b-49cc-9fc7-6c5e34352ffa",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bf5d0809-b100-457e-87fe-5e9e8e1fd887",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8c9d0f3f-c094-4e77-9847-99728f7db7b2",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"backup\"]",
+          "targets": [
+            [
+              "css=[data-page=\"backup\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "91253e18-7086-4f49-b8ca-3406377bb939",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Database backup"
+        },
+        {
+          "id": "f1edbab2-4efc-44c8-a241-1d43c70f1089",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "20fafc13-2eca-5212-b47a-f2f6e9bc8a45",
+      "name": "Trainer My profile",
+      "commands": [
+        {
+          "id": "bff1d12c-f2da-4f64-a437-98fa8775d708",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "91a04cd9-7718-4a30-931e-28cb0061c47d",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dd7f9899-b507-47ec-972b-c48e290d1b64",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "634829cd-e3f8-411f-9352-152ee12f71a4",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2b5964bd-b002-4543-b5bf-28d28c20f629",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "trainer"
+        },
+        {
+          "id": "7fe4c7bf-1b88-425e-b003-2e85731c439a",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "610e7c30-98d5-425c-bdc0-0dba78daa635",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4cce575e-530a-43cf-b752-b3a5b4c351ba",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "87289579-f0e7-4705-8efa-75a88f69dc1a",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "47aaceea-4f29-41da-86ab-66feae9ccccf",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"profile\"]",
+          "targets": [
+            [
+              "css=[data-page=\"profile\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "572c069b-0450-4c0c-b407-bcb1c1c20876",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "My profile"
+        },
+        {
+          "id": "9ebea475-188e-4586-8237-a7a2f2f537f6",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5852b8c5-8d81-4d38-9691-5a001a197165",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "4b145d84-2b69-500e-a408-0a863a5535c9",
+      "name": "Trainer Assigned members",
+      "commands": [
+        {
+          "id": "59460199-a935-494a-bc08-e16be629d91e",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "34891cee-215b-4d5d-b6c9-d9568b3f5e6b",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "25d94c89-e768-4597-92bc-2df8cfebed37",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a27a9aac-3f46-40a8-9cd6-eb4ab55a11f8",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e1ae763e-3482-49bd-9541-31116dd3c0fa",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "trainer"
+        },
+        {
+          "id": "80966be8-6cd2-4745-9bb5-4fbd42fd9192",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "ea6d6b73-1e57-4fe7-9bd3-79814fac7a74",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "94b924d9-dbf6-4a73-9b1d-8902234445fb",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a52ebc2f-26d7-4490-a98b-81274750a792",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a0506693-fcb5-4654-982e-1d358a81a286",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"assigned-members\"]",
+          "targets": [
+            [
+              "css=[data-page=\"assigned-members\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "7b695bd9-40d3-483b-a334-3a7fb7f4a24c",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Assigned members"
+        },
+        {
+          "id": "531327fa-9f8f-47b4-8866-653e6acd6fa3",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e11575ac-3b10-49ec-bda4-c2925ca576fb",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "377870da-3828-5570-b858-d3313b077314",
+      "name": "Trainer My attendance",
+      "commands": [
+        {
+          "id": "978d2e19-f538-4f17-b887-bd9547cd2e6c",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "542a6c84-345e-47f3-849a-cb4118a61c44",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a0634518-d313-45a6-9683-ee74fc46e1c4",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "95824400-096d-45c6-9ff3-a16f0a2bea34",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e916048e-0110-4fa9-b006-a76b0d371242",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "trainer"
+        },
+        {
+          "id": "490a4663-7592-4c47-9814-2817cb5ce361",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "91abfd96-0343-4129-8cec-e53723f776f0",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4e275a53-1219-46fd-bc52-6db267b02ca4",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8cccb9b8-49d5-4fc4-9111-35e049863217",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5b9a10eb-9bde-418c-94e4-31fddb2594ce",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"my-attendance\"]",
+          "targets": [
+            [
+              "css=[data-page=\"my-attendance\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f79b510d-7a2c-4eca-bf66-275685640d8f",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "My attendance"
+        },
+        {
+          "id": "c5d6a629-e139-4983-96e0-d9d21807de17",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d21888d2-caf8-48cf-b74f-aeff6aedd54d",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "1033f9b1-6e50-5170-8108-8e685f2aa38e",
+      "name": "Trainer Member attendance",
+      "commands": [
+        {
+          "id": "202dd198-5bcc-41e5-abb1-81eddd2974a9",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5e404ab8-b51a-4d86-891c-2eb8577d6ff6",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "73b42c07-33cc-4bc9-a10a-8993df450368",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d710419b-d933-4494-95d9-180bdff201fd",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "93a033a3-65d3-49ef-8f0d-6e6d66178101",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "trainer"
+        },
+        {
+          "id": "ea0c6e9d-7f48-49e2-b119-78fe8dc2e372",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "1e087c79-303f-4b37-b32c-4faffc1d269d",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b5979a8a-59b5-4314-92d7-ef2770ac9e3d",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "616e9dd6-6454-4fdf-9483-574f870e382e",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ca231d60-41bf-472c-a68d-e252bbf0cb27",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"member-attendance\"]",
+          "targets": [
+            [
+              "css=[data-page=\"member-attendance\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6637c87a-e449-4365-9e4d-52ddbfae6979",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Member attendance"
+        },
+        {
+          "id": "93d96882-2215-4ed5-84f1-ac780419e51e",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0ca3aedf-5082-4957-a0c6-5a96c35e85f8",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "8cc343f5-bc5f-5ac4-9f3c-2f328d0726d6",
+      "name": "Trainer Progress tracking",
+      "commands": [
+        {
+          "id": "37ecb11e-77fb-4775-9f77-ce62244fb9a7",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "209362b8-8761-4ea5-9a4d-2769fd82ef60",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4847e080-05d7-4e88-9617-5c91a4bb7cf2",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6464486c-7cf4-44c9-9bbd-c96c7b409061",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "369cf7f8-de5d-460c-9a88-1651610458d0",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "trainer"
+        },
+        {
+          "id": "d3d1a10b-530c-4af6-953f-641ad3ca612f",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "2033d23e-4da4-4c97-ace9-979693f57ca0",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "db5c556d-812c-4132-95aa-9054e0cecf89",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4409b763-c149-4858-98da-41c84138925c",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "376f7b96-ca55-4621-82d6-09d36dd2b7cb",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"progress\"]",
+          "targets": [
+            [
+              "css=[data-page=\"progress\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b6dfaff8-e517-4573-9dd8-0db77262e12c",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Progress tracking"
+        },
+        {
+          "id": "ba4abed0-a738-4fd1-9065-b242314c38f9",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "99ebed0e-59da-42f8-a811-40ccb5012d86",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "c76b18c4-8748-5945-b1c4-49fa33f97696",
+      "name": "Trainer Training sessions",
+      "commands": [
+        {
+          "id": "4d37b461-95e3-48c8-9a64-781bd8413583",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "058237a3-bde3-45c7-8bd0-83ac1ac5a20d",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c0dc3899-1ed9-4fd7-a54d-a903728b30e6",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c1f7a870-aee8-4d3b-9daf-b7b95ff0a08e",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "80c46a1f-de3f-4a01-b03f-1928010cf2d6",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "trainer"
+        },
+        {
+          "id": "02a782cf-a3ef-42fb-9223-869953e94339",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "9cbb5226-1b73-4007-ab78-50a80ec15f82",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ffcb9878-fd70-4c08-a6fd-2bc873a41701",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0d6be8ce-3017-400d-8acf-c1388cdc92eb",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "713d090b-8408-44d8-bbc4-e39084d3aeec",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"sessions\"]",
+          "targets": [
+            [
+              "css=[data-page=\"sessions\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f7e91e3f-b860-4442-bd1e-5586938eff11",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "Training sessions"
+        },
+        {
+          "id": "93feca60-d719-4ae4-a2c5-651d6eb6399f",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5f5d851e-b369-4adf-8002-135a7f6600cd",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "3642f536-edc2-5610-9c61-3c80f625221e",
+      "name": "Member My profile",
+      "commands": [
+        {
+          "id": "d3454a44-58b5-49a8-8a71-61c9fd5b5c51",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "45089538-b539-420d-b73e-16c930012fb1",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c839ae12-025e-4d42-8bdd-e5bd0353c94e",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3e465b5d-4eb9-46ea-917e-cf625a511d4d",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d339dd11-8cbb-482e-9b4f-bc6ff132948e",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "user1"
+        },
+        {
+          "id": "e86d6a9c-b9f4-4338-abb9-91fe0e587f5c",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "5b0ab7b7-8378-4874-9522-9c8112dedce7",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c8a58401-0551-4d23-bb59-265913aa1a56",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8b108ecf-b282-4f56-917e-7c19ea15ad4c",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "20dde0cf-cd13-4feb-8313-0f0d83da6060",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"profile\"]",
+          "targets": [
+            [
+              "css=[data-page=\"profile\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "89237500-b75d-443f-9a64-1079236a3cf7",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "My profile"
+        },
+        {
+          "id": "6b3e8448-dd91-4c74-8a3c-6add2da2d555",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "afeb2de8-53ee-41dc-bc0e-4f7a9593b83d",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "eaba95a2-c02d-5f19-abb8-c694e4ec4a01",
+      "name": "Member My attendance",
+      "commands": [
+        {
+          "id": "6e1064c7-5c7d-49f2-8f4b-f49e27cdfb9b",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "265eaa96-be72-40e8-ae52-d14cca968bfc",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "92a88edb-8206-461e-b535-6f0acec65dfe",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "99dfaf79-2cee-45f4-9124-f697d685c303",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f0e4dd28-5d39-4257-89db-a57188a782e2",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "user1"
+        },
+        {
+          "id": "954a03b8-0e67-4076-aa38-c995e6d2b159",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "57b203bd-3f67-4892-b0dc-8ff93f28af33",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "06f19003-d348-4700-b193-c55048f60d92",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "36893d04-c2d5-442c-8b83-174be60e11e4",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c96456b2-af75-43bb-ba33-e96ceec7d6b3",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"my-attendance\"]",
+          "targets": [
+            [
+              "css=[data-page=\"my-attendance\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "39ec9f1a-16f6-4ae1-93b6-613f4f062e6b",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "My attendance"
+        },
+        {
+          "id": "77f445ba-8166-4def-91ca-1d1b3a11359b",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "db323f9a-14b3-4d8c-8190-59f758194d06",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "e8fd9f5c-5a88-5eb5-a360-83b38cf323d4",
+      "name": "Member My progress",
+      "commands": [
+        {
+          "id": "4e3ee3ce-c531-4caa-82cc-bdf827df207c",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9707624b-9a68-4d30-b49a-e3c1a57cf90d",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ec393763-7da3-48fb-84ec-4b9315b02f2b",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b2d0f98b-f589-44b7-86c2-b2642427355a",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c9551c3d-8199-4d37-83ce-a8c715625724",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "user1"
+        },
+        {
+          "id": "2c4da6af-4869-4430-8c4f-9a885700a422",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "c4d59156-a89e-4f57-9a8e-e975c26e33fb",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4ffbada3-0493-4abe-8c2d-1b69fbb8a961",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c56288cc-8fe4-4ce9-8819-69df663bfe62",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6c6b9196-cf4e-448b-8775-04163053c953",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"progress\"]",
+          "targets": [
+            [
+              "css=[data-page=\"progress\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d871a5d1-cf30-4172-a493-11abb251a0e4",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "My progress"
+        },
+        {
+          "id": "624ddc29-eb1a-4722-b9e5-57e69a410bc8",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "62154553-6fbc-44cf-9a24-db95db5bf641",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "64bbd2cf-ea6f-59bc-b146-328d0aec1057",
+      "name": "Member My training",
+      "commands": [
+        {
+          "id": "26897e64-6263-4201-893e-70da15277af0",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f8bd758f-d894-4b89-9f0d-20278718db6d",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2cd495da-45f8-401a-8239-e06836d89f46",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "326c9a4c-ce40-4f15-a266-f87e7db3d78a",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "44b4fa33-906a-4ebd-974f-9271358ab00c",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "user1"
+        },
+        {
+          "id": "68ba75ac-847b-4269-af98-90adb49d48bc",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "6393fc0c-ff7f-42ff-98d3-62dc1535623d",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6b92af94-d640-4a8e-a7cb-d6b2491a25ea",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d63a0749-372e-4d8a-8403-3d5c2f17d268",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b50be1ac-20ea-46f3-9a21-05023c5eef03",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-page=\"sessions\"]",
+          "targets": [
+            [
+              "css=[data-page=\"sessions\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "dfe1566c-4ae1-4400-ace2-b51190e48336",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=page-title",
+          "targets": [],
+          "value": "My training"
+        },
+        {
+          "id": "98f6ffa3-b010-4ffd-9a9a-5dce0b62f6ee",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "css=.loading",
+          "targets": [
+            [
+              "css=.loading",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "756c9c9f-336c-43f2-8368-003b0e9f9721",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"users\"]",
+          "targets": [
+            [
+              "css=[data-page=\"users\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "01e4fdbf-1c4a-5444-ad0d-7994d0d5d059",
+      "name": "Unknown username is rejected",
+      "commands": [
+        {
+          "id": "8f992551-9f0c-4c79-ad80-daad01e30a40",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8b4e72c8-e62b-4261-b61f-933c90ad5d79",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a8496e88-6a26-47af-9b0d-7fe96e8a9a52",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5fd5c516-aaa6-45dc-8ff3-31d21068cb1a",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f9a9cd4b-0aa0-40e1-a9d5-85f85e1a8fed",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "unknown_stqa_account"
+        },
+        {
+          "id": "4a9962d3-f2a0-41d2-bb44-5be6979c80c5",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "76da2d53-e74c-4ab5-820a-32129e294819",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "618c2b49-27ba-43b4-ba8c-d5523c094241",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#login-error:not(:empty)",
+          "targets": [
+            [
+              "css=#login-error:not(:empty)",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "fa300477-dfae-4419-b392-869247e9a854",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=login-error",
+          "targets": [],
+          "value": "We couldn't match that username or mobile number."
+        }
+      ]
+    },
+    {
+      "id": "cca0494c-bb06-5c2c-9ee7-77b9eac2f218",
+      "name": "Admin incorrect password is rejected",
+      "commands": [
+        {
+          "id": "4f26eea2-cb7c-4524-a0d2-f47e3f252aa3",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "24410f26-54e5-449a-abdc-7d2cbe7fc37d",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7cd1a722-e541-4537-964b-1c5e09ebaae1",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "7a0cb1c6-6cfd-4d22-b16d-e3f98d0403fc",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "incorrect_stqa_password"
+        },
+        {
+          "id": "e2728a9e-e0c6-4d52-81d8-a80c5960ca8f",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "01d2171b-c5ac-4871-b73e-54b3a6eadcea",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#login-error:not(:empty)",
+          "targets": [
+            [
+              "css=#login-error:not(:empty)",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8b674a35-dd78-4800-8163-b42e65d0c05c",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=login-error",
+          "targets": [],
+          "value": "The password doesn't match. Try again."
+        }
+      ]
+    },
+    {
+      "id": "93ee29f4-4007-5ba2-abf6-188ddfb6dfb1",
+      "name": "Password visibility toggle",
+      "commands": [
+        {
+          "id": "78a88dcd-8d74-4e5f-83e1-1eb48ee7fc66",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b5dd1412-9146-43e8-b2cb-e91d1674a334",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=show-password",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f8b4458e-e5f3-40ba-baec-3836cc579328",
+          "comment": "",
+          "command": "click",
+          "target": "id=show-password",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "364d07f9-bebb-4a9b-ae85-1130883c919b",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=#login-password[type=\"text\"]",
+          "targets": [
+            [
+              "css=#login-password[type=\"text\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "75f6a20e-513a-4abc-a73d-7c925f52411e",
+          "comment": "",
+          "command": "click",
+          "target": "id=show-password",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8147202a-adda-47ac-b6ad-1644e5ba67fa",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=#login-password[type=\"password\"]",
+          "targets": [
+            [
+              "css=#login-password[type=\"password\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "d707d414-ff80-509d-8c76-2b854538566b",
+      "name": "Member cannot see administrative links",
+      "commands": [
+        {
+          "id": "1fa78d2f-a054-4b79-932b-188cf431e1db",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1aa3acf2-b647-4b4f-b510-3f5ee807e0a0",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "42b3ed98-da8a-4c05-89f8-9e5bd55caeea",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b24ffc3c-ba81-4c7e-9fc1-16ab9d5a689f",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b363b68c-bb27-43cd-aaaf-8ec87323df98",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "user1"
+        },
+        {
+          "id": "629c15e1-91f4-45dc-b607-1b36e5086010",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "d3663a1e-2e80-40e6-9ef7-bd0e954f9ba7",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "550566a5-4a11-4cc6-b373-e6bcf880536a",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6940f618-fedd-4f5a-bcd9-5dd9c92d18e8",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a8ca9908-42b3-4965-88a0-5866530b075a",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"equipment\"]",
+          "targets": [
+            [
+              "css=[data-page=\"equipment\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "adad4d39-2ffd-4438-8bc3-0105f30d8f54",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"backup\"]",
+          "targets": [
+            [
+              "css=[data-page=\"backup\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "eb9e2878-0ac3-45f1-bcc9-e6c265dd4b2b",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-page=\"reports\"]",
+          "targets": [
+            [
+              "css=[data-page=\"reports\"]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "b215a686-7695-501b-8270-ce22aa21e7c1",
+      "name": "Admin sign out",
+      "commands": [
+        {
+          "id": "01d236ca-388a-455e-90c1-2ed9ddc99f91",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4abaa5d5-0c42-4715-afe2-5d4d5cd32b81",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return fetch('/api/logout',{method:'POST'}).then(()=>true);",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d8b73c86-8d41-42e2-b999-2d5510055602",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d5d0cdee-adbf-439c-97a6-fe62228059a0",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=login-username",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0c36d528-e84a-4fc7-b0e6-9f64666ccb04",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-username",
+          "targets": [],
+          "value": "admin"
+        },
+        {
+          "id": "27687f75-d366-414d-a835-6974dfaebf19",
+          "comment": "",
+          "command": "type",
+          "target": "id=login-password",
+          "targets": [],
+          "value": "123"
+        },
+        {
+          "id": "ccdf1613-98db-4c4f-a977-27378313c6cb",
+          "comment": "",
+          "command": "click",
+          "target": "id=sign-in",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "abfe49ed-8daf-43a7-92fe-e46689d16180",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#app:not([hidden])",
+          "targets": [
+            [
+              "css=#app:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "62270088-d497-47a7-963a-8d4a96c5cab1",
+          "comment": "",
+          "command": "waitForElementPresent",
+          "target": "css=.stat-card",
+          "targets": [
+            [
+              "css=.stat-card",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f69a3cb8-5873-4911-92ed-72fb54b16d84",
+          "comment": "",
+          "command": "click",
+          "target": "id=logout",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "81fcede9-5cbd-4ed0-acc8-1598cc3537f6",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=confirm-action",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "249a509a-3a23-404f-b944-7f842acba267",
+          "comment": "",
+          "command": "click",
+          "target": "id=confirm-action",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "35ae0c2d-69d3-4ad6-801c-ba25c2085569",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#login:not([hidden])",
+          "targets": [
+            [
+              "css=#login:not([hidden])",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "d18970a8-1da2-50f9-af0a-631b3b6bd13f",
+      "name": "Three-role regression",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 30000,
+      "tests": [
+        "bfabed29-ab0b-587b-8c92-9231d85ca941",
+        "cc90b35d-1842-547e-8194-3c1c41b18c90",
+        "29fd8d95-726e-5c17-8d0e-becef5ed8b6d",
+        "bb9cd629-6223-5017-9795-c4d03d4a2ef7",
+        "c4fdb553-786e-5da3-95b0-60f002e49f36",
+        "a27f6e3f-184c-5db1-bbbc-f8605d6406a4",
+        "12db0749-2bca-5553-8715-034bbbe354c3",
+        "9762836b-fad7-5639-8424-1da66d7eae5a",
+        "6a34d518-ea0d-5bc5-abbd-83d2533c5e6f",
+        "852c9f22-aecf-54ea-9ea9-6ba425144c53",
+        "4aff1c28-40ce-57a8-a892-c9c6de105f5e",
+        "b336a96b-bed4-5fd6-8d1c-02be3f75cae7",
+        "e8fe3903-6611-5ff7-a289-0f3d910af74b",
+        "e5862393-ffe0-5ba9-bed4-a58158f80025",
+        "b281bac4-f963-5675-9841-e729d15d90eb",
+        "20fafc13-2eca-5212-b47a-f2f6e9bc8a45",
+        "4b145d84-2b69-500e-a408-0a863a5535c9",
+        "377870da-3828-5570-b858-d3313b077314",
+        "1033f9b1-6e50-5170-8108-8e685f2aa38e",
+        "8cc343f5-bc5f-5ac4-9f3c-2f328d0726d6",
+        "c76b18c4-8748-5945-b1c4-49fa33f97696",
+        "3642f536-edc2-5610-9c61-3c80f625221e",
+        "eaba95a2-c02d-5f19-abb8-c694e4ec4a01",
+        "e8fd9f5c-5a88-5eb5-a360-83b38cf323d4",
+        "64bbd2cf-ea6f-59bc-b146-328d0aec1057",
+        "01e4fdbf-1c4a-5444-ad0d-7994d0d5d059",
+        "cca0494c-bb06-5c2c-9ee7-77b9eac2f218",
+        "93ee29f4-4007-5ba2-abf6-188ddfb6dfb1",
+        "d707d414-ff80-509d-8c76-2b854538566b",
+        "b215a686-7695-501b-8270-ce22aa21e7c1"
+      ]
+    }
+  ],
+  "urls": [
+    "http://127.0.0.1:8081/"
+  ],
+  "plugins": []
+}

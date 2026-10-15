@@ -1,0 +1,52 @@
+{
+  "format": "Plain assignment order; Times; full black table borders",
+  "chrome": {
+    "run": "20261015-131021",
+    "timestamp": "2026-10-15T13:12:20.393016+05:30",
+    "base_url": "http://127.0.0.1:8081",
+    "browser": "chrome",
+    "browser_version": "155.0.8059.79",
+    "selenium_version": "4.51.0",
+    "tag": "STQA1a198bde",
+    "total": 79,
+    "passed": 79,
+    "failed": 0,
+    "cleanup_error": null
+  },
+  "edge": {
+    "run": "20261015-131235",
+    "timestamp": "2026-10-15T13:14:01.833772+05:30",
+    "base_url": "http://127.0.0.1:8081",
+    "browser": "edge",
+    "browser_version": "155.0.4283.45",
+    "selenium_version": "4.51.0",
+    "tag": "STQA0119a856",
+    "total": 79,
+    "passed": 79,
+    "failed": 0,
+    "cleanup_error": null
+  },
+  "ide": {
+    "passed": 30,
+    "failed": 0,
+    "source": "output\\stqa\\ide\\results-2026-10-15T07-43-10.288Z.json"
+  },
+  "browser_sources": {
+    "chrome": "output\\stqa\\runs\\20261015-131021\\results.json",
+    "edge": "output\\stqa\\runs\\20261015-131235\\results.json"
+  },
+  "java": {
+    "timestamp": "2026-10-15T13:15:01.527712900+05:30",
+    "base_url": "http://127.0.0.1:8081",
+    "browser": "chrome",
+    "browser_version": "155.0.8059.79",
+    "selenium_version": "4.51.0",
+    "total": 8,
+    "passed": 8,
+    "failed": 0
+  },
+  "exploratory": {
+    "passed": 8,
+    "failed": 0
+  }
+}
