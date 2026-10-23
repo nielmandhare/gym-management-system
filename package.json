@@ -4,11 +4,23 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:local": "next dev --hostname 127.0.0.1 --port 3000",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "python -m unittest discover -s tests/unit -v",
+    "test:integration": "python -m unittest discover -s tests -p \"test_integration_*.py\" -v",
+    "test:blackbox": "python -m unittest discover -s tests -p \"test_blackbox_*.py\" -v",
+    "test:all": "python scripts/run_tests.py all",
+    "test:webdriver": ".venv\\Scripts\\python.exe scripts/run_webdriver.py --browser chrome",
+    "test:webdriver:firefox": ".venv\\Scripts\\python.exe scripts/run_webdriver.py --browser firefox",
+    "test:selenium": "node scripts/run_selenium.mjs --browser chrome",
+    "test:selenium:firefox": "node scripts/run_selenium.mjs --browser firefox",
+    "test:selenium:edge": "node scripts/run_selenium.mjs --browser edge"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
     "next": "16.4.2",
     "react": "19.3.0",
     "react-dom": "19.3.0"
@@ -20,6 +32,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.2",
+    "selenium-side-runner": "^4.0.13",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

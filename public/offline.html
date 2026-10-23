@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#059669">
+  <title>Offline - GymManager</title>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+           background: #f8fafc; color: #0f172a; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+    main { max-width: 22rem; margin: 1rem; padding: 2rem; text-align: center; background: #fff;
+           border: 1px solid #e2e8f0; border-radius: 0.5rem; }
+    img { width: 72px; height: 72px; }
+    h1 { font-size: 1.25rem; margin: 1rem 0 0.5rem; }
+    p { color: #475569; font-size: 0.9rem; line-height: 1.5; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; border: 0; border-radius: 0.375rem;
+             background: #059669; color: #fff; font-size: 0.9rem; font-weight: 500; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="/icons/icon-192.png" alt="GymManager">
+    <h1>You are offline</h1>
+    <p>GymManager needs an internet connection to load member and trainer data. Check your connection and try again.</p>
+    <button onclick="location.reload()">Try again</button>
+  </main>
+</body>
+</html>

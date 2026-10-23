@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "App: start localhost:3000",
+      "type": "shell",
+      "command": "npm run dev:local",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Tests: Python unit + API",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["scripts/run_tests.py", "all"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Tests: Chrome WebDriver 30 functional cases",
+      "type": "shell",
+      "command": "npm run test:webdriver",
+      "problemMatcher": []
+    },
+    {
+      "label": "Tests: existing Selenium IDE suite in Chrome",
+      "type": "shell",
+      "command": "npm run test:selenium",
+      "problemMatcher": []
+    }
+  ]
+}
