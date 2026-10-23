@@ -6,6 +6,10 @@ For installing on another Windows PC and reproducing the Chrome demo, start
 with [SETUP.md](SETUP.md). This handoff records machine-specific history and
 verified results; the setup guide gives fresh-machine commands.
 
+The current Next.js project is published on the `stqa-nextjs-chrome-transfer`
+branch of `nielmandhare/gym-management-system`; `main` remains the earlier
+Java/web project. Clone the transfer branch on a new PC, then follow `SETUP.md`.
+
 ## Completed outcome
 
 The user-approved 30-case native Selenium WebDriver suite is implemented and
@@ -23,7 +27,7 @@ No college upload, email or other submission has been made.
 
 ## Deliverables and evidence
 
-- Final report: `D:\stqa\Gym_Management_System_STQA_Final_Report.docx`
+- Final report: `docs/submission/Gym_Management_System_STQA_Final_Report.docx`
 - Supplied original: `D:\stqa\Gym_Management_System_STQA_Report_Selenium_IDE.docx`
 - Project: `D:\stqa\gymmanagement`
 - Approved plan: `docs/webdriver-completion-plan.md`

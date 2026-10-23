@@ -6,6 +6,10 @@ For the current testing/report work and recovery context, read
 For a fresh Windows installation, Chrome-only browser setup, Supabase test
 accounts, and a classroom walkthrough, follow [SETUP.md](SETUP.md).
 
+To get this transfer snapshot on another PC, clone the `stqa-nextjs-chrome-transfer`
+branch from [GitHub](https://github.com/nielmandhare/gym-management-system/tree/stqa-nextjs-chrome-transfer).
+The existing `main` branch contains the earlier Java/web project.
+
 A small Next.js + Supabase CRUD application for managing gym members and trainers, built to demonstrate software testing with Python PyUnit (`unittest`): unit, white-box, black-box, integration and regression testing.
 
 Pages: Login, Register, Dashboard, Members (search, add, view, edit, delete), Trainers (list, add, delete), Users (admin), My Membership / My Profile, Plans.
